@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "CrowdConnectedIPS",
+    "printedName": "CrowdConnectedIPS",
     "children": [
       {
         "kind": "Import",
@@ -152,13 +152,20 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
         "declKind": "Import",
         "moduleName": "CrowdConnectedIPS",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedIPS"
       },
       {
         "kind": "Import",
@@ -244,6 +251,13 @@
       },
       {
         "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedIPS"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -302,23 +316,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedIPS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CrowdConnectedShared",
-        "printedName": "CrowdConnectedShared",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedIPS"
       },
       {
         "kind": "Import",
@@ -434,13 +431,20 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
         "declKind": "Import",
         "moduleName": "CrowdConnectedIPS",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedIPS"
       },
       {
         "kind": "Import",
@@ -522,23 +526,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedIPS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CrowdConnectedShared",
-        "printedName": "CrowdConnectedShared",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedIPS"
       },
       {
         "kind": "Import",
@@ -595,6 +582,54 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "coreSDKVersion",
+            "printedName": "coreSDKVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CrowdConnectedIPS@objc(cs)CrowdConnectedIPS(cpy)coreSDKVersion",
+            "mangledName": "$s17CrowdConnectedIPSAAC14coreSDKVersionSSvpZ",
+            "moduleName": "CrowdConnectedIPS",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CrowdConnectedIPS@objc(cs)CrowdConnectedIPS(cm)coreSDKVersion",
+                "mangledName": "$s17CrowdConnectedIPSAAC14coreSDKVersionSSvgZ",
+                "moduleName": "CrowdConnectedIPS",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -613,6 +648,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -762,25 +811,8 @@
         "declKind": "Import",
         "moduleName": "CrowdConnectedIPS",
         "declAttributes": [
-          "ImplementationOnly"
+          "AccessControl"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedIPS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CrowdConnectedShared",
-        "printedName": "CrowdConnectedShared",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedIPS"
       },
       {
         "kind": "Import",
@@ -797,571 +829,466 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterScoringStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterScoringStage.swift",
       "kind": "IntegerLiteral",
       "offset": 236,
       "length": 2,
       "value": "35"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/BeaconsManagerObserver.swift",
-      "kind": "StringLiteral",
-      "offset": 440,
-      "length": 22,
-      "value": "\"CrowdConnectedIPS.BeaconsManagerObserver\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/Models\/SynchronizedArray.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/Models\/SynchronizedArray.swift",
       "kind": "Array",
       "offset": 228,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/Models\/SynchronizedArray.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/Models\/SynchronizedArray.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 25,
       "value": "\"SynchronizedArrayAccess\""
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/SurfacesProvider.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/SurfacesProvider.swift",
       "kind": "Array",
-      "offset": 465,
+      "offset": 544,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "FloatLiteral",
       "offset": 443,
       "length": 12,
       "value": "111132.95255"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "FloatLiteral",
       "offset": 477,
       "length": 10,
       "value": "-559.84957"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "FloatLiteral",
       "offset": 509,
       "length": 7,
       "value": "1.17514"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "FloatLiteral",
       "offset": 538,
       "length": 8,
       "value": "-0.00230"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "FloatLiteral",
       "offset": 568,
       "length": 12,
       "value": "111412.87733"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "FloatLiteral",
       "offset": 602,
       "length": 9,
       "value": "-93.50412"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "FloatLiteral",
       "offset": 633,
       "length": 7,
       "value": "0.11774"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "FloatLiteral",
       "offset": 662,
       "length": 9,
       "value": "-0.000165"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "IntegerLiteral",
-      "offset": 6438,
+      "offset": 6620,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "IntegerLiteral",
-      "offset": 6452,
+      "offset": 6634,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "BooleanLiteral",
       "offset": 550,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "BooleanLiteral",
       "offset": 591,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "FloatLiteral",
       "offset": 749,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "FloatLiteral",
       "offset": 755,
       "length": 5,
       "value": "100.0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "IntegerLiteral",
       "offset": 912,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/RealLocationManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/RealLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 907,
+      "offset": 935,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/RealLocationManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/RealLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1009,
+      "offset": 1037,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/RealLocationManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/RealLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1045,
+      "offset": 1073,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/RealLocationManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/RealLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1089,
+      "offset": 1117,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
       "kind": "IntegerLiteral",
       "offset": 622,
       "length": 3,
-      "value": "200"
+      "value": "500"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
       "kind": "BooleanLiteral",
       "offset": 866,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
       "kind": "StringLiteral",
       "offset": 1066,
       "length": 58,
       "value": "\"CrowdConnected.RealBeaconRegionsManager.PersistedRegions\""
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1244,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1273,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/BeaconRegionsManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1308,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterFilterStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterFilterStage.swift",
       "kind": "IntegerLiteral",
       "offset": 267,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterFilterStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterFilterStage.swift",
       "kind": "FloatLiteral",
       "offset": 313,
       "length": 4,
       "value": "0.35"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterFilterStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterFilterStage.swift",
       "kind": "IntegerLiteral",
       "offset": 490,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Beacons.swift",
-      "kind": "StringLiteral",
-      "offset": 930,
-      "length": 9,
-      "value": "\"IBEACON\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Beacons.swift",
-      "kind": "StringLiteral",
-      "offset": 965,
-      "length": 11,
-      "value": "\"EDDYSTONE\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Beacons.swift",
-      "kind": "StringLiteral",
-      "offset": 930,
-      "length": 9,
-      "value": "\"IBEACON\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Beacons.swift",
-      "kind": "StringLiteral",
-      "offset": 965,
-      "length": 11,
-      "value": "\"EDDYSTONE\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Beacons.swift",
-      "kind": "StringLiteral",
-      "offset": 2167,
-      "length": 6,
-      "value": "\"RFID\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Beacons.swift",
-      "kind": "StringLiteral",
-      "offset": 2167,
-      "length": 6,
-      "value": "\"RFID\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/BeaconsManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/BeaconsManager.swift",
       "kind": "Array",
       "offset": 590,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/BeaconsManager.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/BeaconsManager.swift",
       "kind": "BooleanLiteral",
       "offset": 627,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/MeanVariance\/MeanVarianceSlidingWindow.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/MeanVariance\/MeanVarianceSlidingWindow.swift",
       "kind": "IntegerLiteral",
       "offset": 395,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/MeanVariance\/MeanVarianceSlidingWindow.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/MeanVariance\/MeanVarianceSlidingWindow.swift",
       "kind": "IntegerLiteral",
       "offset": 422,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPreProcessStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPreProcessStage.swift",
       "kind": "IntegerLiteral",
       "offset": 256,
       "length": 8,
       "value": "10000000"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPreProcessStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPreProcessStage.swift",
       "kind": "IntegerLiteral",
       "offset": 370,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPreProcessStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPreProcessStage.swift",
       "kind": "IntegerLiteral",
       "offset": 407,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/DataPublisiher\/SequentialDataProcessor.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/DataPublisiher\/SequentialDataProcessor.swift",
       "kind": "IntegerLiteral",
       "offset": 208,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/DataPublisiher\/SequentialDataProcessor.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/DataPublisiher\/SequentialDataProcessor.swift",
       "kind": "IntegerLiteral",
       "offset": 251,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/DataPublisiher\/SequentialDataProcessor.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/DataPublisiher\/SequentialDataProcessor.swift",
       "kind": "IntegerLiteral",
       "offset": 289,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/CartesianBeaconProvider.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/BeaconsManagement\/CartesianBeaconProvider.swift",
       "kind": "Dictionary",
-      "offset": 744,
+      "offset": 808,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterDetectionStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterDetectionStage.swift",
       "kind": "IntegerLiteral",
       "offset": 249,
       "length": 3,
       "value": "160"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterDetectionStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterDetectionStage.swift",
       "kind": "IntegerLiteral",
       "offset": 299,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterDetectionStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterDetectionStage.swift",
       "kind": "FloatLiteral",
       "offset": 348,
       "length": 3,
       "value": "0.7"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterDetectionStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterDetectionStage.swift",
       "kind": "FloatLiteral",
       "offset": 395,
       "length": 3,
       "value": "1.2"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterDetectionStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterDetectionStage.swift",
       "kind": "IntegerLiteral",
       "offset": 424,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/RegionEventsObserver.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/RegionEventsObserver.swift",
       "kind": "IntegerLiteral",
       "offset": 293,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/RegionEventsObserver.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/RegionEventsObserver.swift",
       "kind": "IntegerLiteral",
       "offset": 298,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/RegionsManagement\/RegionEventsObserver.swift",
-      "kind": "StringLiteral",
-      "offset": 107,
-      "length": 20,
-      "value": "\"CrowdConnectedIPS.RegionEventsObserver\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
       "kind": "IntegerLiteral",
       "offset": 362,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
       "kind": "IntegerLiteral",
       "offset": 368,
       "length": 7,
       "value": "1000000"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
       "kind": "IntegerLiteral",
       "offset": 422,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
       "kind": "IntegerLiteral",
       "offset": 429,
       "length": 7,
       "value": "1000000"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
       "kind": "BooleanLiteral",
       "offset": 664,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/ProcessStages\/StepCounterPostProcessStage.swift",
       "kind": "IntegerLiteral",
       "offset": 695,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/DataPublisiher\/IPSDataPublisher.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/DataPublisiher\/IPSDataPublisher.swift",
       "kind": "BooleanLiteral",
-      "offset": 645,
+      "offset": 630,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Surfaces.swift",
-      "kind": "StringLiteral",
-      "offset": 1648,
-      "length": 7,
-      "value": "\"max_x\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Surfaces.swift",
-      "kind": "StringLiteral",
-      "offset": 1680,
-      "length": 7,
-      "value": "\"min_y\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Surfaces.swift",
-      "kind": "StringLiteral",
-      "offset": 1648,
-      "length": 7,
-      "value": "\"max_x\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Surfaces.swift",
-      "kind": "StringLiteral",
-      "offset": 1680,
-      "length": 7,
-      "value": "\"min_y\""
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Surfaces.swift",
-      "kind": "FloatLiteral",
-      "offset": 7022,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Surfaces.swift",
-      "kind": "FloatLiteral",
-      "offset": 7067,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Interface\/CrowdConnectedIPS.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Interface\/CrowdConnectedIPS.swift",
       "kind": "IntegerLiteral",
       "offset": 386,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepDataProcessor.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Interface\/CrowdConnectedIPS.swift",
+      "kind": "StringLiteral",
+      "offset": 1173,
+      "length": 7,
+      "value": "\"0.0.0\""
+    },
+    {
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepDataProcessor.swift",
       "kind": "IntegerLiteral",
       "offset": 1038,
       "length": 10,
       "value": "1000000000"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepDataProcessor.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepDataProcessor.swift",
       "kind": "IntegerLiteral",
       "offset": 1099,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepDataProcessor.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepDataProcessor.swift",
       "kind": "StringLiteral",
       "offset": 1158,
       "length": 43,
       "value": "\"CrowdConnectedIPS.StepDataProcessor.Queue\""
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
       "kind": "StringLiteral",
-      "offset": 855,
+      "offset": 843,
       "length": 44,
       "value": "\"CrowdConnected.IPSPositioner.DispatchQueue\""
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1056,
+      "offset": 1044,
       "length": 4,
       "value": "-100"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1365,
+      "offset": 1353,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1420,
+      "offset": 1408,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Settings.swift",
-      "kind": "BooleanLiteral",
-      "offset": 923,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ralfkernchen\/Colocatorv3iOS\/ColocatorIPS\/CrowdConnectedIPS\/Models\/Settings.swift",
-      "kind": "BooleanLiteral",
-      "offset": 961,
-      "length": 4,
-      "value": "true"
     }
   ]
 }

@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CrowdConnectedShared
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CoreLocation
 import CoreMotion
 @_exported import CrowdConnectedShared
@@ -9,6 +10,7 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os
 @_hasMissingDesignatedInitializers public class MainLogger {
   public static func log(level: CrowdConnectedShared.LogLevel, message: @autoclosure () -> Swift.String)
   public static func log(level: CrowdConnectedShared.LogLevel, error: CrowdConnectedShared.DescriptiveError)
@@ -22,23 +24,26 @@ public enum ReactiveNotification : Swift.String {
   case updateBeacons
   case updateSurfaces
   case updateZones
-  case updateBluetoothSettings
+  case updateCoreBluetoothSettings
   case updateGeoSettings
   case newPositionsAvailable
   case newStepsAvailable
   case newBluetoothObservationsAvailable
   case receivedEddystoneObservation
+  case newPositionForDeviceStatus
   case newDeviceLocationAuthorizationStatus
   case newDeviceAccuracyAuthorizationStatus
   case newDeviceMotionAuthorizationStatus
   case newDevicePedometerAuthorizationStatus
+  case newDeviceBluetoothStatus
+  case newDeviceNotificationsStatus
+  case deviceStatusDidChange
   case ipsModuleState
   case coreBluetoothModuleState
   case geoModuleState
   case startSDK
   case stopSDK
-  case startNavigationSession
-  case endNavigationSession
+  case newAlias
   case newRemoteLog
   case significantClockUpdate
   case newCredentials
@@ -49,7 +54,9 @@ public enum ReactiveNotification : Swift.String {
   case didEnterRegion
   case didExitRegion
   case updateTrackingMode
-  case uploadRecords
+  case uploadAllRecords
+  case uploadPositionRecords
+  case uploadRawObservationRecords
   case invalidAccessToken
   public var name: Foundation.NSNotification.Name {
     get
@@ -74,11 +81,10 @@ public enum LogLevel : Swift.String, Swift.CaseIterable {
   case notice
   case error
   case critical
-  case remote
   public init?(rawValue: Swift.String)
   public typealias AllCases = [CrowdConnectedShared.LogLevel]
   public typealias RawValue = Swift.String
-  public static var allCases: [CrowdConnectedShared.LogLevel] {
+  nonisolated public static var allCases: [CrowdConnectedShared.LogLevel] {
     get
   }
   public var rawValue: Swift.String {
@@ -237,6 +243,12 @@ extension CrowdConnectedShared.CrowdConnectedCodable {
   public static func getOptionalIntValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey = .number) -> Swift.Int? where T : Swift.CodingKey
   public static func getOptionalDoubleValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey = .number) -> Swift.Double? where T : Swift.CodingKey
 }
+extension CrowdConnectedShared.CrowdConnectedCodable {
+  public init?(from dictionary: [Swift.String : Swift.AnyHashable])
+  public var asDictionary: [Swift.String : Swift.AnyHashable]? {
+    get
+  }
+}
 public struct DataPublishRule : Swift.Codable, Swift.Hashable {
   public init(shouldPublishPositionData: Swift.Bool, shouldPublishRawObservationData: Swift.Bool)
   public var shouldPublishPositionData: Swift.Bool
@@ -259,6 +271,88 @@ public struct DescriptiveError : Foundation.LocalizedError {
   public init(name: Swift.String, message: Swift.String? = nil, code: Swift.Int? = nil)
   public init(_ error: any Swift.Error)
   public func isExpiredToken() -> Swift.Bool
+}
+public struct CrowdConnectedSDKSettings : CrowdConnectedShared.CrowdConnectedCodable, Swift.Equatable {
+  public var pollingFrequency: Swift.Int64
+  public var active: Swift.Bool
+  public var deviceIdList: [Swift.String]
+  public var dataSending: CrowdConnectedShared.CrowdConnectedSDKSettings.DataSendingSettings
+  public var tx: Swift.Int?
+  public var geo: CrowdConnectedShared.CrowdConnectedSDKSettings.GeoSettings?
+  public var surfaces: [CrowdConnectedShared.CrowdConnectedSDKSettings.Surface]?
+  public var nidsToScan: [Swift.String]?
+  public var uuidsToScan: [Swift.String]?
+  public var beacons: [CrowdConnectedShared.CrowdConnectedSDKSettings.Beacon]?
+  public var minBeaconCount: Swift.Int?
+  public var minObsCount: Swift.Int?
+  public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings, b: CrowdConnectedShared.CrowdConnectedSDKSettings) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CrowdConnectedShared.CrowdConnectedSDKSettings {
+  public struct DataSendingSettings : CrowdConnectedShared.CrowdConnectedCodable, Swift.Equatable {
+    public let batteryLevel: Swift.Bool
+    public let positionData: Swift.Bool
+    public let rawData: Swift.Bool
+    public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings.DataSendingSettings, b: CrowdConnectedShared.CrowdConnectedSDKSettings.DataSendingSettings) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension CrowdConnectedShared.CrowdConnectedSDKSettings {
+  public struct ValidBeacon : Swift.Equatable {
+    public var rfid: Swift.String
+    public var encryptedValue: Swift.String
+    public var encryptedValueLength: Swift.Int
+    public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings.ValidBeacon, b: CrowdConnectedShared.CrowdConnectedSDKSettings.ValidBeacon) -> Swift.Bool
+  }
+  public struct Beacon : CrowdConnectedShared.CrowdConnectedCodable, Swift.Equatable {
+    public var validBeacon: CrowdConnectedShared.CrowdConnectedSDKSettings.ValidBeacon? {
+      get
+    }
+    public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings.Beacon, b: CrowdConnectedShared.CrowdConnectedSDKSettings.Beacon) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension CrowdConnectedShared.CrowdConnectedSDKSettings {
+  public struct GeoSettings : CrowdConnectedShared.CrowdConnectedCodable, Swift.Equatable {
+    public let enabled: Swift.Bool
+    public let medium: Swift.Int64?
+    public let high: Swift.Int64?
+    public let zones: [CrowdConnectedShared.CrowdConnectedSDKSettings.Zone]?
+    public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings.GeoSettings, b: CrowdConnectedShared.CrowdConnectedSDKSettings.GeoSettings) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Zone : CrowdConnectedShared.CrowdConnectedCodable, Swift.Hashable, Swift.Equatable {
+    public var id: Swift.String
+    public var lat: Swift.Double
+    public var lng: Swift.Double
+    public var smallRadius: Swift.Double
+    public var bigRadius: Swift.Double
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings.Zone, b: CrowdConnectedShared.CrowdConnectedSDKSettings.Zone) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Surface : CrowdConnectedShared.CrowdConnectedCodable, Swift.Equatable {
+    public var surfaceId: Swift.String
+    public var type: Swift.String?
+    public var xScalingFactor: Swift.Double?
+    public var yScalingFactor: Swift.Double?
+    public var xCorrectionScale: Swift.Double
+    public var yCorrectionScale: Swift.Double
+    public var approxLat: Swift.Double?
+    public var approxLng: Swift.Double?
+    public var floor: Swift.Int?
+    public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings.Surface, b: CrowdConnectedShared.CrowdConnectedSDKSettings.Surface) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
 }
 extension CrowdConnectedShared.ReactiveNotification : Swift.Equatable {}
 extension CrowdConnectedShared.ReactiveNotification : Swift.Hashable {}
