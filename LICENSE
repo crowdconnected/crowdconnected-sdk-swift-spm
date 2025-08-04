@@ -1,0 +1,49 @@
+Crowd Connected SDK License Agreement
+
+Copyright (c) 2025 Crowd Connected Ltd. All rights reserved.
+
+IMPORTANT - READ CAREFULLY: This License Agreement ("Agreement") is a legal agreement between you (either an individual or a single entity) and Crowd Connected Ltd. ("Crowd Connected") for the use of the Crowd Connected iOS SDK software, including any associated documentation, examples, and related materials (collectively, the "SDK").
+
+BY DOWNLOADING, INSTALLING, OR USING THE SDK, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT DOWNLOAD, INSTALL, OR USE THE SDK.
+
+1. GRANT OF LICENSE
+Subject to the terms and conditions of this Agreement, Crowd Connected grants you a non-exclusive, non-transferable license to:
+   a) Use the SDK solely for the purpose of developing applications that integrate with Crowd Connected services
+   b) Distribute the SDK as part of your applications, provided such distribution complies with the terms herein
+
+2. RESTRICTIONS
+You may not:
+   a) Reverse engineer, decompile, disassemble, or attempt to derive the source code of the SDK
+   b) Modify, adapt, or create derivative works based on the SDK
+   c) Remove, alter, or obscure any proprietary notices on the SDK
+   d) Use the SDK for any unlawful purpose or in any manner that violates applicable laws
+   e) Distribute the SDK as a standalone product
+
+3. PROPRIETARY RIGHTS
+The SDK and all intellectual property rights therein are and shall remain the exclusive property of Crowd Connected. This Agreement does not grant you any rights to trademarks, service marks, or trade names of Crowd Connected.
+
+4. PRIVACY AND DATA
+Your use of the SDK must comply with all applicable privacy laws and Crowd Connected's Privacy Policy. You are responsible for obtaining all necessary consents from end users.
+
+5. SUPPORT AND UPDATES
+Crowd Connected may, but is not obligated to, provide support or updates for the SDK. Any updates provided shall be subject to this Agreement unless accompanied by a separate license agreement.
+
+6. WARRANTY DISCLAIMER
+THE SDK IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. CROWD CONNECTED DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+7. LIMITATION OF LIABILITY
+IN NO EVENT SHALL CROWD CONNECTED BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, OR USE, ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE USE OF THE SDK.
+
+8. TERMINATION
+This Agreement is effective until terminated. Crowd Connected may terminate this Agreement immediately if you breach any term hereof. Upon termination, you must cease all use of the SDK and destroy all copies in your possession.
+
+9. GOVERNING LAW
+This Agreement shall be governed by and construed in accordance with the laws of England and Wales, without regard to conflict of law principles.
+
+10. ENTIRE AGREEMENT
+This Agreement constitutes the entire agreement between the parties and supersedes all prior agreements relating to the subject matter hereof.
+
+For questions about this license, please contact: legal@crowdconnected.com
+
+Crowd Connected Ltd.
+Registered in England and Wales

@@ -1,0 +1,312 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth"
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth"
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CrowdConnectedCoreBluetooth",
+        "printedName": "CrowdConnectedCoreBluetooth",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "activate",
+            "printedName": "activate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CrowdConnectedCoreBluetooth@objc(cs)CrowdConnectedCoreBluetooth(cm)activate",
+            "mangledName": "$s27CrowdConnectedCoreBluetoothAAC8activateyyFZ",
+            "moduleName": "CrowdConnectedCoreBluetooth",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CrowdConnectedCoreBluetooth@objc(cs)CrowdConnectedCoreBluetooth",
+        "mangledName": "$s27CrowdConnectedCoreBluetoothAAC",
+        "moduleName": "CrowdConnectedCoreBluetooth",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCoreBluetooth"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconID.swift",
+      "kind": "StringLiteral",
+      "offset": 80,
+      "length": 17,
+      "value": "\"CrowdConnectedCoreBluetooth.EddystoneBeaconID\""
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "kind": "StringLiteral",
+      "offset": 464,
+      "length": 39,
+      "value": "\"CrowdConnected.Eddystone.ScannerQueue\""
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "kind": "StringLiteral",
+      "offset": 550,
+      "length": 6,
+      "value": "\"FEAA\""
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 824,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 866,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 924,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "kind": "Array",
+      "offset": 970,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 14,
+      "value": "\"CrowdConnectedCoreBluetooth.BeaconObserver\""
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 339,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 392,
+      "length": 4,
+      "value": "0x10"
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 445,
+      "length": 4,
+      "value": "0x20"
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 498,
+      "length": 4,
+      "value": "0x30"
+    },
+    {
+      "filePath": "\/Users\/ralfkernchen\/ColocatorV3iOS\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 19,
+      "value": "\"CrowdConnectedCoreBluetooth.EddystoneBeaconInfo\""
+    }
+  ]
+}

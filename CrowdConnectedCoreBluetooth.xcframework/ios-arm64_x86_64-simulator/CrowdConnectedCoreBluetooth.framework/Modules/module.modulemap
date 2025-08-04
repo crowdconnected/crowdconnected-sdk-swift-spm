@@ -1,0 +1,11 @@
+framework module CrowdConnectedCoreBluetooth {
+  umbrella header "CrowdConnectedCoreBluetooth.h"
+  export *
+
+  module * { export * }
+}
+
+module CrowdConnectedCoreBluetooth.Swift {
+  header "CrowdConnectedCoreBluetooth-Swift.h"
+  requires objc
+}
