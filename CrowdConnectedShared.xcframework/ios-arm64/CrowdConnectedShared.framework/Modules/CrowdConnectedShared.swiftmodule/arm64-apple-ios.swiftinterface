@@ -6,7 +6,9 @@ import CoreLocation
 import CoreMotion
 @_exported import CrowdConnectedShared
 import Foundation
+import OSLog
 import Swift
+import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -58,6 +60,7 @@ public enum ReactiveNotification : Swift.String {
   case uploadPositionRecords
   case uploadRawObservationRecords
   case invalidAccessToken
+  case appWillTerminate
   public var name: Foundation.NSNotification.Name {
     get
   }
@@ -72,13 +75,14 @@ public enum ReactiveNotification : Swift.String {
   public static func getSeconds() -> Swift.Double
   @objc deinit
 }
-public protocol Logger {
+public protocol LoggerProtocol {
   func log(level: CrowdConnectedShared.LogLevel, message: @autoclosure () -> Swift.String)
 }
 public enum LogLevel : Swift.String, Swift.CaseIterable {
   case debug
   case info
   case notice
+  case warning
   case error
   case critical
   public init?(rawValue: Swift.String)
@@ -260,6 +264,23 @@ public struct DataPublishRule : Swift.Codable, Swift.Hashable {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
+}
+public enum TaskState : Swift.Equatable {
+  case running
+  case completed
+  case cancelled
+  case failed(any Swift.Error)
+  public static func == (lhs: CrowdConnectedShared.TaskState, rhs: CrowdConnectedShared.TaskState) -> Swift.Bool
+}
+final public class TaskTracker<Success> {
+  final public var state: CrowdConnectedShared.TaskState
+  public init(priority: _Concurrency.TaskPriority? = nil, operation: @escaping @Sendable () async throws -> Success)
+  final public func cancel()
+  final public var isCancelled: Swift.Bool {
+    get
+  }
+  final public func value() async throws -> Success
+  @objc deinit
 }
 public protocol DescribingError {
   var descriptiveError: CrowdConnectedShared.DescriptiveError { get }

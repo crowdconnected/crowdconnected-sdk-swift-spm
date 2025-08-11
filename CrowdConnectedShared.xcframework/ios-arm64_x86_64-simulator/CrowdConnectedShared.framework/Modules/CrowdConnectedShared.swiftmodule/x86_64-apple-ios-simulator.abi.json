@@ -159,6 +159,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedShared"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ReactiveNotification",
         "printedName": "ReactiveNotification",
@@ -1571,6 +1578,43 @@
           },
           {
             "kind": "Var",
+            "name": "appWillTerminate",
+            "printedName": "appWillTerminate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrowdConnectedShared.ReactiveNotification.Type) -> CrowdConnectedShared.ReactiveNotification",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReactiveNotification",
+                    "printedName": "CrowdConnectedShared.ReactiveNotification",
+                    "usr": "s:20CrowdConnectedShared20ReactiveNotificationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrowdConnectedShared.ReactiveNotification.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReactiveNotification",
+                        "printedName": "CrowdConnectedShared.ReactiveNotification",
+                        "usr": "s:20CrowdConnectedShared20ReactiveNotificationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20CrowdConnectedShared20ReactiveNotificationO16appWillTerminateyA2CmF",
+            "mangledName": "$s20CrowdConnectedShared20ReactiveNotificationO16appWillTerminateyA2CmF",
+            "moduleName": "CrowdConnectedShared"
+          },
+          {
+            "kind": "Var",
             "name": "name",
             "printedName": "name",
             "children": [
@@ -1847,8 +1891,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Logger",
-        "printedName": "Logger",
+        "name": "LoggerProtocol",
+        "printedName": "LoggerProtocol",
         "children": [
           {
             "kind": "Function",
@@ -1889,11 +1933,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared6LoggerP3log5level7messageyAA8LogLevelO_SSyXKtF",
-            "mangledName": "$s20CrowdConnectedShared6LoggerP3log5level7messageyAA8LogLevelO_SSyXKtF",
+            "usr": "s:20CrowdConnectedShared14LoggerProtocolP3log5level7messageyAA8LogLevelO_SSyXKtF",
+            "mangledName": "$s20CrowdConnectedShared14LoggerProtocolP3log5level7messageyAA8LogLevelO_SSyXKtF",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedShared.Logger>",
-            "sugared_genericSig": "<Self where Self : CrowdConnectedShared.Logger>",
+            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedShared.LoggerProtocol>",
+            "sugared_genericSig": "<Self where Self : CrowdConnectedShared.LoggerProtocol>",
             "protocolReq": true,
             "declAttributes": [
               "RawDocComment"
@@ -1903,8 +1947,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:20CrowdConnectedShared6LoggerP",
-        "mangledName": "$s20CrowdConnectedShared6LoggerP",
+        "usr": "s:20CrowdConnectedShared14LoggerProtocolP",
+        "mangledName": "$s20CrowdConnectedShared14LoggerProtocolP",
         "moduleName": "CrowdConnectedShared",
         "declAttributes": [
           "AccessControl",
@@ -2047,6 +2091,46 @@
             "declKind": "EnumElement",
             "usr": "s:20CrowdConnectedShared8LogLevelO6noticeyA2CmF",
             "mangledName": "$s20CrowdConnectedShared8LogLevelO6noticeyA2CmF",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrowdConnectedShared.LogLevel.Type) -> CrowdConnectedShared.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "CrowdConnectedShared.LogLevel",
+                    "usr": "s:20CrowdConnectedShared8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrowdConnectedShared.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "CrowdConnectedShared.LogLevel",
+                        "usr": "s:20CrowdConnectedShared8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20CrowdConnectedShared8LogLevelO7warningyA2CmF",
+            "mangledName": "$s20CrowdConnectedShared8LogLevelO7warningyA2CmF",
             "moduleName": "CrowdConnectedShared",
             "declAttributes": [
               "RawDocComment"
@@ -3064,6 +3148,13 @@
         "kind": "Import",
         "name": "os",
         "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedShared"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
         "declKind": "Import",
         "moduleName": "CrowdConnectedShared"
       },
@@ -6751,6 +6842,538 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TaskState",
+        "printedName": "TaskState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "running",
+            "printedName": "running",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrowdConnectedShared.TaskState.Type) -> CrowdConnectedShared.TaskState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TaskState",
+                    "printedName": "CrowdConnectedShared.TaskState",
+                    "usr": "s:20CrowdConnectedShared9TaskStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrowdConnectedShared.TaskState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TaskState",
+                        "printedName": "CrowdConnectedShared.TaskState",
+                        "usr": "s:20CrowdConnectedShared9TaskStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20CrowdConnectedShared9TaskStateO7runningyA2CmF",
+            "mangledName": "$s20CrowdConnectedShared9TaskStateO7runningyA2CmF",
+            "moduleName": "CrowdConnectedShared"
+          },
+          {
+            "kind": "Var",
+            "name": "completed",
+            "printedName": "completed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrowdConnectedShared.TaskState.Type) -> CrowdConnectedShared.TaskState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TaskState",
+                    "printedName": "CrowdConnectedShared.TaskState",
+                    "usr": "s:20CrowdConnectedShared9TaskStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrowdConnectedShared.TaskState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TaskState",
+                        "printedName": "CrowdConnectedShared.TaskState",
+                        "usr": "s:20CrowdConnectedShared9TaskStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20CrowdConnectedShared9TaskStateO9completedyA2CmF",
+            "mangledName": "$s20CrowdConnectedShared9TaskStateO9completedyA2CmF",
+            "moduleName": "CrowdConnectedShared"
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrowdConnectedShared.TaskState.Type) -> CrowdConnectedShared.TaskState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TaskState",
+                    "printedName": "CrowdConnectedShared.TaskState",
+                    "usr": "s:20CrowdConnectedShared9TaskStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrowdConnectedShared.TaskState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TaskState",
+                        "printedName": "CrowdConnectedShared.TaskState",
+                        "usr": "s:20CrowdConnectedShared9TaskStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20CrowdConnectedShared9TaskStateO9cancelledyA2CmF",
+            "mangledName": "$s20CrowdConnectedShared9TaskStateO9cancelledyA2CmF",
+            "moduleName": "CrowdConnectedShared"
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrowdConnectedShared.TaskState.Type) -> (any Swift.Error) -> CrowdConnectedShared.TaskState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> CrowdConnectedShared.TaskState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TaskState",
+                        "printedName": "CrowdConnectedShared.TaskState",
+                        "usr": "s:20CrowdConnectedShared9TaskStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrowdConnectedShared.TaskState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TaskState",
+                        "printedName": "CrowdConnectedShared.TaskState",
+                        "usr": "s:20CrowdConnectedShared9TaskStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20CrowdConnectedShared9TaskStateO6failedyACs5Error_pcACmF",
+            "mangledName": "$s20CrowdConnectedShared9TaskStateO6failedyACs5Error_pcACmF",
+            "moduleName": "CrowdConnectedShared"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TaskState",
+                "printedName": "CrowdConnectedShared.TaskState",
+                "usr": "s:20CrowdConnectedShared9TaskStateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TaskState",
+                "printedName": "CrowdConnectedShared.TaskState",
+                "usr": "s:20CrowdConnectedShared9TaskStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20CrowdConnectedShared9TaskStateO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s20CrowdConnectedShared9TaskStateO2eeoiySbAC_ACtFZ",
+            "moduleName": "CrowdConnectedShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20CrowdConnectedShared9TaskStateO",
+        "mangledName": "$s20CrowdConnectedShared9TaskStateO",
+        "moduleName": "CrowdConnectedShared",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TaskTracker",
+        "printedName": "TaskTracker",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TaskState",
+                "printedName": "CrowdConnectedShared.TaskState",
+                "usr": "s:20CrowdConnectedShared9TaskStateO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20CrowdConnectedShared11TaskTrackerC5stateAA0D5StateOvp",
+            "mangledName": "$s20CrowdConnectedShared11TaskTrackerC5stateAA0D5StateOvp",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TaskState",
+                    "printedName": "CrowdConnectedShared.TaskState",
+                    "usr": "s:20CrowdConnectedShared9TaskStateO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared11TaskTrackerC5stateAA0D5StateOvg",
+                "mangledName": "$s20CrowdConnectedShared11TaskTrackerC5stateAA0D5StateOvg",
+                "moduleName": "CrowdConnectedShared",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Success>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TaskState",
+                    "printedName": "CrowdConnectedShared.TaskState",
+                    "usr": "s:20CrowdConnectedShared9TaskStateO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared11TaskTrackerC5stateAA0D5StateOvs",
+                "mangledName": "$s20CrowdConnectedShared11TaskTrackerC5stateAA0D5StateOvs",
+                "moduleName": "CrowdConnectedShared",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Success>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared11TaskTrackerC5stateAA0D5StateOvM",
+                "mangledName": "$s20CrowdConnectedShared11TaskTrackerC5stateAA0D5StateOvM",
+                "moduleName": "CrowdConnectedShared",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Success>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(priority:operation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TaskTracker",
+                "printedName": "CrowdConnectedShared.TaskTracker<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:20CrowdConnectedShared11TaskTrackerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "_Concurrency.TaskPriority?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TaskPriority",
+                    "printedName": "_Concurrency.TaskPriority",
+                    "usr": "s:ScP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() async throws -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20CrowdConnectedShared11TaskTrackerC8priority9operationACyxGScPSg_xyYaYbKctcfc",
+            "mangledName": "$s20CrowdConnectedShared11TaskTrackerC8priority9operationACyxGScPSg_xyYaYbKctcfc",
+            "moduleName": "CrowdConnectedShared",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Success>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20CrowdConnectedShared11TaskTrackerC6cancelyyF",
+            "mangledName": "$s20CrowdConnectedShared11TaskTrackerC6cancelyyF",
+            "moduleName": "CrowdConnectedShared",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Success>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isCancelled",
+            "printedName": "isCancelled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20CrowdConnectedShared11TaskTrackerC11isCancelledSbvp",
+            "mangledName": "$s20CrowdConnectedShared11TaskTrackerC11isCancelledSbvp",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared11TaskTrackerC11isCancelledSbvg",
+                "mangledName": "$s20CrowdConnectedShared11TaskTrackerC11isCancelledSbvg",
+                "moduleName": "CrowdConnectedShared",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Success>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "value",
+            "printedName": "value()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20CrowdConnectedShared11TaskTrackerC5valuexyYaKF",
+            "mangledName": "$s20CrowdConnectedShared11TaskTrackerC5valuexyYaKF",
+            "moduleName": "CrowdConnectedShared",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Success>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20CrowdConnectedShared11TaskTrackerC",
+        "mangledName": "$s20CrowdConnectedShared11TaskTrackerC",
+        "moduleName": "CrowdConnectedShared",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Success>",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -13585,268 +14208,275 @@
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 355,
       "length": 30,
       "value": "\"CrowdConnectedUpdateSettings\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 422,
+      "offset": 435,
       "length": 29,
       "value": "\"CrowdConnectedUpdateBeacons\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 501,
+      "offset": 514,
       "length": 30,
       "value": "\"CrowdConnectedUpdateSurfaces\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 581,
+      "offset": 594,
       "length": 27,
       "value": "\"CrowdConnectedUpdateZones\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 658,
+      "offset": 671,
       "length": 39,
       "value": "\"CrowdConnectedUpdateBluetoothSettings\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 747,
+      "offset": 760,
       "length": 33,
       "value": "\"CrowdConnectedUpdateGeoSettings\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 831,
+      "offset": 844,
       "length": 37,
       "value": "\"CrowdConnectedNewPositionsAvailable\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 918,
+      "offset": 931,
       "length": 33,
       "value": "\"CrowdConnectedNewStepsAvailable\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1001,
+      "offset": 1014,
       "length": 49,
       "value": "\"CrowdConnectedNewBluetoothObservationsAvailable\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1100,
+      "offset": 1113,
       "length": 44,
       "value": "\"CrowdConnectedReceivedEddystoneObservation\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1194,
+      "offset": 1207,
       "length": 42,
       "value": "\"CrowdConnectedNewPositionForDeviceStatus\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1287,
+      "offset": 1300,
       "length": 52,
       "value": "\"CrowdConnectedNewDeviceLocationAuthorizationStatus\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1389,
+      "offset": 1402,
       "length": 52,
       "value": "\"CrowdConnectedNewDeviceAccuracyAuthorizationStatus\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1491,
+      "offset": 1504,
       "length": 50,
       "value": "\"CrowdConnectedNewDeviceMotionAuthorizationStatus\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1591,
+      "offset": 1604,
       "length": 53,
       "value": "\"CrowdConnectedNewDevicePedometerAuthorizationStatus\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1694,
+      "offset": 1707,
       "length": 40,
       "value": "\"CrowdConnectedNewDeviceBluetoothStatus\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1784,
+      "offset": 1797,
       "length": 44,
       "value": "\"CrowdConnectedNewDeviceNotificationsStatus\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1878,
+      "offset": 1891,
       "length": 37,
       "value": "\"CrowdConnectedDeviceStatusDidChange\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1966,
+      "offset": 1979,
       "length": 30,
       "value": "\"CrowdConnectedIPSModuleState\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2046,
+      "offset": 2059,
       "length": 40,
       "value": "\"CrowdConnectedCoreBluetoothModuleState\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2136,
+      "offset": 2149,
       "length": 30,
       "value": "\"CrowdConnectedGeoModuleState\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2217,
+      "offset": 2230,
       "length": 28,
       "value": "\"CrowdConnectedStartLibrary\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2295,
+      "offset": 2308,
       "length": 27,
       "value": "\"CrowdConnectedStopLibrary\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2373,
+      "offset": 2386,
       "length": 24,
       "value": "\"CrowdConnectedNewAlias\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2448,
+      "offset": 2461,
       "length": 29,
       "value": "\"CrowdConnectedNewLogMessage\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2527,
+      "offset": 2540,
       "length": 38,
       "value": "\"CrowdConnectedSignificantClockUpdate\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2615,
+      "offset": 2628,
       "length": 30,
       "value": "\"CrowdConnectedNewCredentials\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2695,
+      "offset": 2708,
       "length": 37,
       "value": "\"CrowdConnectedUpdateDataPublishRule\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2783,
+      "offset": 2796,
       "length": 38,
       "value": "\"CrowdConnectedStartMonitoringRegions\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2871,
+      "offset": 2884,
       "length": 37,
       "value": "\"CrowdConnectedStopMonitoringRegions\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2958,
+      "offset": 2971,
       "length": 49,
       "value": "\"CrowdConnectedDetermineStateForMonitoredRegions\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3057,
+      "offset": 3070,
       "length": 30,
       "value": "\"CrowdConnectedDidEnterRegion\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3137,
+      "offset": 3150,
       "length": 29,
       "value": "\"CrowdConnectedDidExitRegion\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3216,
+      "offset": 3229,
       "length": 34,
       "value": "\"CrowdConnectedUpdateTrackingMode\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3301,
+      "offset": 3314,
       "length": 32,
       "value": "\"CrowdConnectedUploadAllRecords\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3383,
+      "offset": 3396,
       "length": 37,
       "value": "\"CrowdConnectedUploadPositionRecords\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3470,
+      "offset": 3483,
       "length": 43,
       "value": "\"CrowdConnectedUploadRawObservationRecords\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3564,
+      "offset": 3577,
       "length": 34,
       "value": "\"CrowdConnectedInvalidAccessToken\""
+    },
+    {
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 3657,
+      "length": 40,
+      "value": "\"CrowdConnectedApplicationWillTerminate\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Clocks\/SyncClock.swift",
@@ -13956,14 +14586,21 @@
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/ConsoleLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1567,
+      "offset": 596,
+      "length": 5,
+      "value": "\"SDK\""
+    },
+    {
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/ConsoleLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 3288,
       "length": 24,
       "value": "\"com.crowdconnected.SDK\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/ConsoleLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1603,
+      "offset": 3324,
       "length": 12,
       "value": "\"SDKLogging\""
     },
