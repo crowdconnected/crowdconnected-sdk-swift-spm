@@ -28,7 +28,7 @@ Add the following to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/crowdconnected/crowd-connected-sdk-swift-spm.git", from: "1.0.0")
+    .package(url: "https://github.com/crowdconnected/crowd-connected-sdk-swift-spm.git", from: "2.2.0")
 ]
 ```
 
@@ -145,15 +145,15 @@ This ensures compatibility with both Apple Silicon and Intel-based development m
 
 For detailed documentation, API references, and integration guides, please visit:
 
-- [Crowd Connected Developer Portal](https://developers.crowdconnected.com/)
-- [API Documentation](https://docs.crowdconnected.com/)
+- [Crowd Connected Portal](https://app.crowdconnected.com)
+- [API Documentation](https://crowdconnected.atlassian.net/wiki/spaces/SUP/pages/2888138783/SDK+Integration)
 
 ## Support
 
 For technical support, questions, or issues:
 
 - **Email**: support@crowdconnected.com
-- **Documentation**: [Developer Portal](https://developers.crowdconnected.com/)
+- **Documentation**: [Developer Portal](https://crowdconnected.atlassian.net/wiki/spaces/SUP/pages/2888138783/SDK+Integration)
 - **Issues**: Please report issues through the GitHub repository
 
 ## License
