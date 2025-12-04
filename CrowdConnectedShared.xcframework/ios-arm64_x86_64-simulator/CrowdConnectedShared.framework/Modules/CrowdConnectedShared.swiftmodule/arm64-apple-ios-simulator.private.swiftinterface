@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CrowdConnectedShared
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CrowdConnectedShared
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import CoreLocation
 import CoreMotion
 @_exported import CrowdConnectedShared
@@ -14,7 +14,18 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os
 @_hasMissingDesignatedInitializers public class MainLogger {
+  public enum LogTag : Swift.String {
+    case IPS
+    case GEO
+    case BLE
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
   public static func log(level: CrowdConnectedShared.LogLevel, message: @autoclosure () -> Swift.String)
+  public static func log(level: CrowdConnectedShared.LogLevel, tag: CrowdConnectedShared.MainLogger.LogTag? = nil, message: @autoclosure () -> Swift.String)
   public static func log(level: CrowdConnectedShared.LogLevel, error: CrowdConnectedShared.DescriptiveError)
   @objc deinit
 }
@@ -35,8 +46,6 @@ public enum ReactiveNotification : Swift.String {
   case newPositionForDeviceStatus
   case newDeviceLocationAuthorizationStatus
   case newDeviceAccuracyAuthorizationStatus
-  case newDeviceMotionAuthorizationStatus
-  case newDevicePedometerAuthorizationStatus
   case newDeviceBluetoothStatus
   case newDeviceNotificationsStatus
   case deviceStatusDidChange
@@ -149,6 +158,7 @@ extension Foundation.Date {
   public func addObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification, selector: ObjectiveC.Selector)
   public func removeObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification)
   public func getState(of notification: CrowdConnectedShared.ReactiveNotification) -> CrowdConnectedShared.ReactiveNotificationsCenter.NotificationData
+  public func clearAllStates()
   @objc deinit
 }
 public enum CrowdConnectedDecodingError : Swift.Error, CrowdConnectedShared.DescribingError {
@@ -160,6 +170,11 @@ public enum CrowdConnectedDecodingError : Swift.Error, CrowdConnectedShared.Desc
     get
   }
   public static func extractDecodingError(_ error: any Swift.Error) -> CrowdConnectedShared.CrowdConnectedDecodingError
+}
+extension Swift.String {
+  public var functionName: Swift.String {
+    get
+  }
 }
 public protocol Clock {
   func currentDate() -> Foundation.Date
@@ -175,6 +190,7 @@ public protocol ReactiveNotificationsProtocol {
   func addObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification, selector: ObjectiveC.Selector)
   func removeObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification)
   func getState(of notification: CrowdConnectedShared.ReactiveNotification) -> Self.NotificationData
+  func clearAllStates()
 }
 extension CrowdConnectedShared.ReactiveNotificationsProtocol {
   public func post(notification: CrowdConnectedShared.ReactiveNotification)
@@ -214,6 +230,7 @@ public enum TrackingMode : Swift.Int {
     get
   }
 }
+public typealias CCObject = ObjectiveC.NSObject
 extension Swift.Float {
   public func cutToDecimals(_ decimalsNumber: Swift.Int) -> Swift.Double
 }
@@ -257,9 +274,9 @@ public struct DataPublishRule : Swift.Codable, Swift.Hashable {
   public init(shouldPublishPositionData: Swift.Bool, shouldPublishRawObservationData: Swift.Bool)
   public var shouldPublishPositionData: Swift.Bool
   public var shouldPublishRawObservationData: Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: CrowdConnectedShared.DataPublishRule, b: CrowdConnectedShared.DataPublishRule) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -352,9 +369,9 @@ extension CrowdConnectedShared.CrowdConnectedSDKSettings {
     public var lng: Swift.Double
     public var smallRadius: Swift.Double
     public var bigRadius: Swift.Double
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings.Zone, b: CrowdConnectedShared.CrowdConnectedSDKSettings.Zone) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -375,6 +392,9 @@ extension CrowdConnectedShared.CrowdConnectedSDKSettings {
     public init(from decoder: any Swift.Decoder) throws
   }
 }
+extension CrowdConnectedShared.MainLogger.LogTag : Swift.Equatable {}
+extension CrowdConnectedShared.MainLogger.LogTag : Swift.Hashable {}
+extension CrowdConnectedShared.MainLogger.LogTag : Swift.RawRepresentable {}
 extension CrowdConnectedShared.ReactiveNotification : Swift.Equatable {}
 extension CrowdConnectedShared.ReactiveNotification : Swift.Hashable {}
 extension CrowdConnectedShared.ReactiveNotification : Swift.RawRepresentable {}

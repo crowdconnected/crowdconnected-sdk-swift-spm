@@ -20,6 +20,256 @@
         "printedName": "MainLogger",
         "children": [
           {
+            "kind": "TypeDecl",
+            "name": "LogTag",
+            "printedName": "LogTag",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "IPS",
+                "printedName": "IPS",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CrowdConnectedShared.MainLogger.LogTag.Type) -> CrowdConnectedShared.MainLogger.LogTag",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogTag",
+                        "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                        "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CrowdConnectedShared.MainLogger.LogTag.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LogTag",
+                            "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                            "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO3IPSyA2EmF",
+                "mangledName": "$s20CrowdConnectedShared10MainLoggerC6LogTagO3IPSyA2EmF",
+                "moduleName": "CrowdConnectedShared"
+              },
+              {
+                "kind": "Var",
+                "name": "GEO",
+                "printedName": "GEO",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CrowdConnectedShared.MainLogger.LogTag.Type) -> CrowdConnectedShared.MainLogger.LogTag",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogTag",
+                        "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                        "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CrowdConnectedShared.MainLogger.LogTag.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LogTag",
+                            "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                            "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO3GEOyA2EmF",
+                "mangledName": "$s20CrowdConnectedShared10MainLoggerC6LogTagO3GEOyA2EmF",
+                "moduleName": "CrowdConnectedShared"
+              },
+              {
+                "kind": "Var",
+                "name": "BLE",
+                "printedName": "BLE",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CrowdConnectedShared.MainLogger.LogTag.Type) -> CrowdConnectedShared.MainLogger.LogTag",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogTag",
+                        "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                        "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CrowdConnectedShared.MainLogger.LogTag.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LogTag",
+                            "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                            "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO3BLEyA2EmF",
+                "mangledName": "$s20CrowdConnectedShared10MainLoggerC6LogTagO3BLEyA2EmF",
+                "moduleName": "CrowdConnectedShared"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CrowdConnectedShared.MainLogger.LogTag?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogTag",
+                        "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                        "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO8rawValueAESgSS_tcfc",
+                "mangledName": "$s20CrowdConnectedShared10MainLoggerC6LogTagO8rawValueAESgSS_tcfc",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO8rawValueSSvp",
+                "mangledName": "$s20CrowdConnectedShared10MainLoggerC6LogTagO8rawValueSSvp",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO8rawValueSSvg",
+                    "mangledName": "$s20CrowdConnectedShared10MainLoggerC6LogTagO8rawValueSSvg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO",
+            "mangledName": "$s20CrowdConnectedShared10MainLoggerC6LogTagO",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "log",
             "printedName": "log(level:message:)",
@@ -60,6 +310,71 @@
             "declKind": "Func",
             "usr": "s:20CrowdConnectedShared10MainLoggerC3log5level7messageyAA8LogLevelO_SSyXKtFZ",
             "mangledName": "$s20CrowdConnectedShared10MainLoggerC3log5level7messageyAA8LogLevelO_SSyXKtFZ",
+            "moduleName": "CrowdConnectedShared",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(level:tag:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "CrowdConnectedShared.LogLevel",
+                "usr": "s:20CrowdConnectedShared8LogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CrowdConnectedShared.MainLogger.LogTag?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogTag",
+                    "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                    "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20CrowdConnectedShared10MainLoggerC3log5level3tag7messageyAA8LogLevelO_AC0J3TagOSgSSyXKtFZ",
+            "mangledName": "$s20CrowdConnectedShared10MainLoggerC3log5level3tag7messageyAA8LogLevelO_AC0J3TagOSgSSyXKtFZ",
             "moduleName": "CrowdConnectedShared",
             "static": true,
             "declAttributes": [
@@ -649,80 +964,6 @@
             "declKind": "EnumElement",
             "usr": "s:20CrowdConnectedShared20ReactiveNotificationO36newDeviceAccuracyAuthorizationStatusyA2CmF",
             "mangledName": "$s20CrowdConnectedShared20ReactiveNotificationO36newDeviceAccuracyAuthorizationStatusyA2CmF",
-            "moduleName": "CrowdConnectedShared"
-          },
-          {
-            "kind": "Var",
-            "name": "newDeviceMotionAuthorizationStatus",
-            "printedName": "newDeviceMotionAuthorizationStatus",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CrowdConnectedShared.ReactiveNotification.Type) -> CrowdConnectedShared.ReactiveNotification",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ReactiveNotification",
-                    "printedName": "CrowdConnectedShared.ReactiveNotification",
-                    "usr": "s:20CrowdConnectedShared20ReactiveNotificationO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CrowdConnectedShared.ReactiveNotification.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ReactiveNotification",
-                        "printedName": "CrowdConnectedShared.ReactiveNotification",
-                        "usr": "s:20CrowdConnectedShared20ReactiveNotificationO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20CrowdConnectedShared20ReactiveNotificationO34newDeviceMotionAuthorizationStatusyA2CmF",
-            "mangledName": "$s20CrowdConnectedShared20ReactiveNotificationO34newDeviceMotionAuthorizationStatusyA2CmF",
-            "moduleName": "CrowdConnectedShared"
-          },
-          {
-            "kind": "Var",
-            "name": "newDevicePedometerAuthorizationStatus",
-            "printedName": "newDevicePedometerAuthorizationStatus",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CrowdConnectedShared.ReactiveNotification.Type) -> CrowdConnectedShared.ReactiveNotification",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ReactiveNotification",
-                    "printedName": "CrowdConnectedShared.ReactiveNotification",
-                    "usr": "s:20CrowdConnectedShared20ReactiveNotificationO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CrowdConnectedShared.ReactiveNotification.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ReactiveNotification",
-                        "printedName": "CrowdConnectedShared.ReactiveNotification",
-                        "usr": "s:20CrowdConnectedShared20ReactiveNotificationO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20CrowdConnectedShared20ReactiveNotificationO37newDevicePedometerAuthorizationStatusyA2CmF",
-            "mangledName": "$s20CrowdConnectedShared20ReactiveNotificationO37newDevicePedometerAuthorizationStatusyA2CmF",
             "moduleName": "CrowdConnectedShared"
           },
           {
@@ -3565,6 +3806,27 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearAllStates",
+            "printedName": "clearAllStates()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20CrowdConnectedShared27ReactiveNotificationsCenterC14clearAllStatesyyF",
+            "mangledName": "$s20CrowdConnectedShared27ReactiveNotificationsCenterC14clearAllStatesyyF",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -4374,6 +4636,30 @@
             "declKind": "Func",
             "usr": "s:20CrowdConnectedShared29ReactiveNotificationsProtocolP8getState2ofSDySSs11AnyHashableVGSgAA0D12NotificationO_tF",
             "mangledName": "$s20CrowdConnectedShared29ReactiveNotificationsProtocolP8getState2ofSDySSs11AnyHashableVGSgAA0D12NotificationO_tF",
+            "moduleName": "CrowdConnectedShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedShared.ReactiveNotificationsProtocol>",
+            "sugared_genericSig": "<Self where Self : CrowdConnectedShared.ReactiveNotificationsProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearAllStates",
+            "printedName": "clearAllStates()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20CrowdConnectedShared29ReactiveNotificationsProtocolP14clearAllStatesyyF",
+            "mangledName": "$s20CrowdConnectedShared29ReactiveNotificationsProtocolP14clearAllStatesyyF",
             "moduleName": "CrowdConnectedShared",
             "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedShared.ReactiveNotificationsProtocol>",
             "sugared_genericSig": "<Self where Self : CrowdConnectedShared.ReactiveNotificationsProtocol>",
@@ -12763,6 +13049,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ArrayProtocol",
             "printedName": "_ArrayProtocol",
             "children": [
@@ -13219,13 +13512,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -13297,6 +13583,51 @@
           },
           {
             "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ContiguousBytes",
             "printedName": "ContiguousBytes",
             "usr": "s:10Foundation15ContiguousBytesP",
@@ -13343,51 +13674,6 @@
             ],
             "usr": "s:10Foundation26DecodableWithConfigurationP",
             "mangledName": "$s10Foundation26DecodableWithConfigurationP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
           }
         ]
       },
@@ -13695,6 +13981,599 @@
             ],
             "usr": "s:Sx",
             "mangledName": "$sSx"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "String",
+        "printedName": "String",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "functionName",
+            "printedName": "functionName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:SS20CrowdConnectedSharedE12functionNameSSvp",
+            "mangledName": "$sSS20CrowdConnectedSharedE12functionNameSSvp",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:SS20CrowdConnectedSharedE12functionNameSSvg",
+                "mangledName": "$sSS20CrowdConnectedSharedE12functionNameSSvg",
+                "moduleName": "CrowdConnectedShared",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:SS",
+        "mangledName": "$sSS",
+        "moduleName": "Swift",
+        "declAttributes": [
+          "EagerMove",
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CodingKeyRepresentable",
+            "printedName": "CodingKeyRepresentable",
+            "usr": "s:s22CodingKeyRepresentableP",
+            "mangledName": "$ss22CodingKeyRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasContiguousBytes",
+            "printedName": "_HasContiguousBytes",
+            "usr": "s:s19_HasContiguousBytesP",
+            "mangledName": "$ss19_HasContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TextOutputStream",
+            "printedName": "TextOutputStream",
+            "usr": "s:s16TextOutputStreamP",
+            "mangledName": "$ss16TextOutputStreamP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TextOutputStreamable",
+            "printedName": "TextOutputStreamable",
+            "usr": "s:s20TextOutputStreamableP",
+            "mangledName": "$ss20TextOutputStreamableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "printedName": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "usr": "s:s41_ExpressibleByBuiltinUnicodeScalarLiteralP",
+            "mangledName": "$ss41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "printedName": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "usr": "s:s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinStringLiteral",
+            "printedName": "_ExpressibleByBuiltinStringLiteral",
+            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
+            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringLiteral",
+            "printedName": "ExpressibleByStringLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringLiteralType",
+                "printedName": "StringLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s26ExpressibleByStringLiteralP",
+            "mangledName": "$ss26ExpressibleByStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedGraphemeClusterLiteralType",
+                "printedName": "ExtendedGraphemeClusterLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByUnicodeScalarLiteral",
+            "printedName": "ExpressibleByUnicodeScalarLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarLiteralType",
+                "printedName": "UnicodeScalarLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
+            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.String.Index",
+                    "usr": "s:SS5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.String.Index",
+                    "usr": "s:SS5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.String.Iterator",
+                    "usr": "s:SS8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.String.Iterator",
+                    "usr": "s:SS8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "StringProtocol",
+            "printedName": "StringProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UTF8View",
+                "printedName": "UTF8View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UTF8View",
+                    "printedName": "Swift.String.UTF8View",
+                    "usr": "s:SS8UTF8ViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UTF16View",
+                "printedName": "UTF16View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UTF16View",
+                    "printedName": "Swift.String.UTF16View",
+                    "usr": "s:SS9UTF16ViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarView",
+                "printedName": "UnicodeScalarView",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnicodeScalarView",
+                    "printedName": "Swift.String.UnicodeScalarView",
+                    "usr": "s:SS17UnicodeScalarViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sy",
+            "mangledName": "$sSy"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringInterpolation",
+            "printedName": "ExpressibleByStringInterpolation",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringInterpolation",
+                "printedName": "StringInterpolation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultStringInterpolation",
+                    "printedName": "Swift.DefaultStringInterpolation",
+                    "usr": "s:s26DefaultStringInterpolationV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s32ExpressibleByStringInterpolationP",
+            "mangledName": "$ss32ExpressibleByStringInterpolationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LosslessStringConvertible",
+            "printedName": "LosslessStringConvertible",
+            "usr": "s:s25LosslessStringConvertibleP",
+            "mangledName": "$ss25LosslessStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MirrorPath",
+            "printedName": "MirrorPath",
+            "usr": "s:s10MirrorPathP",
+            "mangledName": "$ss10MirrorPathP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           }
         ]
       },
@@ -14202,6 +15081,27 @@
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/MainLogger.swift",
       "kind": "StringLiteral",
       "offset": 302,
+      "length": 5,
+      "value": "\"IPS\""
+    },
+    {
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/MainLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 327,
+      "length": 5,
+      "value": "\"GEO\""
+    },
+    {
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/MainLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 5,
+      "value": "\"BLE\""
+    },
+    {
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/MainLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 582,
       "length": 33,
       "value": "\"CrowdConnected.MainLogger.Queue\""
     },
@@ -14300,181 +15200,167 @@
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
       "offset": 1504,
-      "length": 50,
-      "value": "\"CrowdConnectedNewDeviceMotionAuthorizationStatus\""
-    },
-    {
-      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
-      "kind": "StringLiteral",
-      "offset": 1604,
-      "length": 53,
-      "value": "\"CrowdConnectedNewDevicePedometerAuthorizationStatus\""
-    },
-    {
-      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
-      "kind": "StringLiteral",
-      "offset": 1707,
       "length": 40,
       "value": "\"CrowdConnectedNewDeviceBluetoothStatus\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1797,
+      "offset": 1594,
       "length": 44,
       "value": "\"CrowdConnectedNewDeviceNotificationsStatus\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1891,
+      "offset": 1688,
       "length": 37,
       "value": "\"CrowdConnectedDeviceStatusDidChange\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 1979,
+      "offset": 1776,
       "length": 30,
       "value": "\"CrowdConnectedIPSModuleState\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2059,
+      "offset": 1856,
       "length": 40,
       "value": "\"CrowdConnectedCoreBluetoothModuleState\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2149,
+      "offset": 1946,
       "length": 30,
       "value": "\"CrowdConnectedGeoModuleState\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2230,
+      "offset": 2027,
       "length": 28,
       "value": "\"CrowdConnectedStartLibrary\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2308,
+      "offset": 2105,
       "length": 27,
       "value": "\"CrowdConnectedStopLibrary\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2386,
+      "offset": 2183,
       "length": 24,
       "value": "\"CrowdConnectedNewAlias\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2461,
+      "offset": 2258,
       "length": 29,
       "value": "\"CrowdConnectedNewLogMessage\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2540,
+      "offset": 2337,
       "length": 38,
       "value": "\"CrowdConnectedSignificantClockUpdate\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2628,
+      "offset": 2425,
       "length": 30,
       "value": "\"CrowdConnectedNewCredentials\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2708,
+      "offset": 2505,
       "length": 37,
       "value": "\"CrowdConnectedUpdateDataPublishRule\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2796,
+      "offset": 2593,
       "length": 38,
       "value": "\"CrowdConnectedStartMonitoringRegions\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2884,
+      "offset": 2681,
       "length": 37,
       "value": "\"CrowdConnectedStopMonitoringRegions\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2971,
+      "offset": 2768,
       "length": 49,
       "value": "\"CrowdConnectedDetermineStateForMonitoredRegions\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3070,
+      "offset": 2867,
       "length": 30,
       "value": "\"CrowdConnectedDidEnterRegion\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3150,
+      "offset": 2947,
       "length": 29,
       "value": "\"CrowdConnectedDidExitRegion\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3229,
+      "offset": 3026,
       "length": 34,
       "value": "\"CrowdConnectedUpdateTrackingMode\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3314,
+      "offset": 3111,
       "length": 32,
       "value": "\"CrowdConnectedUploadAllRecords\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3396,
+      "offset": 3193,
       "length": 37,
       "value": "\"CrowdConnectedUploadPositionRecords\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3483,
+      "offset": 3280,
       "length": 43,
       "value": "\"CrowdConnectedUploadRawObservationRecords\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3577,
+      "offset": 3374,
       "length": 34,
       "value": "\"CrowdConnectedInvalidAccessToken\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3657,
+      "offset": 3463,
       "length": 40,
       "value": "\"CrowdConnectedApplicationWillTerminate\""
     },
