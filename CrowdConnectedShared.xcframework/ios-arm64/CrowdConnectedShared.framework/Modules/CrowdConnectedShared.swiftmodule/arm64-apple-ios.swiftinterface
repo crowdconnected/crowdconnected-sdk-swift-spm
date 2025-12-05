@@ -158,7 +158,6 @@ extension Foundation.Date {
   public func addObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification, selector: ObjectiveC.Selector)
   public func removeObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification)
   public func getState(of notification: CrowdConnectedShared.ReactiveNotification) -> CrowdConnectedShared.ReactiveNotificationsCenter.NotificationData
-  public func clearAllStates()
   @objc deinit
 }
 public enum CrowdConnectedDecodingError : Swift.Error, CrowdConnectedShared.DescribingError {
@@ -190,7 +189,6 @@ public protocol ReactiveNotificationsProtocol {
   func addObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification, selector: ObjectiveC.Selector)
   func removeObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification)
   func getState(of notification: CrowdConnectedShared.ReactiveNotification) -> Self.NotificationData
-  func clearAllStates()
 }
 extension CrowdConnectedShared.ReactiveNotificationsProtocol {
   public func post(notification: CrowdConnectedShared.ReactiveNotification)
@@ -231,6 +229,25 @@ public enum TrackingMode : Swift.Int {
   }
 }
 public typealias CCObject = ObjectiveC.NSObject
+public class RepeatingTimer {
+  public init(deadline: Dispatch.DispatchTime, repeating: Dispatch.DispatchTimeInterval = .never, leeway: Dispatch.DispatchTimeInterval = .nanoseconds(0), queue: Dispatch.DispatchQueue? = nil)
+  public init(repeating: Dispatch.DispatchTimeInterval = .never, leeway: Dispatch.DispatchTimeInterval = .nanoseconds(0), queue: Dispatch.DispatchQueue? = nil)
+  public var timeInterval: Dispatch.DispatchTimeInterval {
+    get
+  }
+  public var isCancelled: Swift.Bool {
+    get
+  }
+  public var isActive: Swift.Bool {
+    get
+  }
+  @objc deinit
+  public func setEventHandler(handler: @escaping () -> Swift.Void)
+  public func resume()
+  public func suspend()
+  public func activate()
+  public func cancel()
+}
 extension Swift.Float {
   public func cutToDecimals(_ decimalsNumber: Swift.Int) -> Swift.Double
 }
