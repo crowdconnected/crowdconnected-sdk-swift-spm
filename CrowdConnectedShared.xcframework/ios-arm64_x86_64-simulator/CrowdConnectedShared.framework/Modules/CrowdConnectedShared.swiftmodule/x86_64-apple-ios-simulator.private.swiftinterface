@@ -155,8 +155,8 @@ extension Foundation.Date {
 @_hasMissingDesignatedInitializers public class ReactiveNotificationsCenter : CrowdConnectedShared.ReactiveNotificationsProtocol {
   public static let shared: CrowdConnectedShared.ReactiveNotificationsCenter
   public func post(notification: CrowdConnectedShared.ReactiveNotification, dictionary: CrowdConnectedShared.ReactiveNotificationsCenter.NotificationData = nil)
-  public func addObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification, selector: ObjectiveC.Selector)
-  public func removeObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification)
+  public func addObserver(_ observer: Swift.AnyObject, for notification: CrowdConnectedShared.ReactiveNotification, selector: ObjectiveC.Selector)
+  public func removeObserver(_ observer: Swift.AnyObject, for notification: CrowdConnectedShared.ReactiveNotification)
   public func getState(of notification: CrowdConnectedShared.ReactiveNotification) -> CrowdConnectedShared.ReactiveNotificationsCenter.NotificationData
   @objc deinit
 }
@@ -186,8 +186,8 @@ public protocol Clock {
 public protocol ReactiveNotificationsProtocol {
   typealias NotificationData = [Swift.String : Swift.AnyHashable]?
   func post(notification: CrowdConnectedShared.ReactiveNotification, dictionary: Self.NotificationData)
-  func addObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification, selector: ObjectiveC.Selector)
-  func removeObserver(_ observer: Any, for notification: CrowdConnectedShared.ReactiveNotification)
+  func addObserver(_ observer: Swift.AnyObject, for notification: CrowdConnectedShared.ReactiveNotification, selector: ObjectiveC.Selector)
+  func removeObserver(_ observer: Swift.AnyObject, for notification: CrowdConnectedShared.ReactiveNotification)
   func getState(of notification: CrowdConnectedShared.ReactiveNotification) -> Self.NotificationData
 }
 extension CrowdConnectedShared.ReactiveNotificationsProtocol {
