@@ -195,10 +195,11 @@
             "mangledName": "$s17CrowdConnectedGeoAAC8activateyyFZ",
             "moduleName": "CrowdConnectedGeo",
             "static": true,
+            "objc_name": "activate",
             "declAttributes": [
               "Final",
-              "AccessControl",
               "ObjC",
+              "AccessControl",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -220,6 +221,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Module",
+            "printedName": "Module",
+            "usr": "c:@M@CrowdConnectedShared@objc(pl)Module",
+            "mangledName": "$s20CrowdConnectedShared6ModuleP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",

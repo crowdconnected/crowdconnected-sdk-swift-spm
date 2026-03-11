@@ -136,6 +136,80 @@
                 "moduleName": "CrowdConnectedShared"
               },
               {
+                "kind": "Var",
+                "name": "API",
+                "printedName": "API",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CrowdConnectedShared.MainLogger.LogTag.Type) -> CrowdConnectedShared.MainLogger.LogTag",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogTag",
+                        "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                        "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CrowdConnectedShared.MainLogger.LogTag.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LogTag",
+                            "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                            "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO3APIyA2EmF",
+                "mangledName": "$s20CrowdConnectedShared10MainLoggerC6LogTagO3APIyA2EmF",
+                "moduleName": "CrowdConnectedShared"
+              },
+              {
+                "kind": "Var",
+                "name": "AUT",
+                "printedName": "AUT",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CrowdConnectedShared.MainLogger.LogTag.Type) -> CrowdConnectedShared.MainLogger.LogTag",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogTag",
+                        "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                        "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CrowdConnectedShared.MainLogger.LogTag.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LogTag",
+                            "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                            "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO3AUTyA2EmF",
+                "mangledName": "$s20CrowdConnectedShared10MainLoggerC6LogTagO3AUTyA2EmF",
+                "moduleName": "CrowdConnectedShared"
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(rawValue:)",
@@ -375,6 +449,56 @@
             "declKind": "Func",
             "usr": "s:20CrowdConnectedShared10MainLoggerC3log5level3tag7messageyAA8LogLevelO_AC0J3TagOSgSSyXKtFZ",
             "mangledName": "$s20CrowdConnectedShared10MainLoggerC3log5level3tag7messageyAA8LogLevelO_AC0J3TagOSgSSyXKtFZ",
+            "moduleName": "CrowdConnectedShared",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(level:tag:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "CrowdConnectedShared.LogLevel",
+                "usr": "s:20CrowdConnectedShared8LogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CrowdConnectedShared.MainLogger.LogTag?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogTag",
+                    "printedName": "CrowdConnectedShared.MainLogger.LogTag",
+                    "usr": "s:20CrowdConnectedShared10MainLoggerC6LogTagO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DescriptiveError",
+                "printedName": "CrowdConnectedShared.DescriptiveError",
+                "usr": "s:20CrowdConnectedShared16DescriptiveErrorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20CrowdConnectedShared10MainLoggerC3log5level3tag5erroryAA8LogLevelO_AC0J3TagOSgAA16DescriptiveErrorVtFZ",
+            "mangledName": "$s20CrowdConnectedShared10MainLoggerC3log5level3tag5erroryAA8LogLevelO_AC0J3TagOSgAA16DescriptiveErrorVtFZ",
             "moduleName": "CrowdConnectedShared",
             "static": true,
             "declAttributes": [
@@ -3411,6 +3535,74 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Module",
+        "printedName": "Module",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "activate",
+            "printedName": "activate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CrowdConnectedShared@objc(pl)Module(cm)activate",
+            "mangledName": "$s20CrowdConnectedShared6ModuleP8activateyyFZ",
+            "moduleName": "CrowdConnectedShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedShared.Module>",
+            "sugared_genericSig": "<Self where Self : CrowdConnectedShared.Module>",
+            "static": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@CrowdConnectedShared@objc(pl)Module",
+        "mangledName": "$s20CrowdConnectedShared6ModuleP",
+        "moduleName": "CrowdConnectedShared",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Atomic",
         "printedName": "Atomic",
         "children": [
@@ -6268,8 +6460,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CrowdConnectedCodable",
-        "printedName": "CrowdConnectedCodable",
+        "name": "CCCodable",
+        "printedName": "CCCodable",
         "children": [
           {
             "kind": "Function",
@@ -6309,11 +6501,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared0aB7CodableP14getStringValue3for4from10wrapperKeySSAA0f6CodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0lK0Rd__lFZ",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodableP14getStringValue3for4from10wrapperKeySSAA0f6CodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0lK0Rd__lFZ",
+            "usr": "s:20CrowdConnectedShared9CCCodableP14getStringValue3for4from10wrapperKeySSAA0f6CodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0lK0Rd__lFZ",
+            "mangledName": "$s20CrowdConnectedShared9CCCodableP14getStringValue3for4from10wrapperKeySSAA0f6CodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0lK0Rd__lFZ",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable, τ_1_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CrowdConnectedCodable, T : Swift.CodingKey>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CCCodable, τ_1_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CCCodable, T : Swift.CodingKey>",
             "static": true,
             "protocolReq": true,
             "throwing": true,
@@ -6358,11 +6550,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared0aB7CodableP11getIntValue3for4from10wrapperKeySiAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodableP11getIntValue3for4from10wrapperKeySiAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
+            "usr": "s:20CrowdConnectedShared9CCCodableP11getIntValue3for4from10wrapperKeySiAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
+            "mangledName": "$s20CrowdConnectedShared9CCCodableP11getIntValue3for4from10wrapperKeySiAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable, τ_1_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CrowdConnectedCodable, T : Swift.CodingKey>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CCCodable, τ_1_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CCCodable, T : Swift.CodingKey>",
             "static": true,
             "protocolReq": true,
             "throwing": true,
@@ -6407,11 +6599,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared0aB7CodableP14getDoubleValue3for4from10wrapperKeySdAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodableP14getDoubleValue3for4from10wrapperKeySdAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
+            "usr": "s:20CrowdConnectedShared9CCCodableP14getDoubleValue3for4from10wrapperKeySdAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
+            "mangledName": "$s20CrowdConnectedShared9CCCodableP14getDoubleValue3for4from10wrapperKeySdAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable, τ_1_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CrowdConnectedCodable, T : Swift.CodingKey>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CCCodable, τ_1_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CCCodable, T : Swift.CodingKey>",
             "static": true,
             "protocolReq": true,
             "throwing": true,
@@ -6464,11 +6656,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared0aB7CodableP19getOptionalIntValue3for4from10wrapperKeySiSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodableP19getOptionalIntValue3for4from10wrapperKeySiSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
+            "usr": "s:20CrowdConnectedShared9CCCodableP19getOptionalIntValue3for4from10wrapperKeySiSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
+            "mangledName": "$s20CrowdConnectedShared9CCCodableP19getOptionalIntValue3for4from10wrapperKeySiSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable, τ_1_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CrowdConnectedCodable, T : Swift.CodingKey>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CCCodable, τ_1_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CCCodable, T : Swift.CodingKey>",
             "static": true,
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
@@ -6520,11 +6712,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared0aB7CodableP22getOptionalDoubleValue3for4from10wrapperKeySdSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodableP22getOptionalDoubleValue3for4from10wrapperKeySdSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
+            "usr": "s:20CrowdConnectedShared9CCCodableP22getOptionalDoubleValue3for4from10wrapperKeySdSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
+            "mangledName": "$s20CrowdConnectedShared9CCCodableP22getOptionalDoubleValue3for4from10wrapperKeySdSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable, τ_1_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CrowdConnectedCodable, T : Swift.CodingKey>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CCCodable, τ_1_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CCCodable, T : Swift.CodingKey>",
             "static": true,
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
@@ -6569,11 +6761,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared0aB7CodablePAAE14getStringValue3for4from10wrapperKeySSAA0f6CodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0lK0Rd__lFZ",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodablePAAE14getStringValue3for4from10wrapperKeySSAA0f6CodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0lK0Rd__lFZ",
+            "usr": "s:20CrowdConnectedShared9CCCodablePAAE14getStringValue3for4from10wrapperKeySSAA0f6CodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0lK0Rd__lFZ",
+            "mangledName": "$s20CrowdConnectedShared9CCCodablePAAE14getStringValue3for4from10wrapperKeySSAA0f6CodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0lK0Rd__lFZ",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable, τ_1_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CrowdConnectedCodable, T : Swift.CodingKey>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CCCodable, τ_1_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CCCodable, T : Swift.CodingKey>",
             "static": true,
             "declAttributes": [
               "AccessControl"
@@ -6621,11 +6813,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared0aB7CodablePAAE11getIntValue3for4from10wrapperKeySiAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodablePAAE11getIntValue3for4from10wrapperKeySiAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
+            "usr": "s:20CrowdConnectedShared9CCCodablePAAE11getIntValue3for4from10wrapperKeySiAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
+            "mangledName": "$s20CrowdConnectedShared9CCCodablePAAE11getIntValue3for4from10wrapperKeySiAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable, τ_1_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CrowdConnectedCodable, T : Swift.CodingKey>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CCCodable, τ_1_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CCCodable, T : Swift.CodingKey>",
             "static": true,
             "declAttributes": [
               "AccessControl"
@@ -6673,11 +6865,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared0aB7CodablePAAE14getDoubleValue3for4from10wrapperKeySdAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodablePAAE14getDoubleValue3for4from10wrapperKeySdAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
+            "usr": "s:20CrowdConnectedShared9CCCodablePAAE14getDoubleValue3for4from10wrapperKeySdAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
+            "mangledName": "$s20CrowdConnectedShared9CCCodablePAAE14getDoubleValue3for4from10wrapperKeySdAA012StringCodingK0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperK0OtKs0mK0Rd__lFZ",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable, τ_1_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CrowdConnectedCodable, T : Swift.CodingKey>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CCCodable, τ_1_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CCCodable, T : Swift.CodingKey>",
             "static": true,
             "declAttributes": [
               "AccessControl"
@@ -6733,11 +6925,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared0aB7CodablePAAE22getOptionalStringValue3for4from10wrapperKeySSSgAA0g6CodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0mL0Rd__lFZ",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodablePAAE22getOptionalStringValue3for4from10wrapperKeySSSgAA0g6CodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0mL0Rd__lFZ",
+            "usr": "s:20CrowdConnectedShared9CCCodablePAAE22getOptionalStringValue3for4from10wrapperKeySSSgAA0g6CodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0mL0Rd__lFZ",
+            "mangledName": "$s20CrowdConnectedShared9CCCodablePAAE22getOptionalStringValue3for4from10wrapperKeySSSgAA0g6CodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0mL0Rd__lFZ",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable, τ_1_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CrowdConnectedCodable, T : Swift.CodingKey>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CCCodable, τ_1_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CCCodable, T : Swift.CodingKey>",
             "static": true,
             "declAttributes": [
               "AccessControl"
@@ -6792,11 +6984,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared0aB7CodablePAAE19getOptionalIntValue3for4from10wrapperKeySiSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodablePAAE19getOptionalIntValue3for4from10wrapperKeySiSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
+            "usr": "s:20CrowdConnectedShared9CCCodablePAAE19getOptionalIntValue3for4from10wrapperKeySiSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
+            "mangledName": "$s20CrowdConnectedShared9CCCodablePAAE19getOptionalIntValue3for4from10wrapperKeySiSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable, τ_1_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CrowdConnectedCodable, T : Swift.CodingKey>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CCCodable, τ_1_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CCCodable, T : Swift.CodingKey>",
             "static": true,
             "declAttributes": [
               "AccessControl"
@@ -6851,11 +7043,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20CrowdConnectedShared0aB7CodablePAAE22getOptionalDoubleValue3for4from10wrapperKeySdSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodablePAAE22getOptionalDoubleValue3for4from10wrapperKeySdSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
+            "usr": "s:20CrowdConnectedShared9CCCodablePAAE22getOptionalDoubleValue3for4from10wrapperKeySdSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
+            "mangledName": "$s20CrowdConnectedShared9CCCodablePAAE22getOptionalDoubleValue3for4from10wrapperKeySdSgAA012StringCodingL0V_s22KeyedDecodingContainerVyqd__GAA0ab7WrapperL0Ots0nL0Rd__lFZ",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable, τ_1_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CrowdConnectedCodable, T : Swift.CodingKey>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CrowdConnectedShared.CCCodable, τ_1_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<Self, T where Self : CrowdConnectedShared.CCCodable, T : Swift.CodingKey>",
             "static": true,
             "declAttributes": [
               "AccessControl"
@@ -6903,11 +7095,11 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:20CrowdConnectedShared0aB7CodablePAAE4fromxSgSDySSs11AnyHashableVG_tcfc",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodablePAAE4fromxSgSDySSs11AnyHashableVG_tcfc",
+            "usr": "s:20CrowdConnectedShared9CCCodablePAAE4fromxSgSDySSs11AnyHashableVG_tcfc",
+            "mangledName": "$s20CrowdConnectedShared9CCCodablePAAE4fromxSgSDySSs11AnyHashableVG_tcfc",
             "moduleName": "CrowdConnectedShared",
-            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable>",
-            "sugared_genericSig": "<Self where Self : CrowdConnectedShared.CrowdConnectedCodable>",
+            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedShared.CCCodable>",
+            "sugared_genericSig": "<Self where Self : CrowdConnectedShared.CCCodable>",
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
@@ -6950,8 +7142,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:20CrowdConnectedShared0aB7CodablePAAE12asDictionarySDySSs11AnyHashableVGSgvp",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodablePAAE12asDictionarySDySSs11AnyHashableVGSgvp",
+            "usr": "s:20CrowdConnectedShared9CCCodablePAAE12asDictionarySDySSs11AnyHashableVGSgvp",
+            "mangledName": "$s20CrowdConnectedShared9CCCodablePAAE12asDictionarySDySSs11AnyHashableVGSgvp",
             "moduleName": "CrowdConnectedShared",
             "declAttributes": [
               "AccessControl",
@@ -6994,11 +7186,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20CrowdConnectedShared0aB7CodablePAAE12asDictionarySDySSs11AnyHashableVGSgvg",
-                "mangledName": "$s20CrowdConnectedShared0aB7CodablePAAE12asDictionarySDySSs11AnyHashableVGSgvg",
+                "usr": "s:20CrowdConnectedShared9CCCodablePAAE12asDictionarySDySSs11AnyHashableVGSgvg",
+                "mangledName": "$s20CrowdConnectedShared9CCCodablePAAE12asDictionarySDySSs11AnyHashableVGSgvg",
                 "moduleName": "CrowdConnectedShared",
-                "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedShared.CrowdConnectedCodable>",
-                "sugared_genericSig": "<Self where Self : CrowdConnectedShared.CrowdConnectedCodable>",
+                "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedShared.CCCodable>",
+                "sugared_genericSig": "<Self where Self : CrowdConnectedShared.CCCodable>",
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
@@ -7006,8 +7198,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:20CrowdConnectedShared0aB7CodableP",
-        "mangledName": "$s20CrowdConnectedShared0aB7CodableP",
+        "usr": "s:20CrowdConnectedShared9CCCodableP",
+        "mangledName": "$s20CrowdConnectedShared9CCCodableP",
         "moduleName": "CrowdConnectedShared",
         "genericSig": "<τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
         "sugared_genericSig": "<Self : Swift.Decodable, Self : Swift.Encodable>",
@@ -9301,6 +9493,116 @@
           },
           {
             "kind": "Var",
+            "name": "beaconFile",
+            "printedName": "beaconFile",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.BeaconFile?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeaconFile",
+                    "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.BeaconFile",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10beaconFileAC06BeaconF0VSgvp",
+            "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10beaconFileAC06BeaconF0VSgvp",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.BeaconFile?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BeaconFile",
+                        "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.BeaconFile",
+                        "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10beaconFileAC06BeaconF0VSgvg",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10beaconFileAC06BeaconF0VSgvg",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.BeaconFile?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BeaconFile",
+                        "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.BeaconFile",
+                        "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10beaconFileAC06BeaconF0VSgvs",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10beaconFileAC06BeaconF0VSgvs",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10beaconFileAC06BeaconF0VSgvM",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10beaconFileAC06BeaconF0VSgvM",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "beacons",
             "printedName": "beacons",
             "children": [
@@ -9982,10 +10284,407 @@
               },
               {
                 "kind": "Conformance",
-                "name": "CrowdConnectedCodable",
-                "printedName": "CrowdConnectedCodable",
-                "usr": "s:20CrowdConnectedShared0aB7CodableP",
-                "mangledName": "$s20CrowdConnectedShared0aB7CodableP"
+                "name": "CCCodable",
+                "printedName": "CCCodable",
+                "usr": "s:20CrowdConnectedShared9CCCodableP",
+                "mangledName": "$s20CrowdConnectedShared9CCCodableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "BeaconFile",
+            "printedName": "BeaconFile",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "version",
+                "printedName": "version",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV7versionSivp",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV7versionSivp",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV7versionSivg",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV7versionSivg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV7versionSivs",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV7versionSivs",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV7versionSivM",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV7versionSivM",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "url",
+                "printedName": "url",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV3urlSSvp",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV3urlSSvp",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV3urlSSvg",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV3urlSSvg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV3urlSSvs",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV3urlSSvs",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV3urlSSvM",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV3urlSSvM",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "itemCount",
+                "printedName": "itemCount",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV9itemCountSivp",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV9itemCountSivp",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV9itemCountSivg",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV9itemCountSivg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV9itemCountSivs",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV9itemCountSivs",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV9itemCountSivM",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV9itemCountSivM",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeaconFile",
+                    "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.BeaconFile",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeaconFile",
+                    "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.BeaconFile",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeaconFile",
+                    "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.BeaconFile",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV2eeoiySbAE_AEtFZ",
+                "moduleName": "CrowdConnectedShared",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV6encode2toys7Encoder_p_tKF",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV",
+            "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV10BeaconFileV",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CCCodable",
+                "printedName": "CCCodable",
+                "usr": "s:20CrowdConnectedShared9CCCodableP",
+                "mangledName": "$s20CrowdConnectedShared9CCCodableP"
               },
               {
                 "kind": "Conformance",
@@ -10342,6 +11041,212 @@
             "children": [
               {
                 "kind": "Var",
+                "name": "rfid",
+                "printedName": "rfid",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV6BeaconV4rfidSSSgvp",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV6BeaconV4rfidSSSgvp",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV6BeaconV4rfidSSSgvg",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV6BeaconV4rfidSSSgvg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV6BeaconV4rfidSSSgvs",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV6BeaconV4rfidSSSgvs",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV6BeaconV4rfidSSSgvM",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV6BeaconV4rfidSSSgvM",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(type:rfid:surfaceId:encryptedValue:encryptedValueLength:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Beacon",
+                    "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.Beacon",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV6BeaconV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV6BeaconV4type4rfid9surfaceId14encryptedValue0jK6LengthAESSSg_A3KSiSgtcfc",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV6BeaconV4type4rfid9surfaceId14encryptedValue0jK6LengthAESSSg_A3KSiSgtcfc",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
                 "name": "validBeacon",
                 "printedName": "validBeacon",
                 "children": [
@@ -10505,10 +11410,10 @@
               },
               {
                 "kind": "Conformance",
-                "name": "CrowdConnectedCodable",
-                "printedName": "CrowdConnectedCodable",
-                "usr": "s:20CrowdConnectedShared0aB7CodableP",
-                "mangledName": "$s20CrowdConnectedShared0aB7CodableP"
+                "name": "CCCodable",
+                "printedName": "CCCodable",
+                "usr": "s:20CrowdConnectedShared9CCCodableP",
+                "mangledName": "$s20CrowdConnectedShared9CCCodableP"
               },
               {
                 "kind": "Conformance",
@@ -10887,10 +11792,10 @@
               },
               {
                 "kind": "Conformance",
-                "name": "CrowdConnectedCodable",
-                "printedName": "CrowdConnectedCodable",
-                "usr": "s:20CrowdConnectedShared0aB7CodableP",
-                "mangledName": "$s20CrowdConnectedShared0aB7CodableP"
+                "name": "CCCodable",
+                "printedName": "CCCodable",
+                "usr": "s:20CrowdConnectedShared9CCCodableP",
+                "mangledName": "$s20CrowdConnectedShared9CCCodableP"
               },
               {
                 "kind": "Conformance",
@@ -11518,10 +12423,10 @@
               },
               {
                 "kind": "Conformance",
-                "name": "CrowdConnectedCodable",
-                "printedName": "CrowdConnectedCodable",
-                "usr": "s:20CrowdConnectedShared0aB7CodableP",
-                "mangledName": "$s20CrowdConnectedShared0aB7CodableP"
+                "name": "CCCodable",
+                "printedName": "CCCodable",
+                "usr": "s:20CrowdConnectedShared9CCCodableP",
+                "mangledName": "$s20CrowdConnectedShared9CCCodableP"
               },
               {
                 "kind": "Conformance",
@@ -12582,10 +13487,10 @@
               },
               {
                 "kind": "Conformance",
-                "name": "CrowdConnectedCodable",
-                "printedName": "CrowdConnectedCodable",
-                "usr": "s:20CrowdConnectedShared0aB7CodableP",
-                "mangledName": "$s20CrowdConnectedShared0aB7CodableP"
+                "name": "CCCodable",
+                "printedName": "CCCodable",
+                "usr": "s:20CrowdConnectedShared9CCCodableP",
+                "mangledName": "$s20CrowdConnectedShared9CCCodableP"
               },
               {
                 "kind": "Conformance",
@@ -12635,10 +13540,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "CrowdConnectedCodable",
-            "printedName": "CrowdConnectedCodable",
-            "usr": "s:20CrowdConnectedShared0aB7CodableP",
-            "mangledName": "$s20CrowdConnectedShared0aB7CodableP"
+            "name": "CCCodable",
+            "printedName": "CCCodable",
+            "usr": "s:20CrowdConnectedShared9CCCodableP",
+            "mangledName": "$s20CrowdConnectedShared9CCCodableP"
           },
           {
             "kind": "Conformance",
@@ -15436,7 +16341,21 @@
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/MainLogger.swift",
       "kind": "StringLiteral",
-      "offset": 582,
+      "offset": 377,
+      "length": 5,
+      "value": "\"API\""
+    },
+    {
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/MainLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 402,
+      "length": 5,
+      "value": "\"AUT\""
+    },
+    {
+      "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/MainLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 628,
       "length": 33,
       "value": "\"CrowdConnected.MainLogger.Queue\""
     },
@@ -15933,70 +16852,70 @@
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1187,
+      "offset": 1363,
       "length": 9,
       "value": "\"IBEACON\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1222,
+      "offset": 1398,
       "length": 11,
       "value": "\"EDDYSTONE\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 2056,
+      "offset": 2608,
       "length": 6,
       "value": "\"RFID\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 2591,
+      "offset": 3131,
       "length": 13,
       "value": "\"frequency_2\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 2629,
+      "offset": 3169,
       "length": 13,
       "value": "\"frequency_1\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 2973,
+      "offset": 3501,
       "length": 8,
       "value": "\"zoneID\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3055,
+      "offset": 3583,
       "length": 10,
       "value": "\"radius_1\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3095,
+      "offset": 3623,
       "length": 10,
       "value": "\"radius_2\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3860,
+      "offset": 4376,
       "length": 7,
       "value": "\"max_x\""
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3892,
+      "offset": 4408,
       "length": 7,
       "value": "\"min_y\""
     }

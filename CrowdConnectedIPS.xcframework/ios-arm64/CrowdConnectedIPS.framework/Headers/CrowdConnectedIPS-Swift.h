@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CrowdConnectedShared;
 @import ObjectiveC;
 #endif
 
@@ -307,7 +308,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSString;
 /// The entry point class of the <code>CrowdConnectedIPS</code> module.
 SWIFT_CLASS("_TtC17CrowdConnectedIPS17CrowdConnectedIPS")
-@interface CrowdConnectedIPS : NSObject
+@interface CrowdConnectedIPS : NSObject <Module>
 /// Activate the Indoor Positioning module.
 + (void)activate;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull coreSDKVersion;)

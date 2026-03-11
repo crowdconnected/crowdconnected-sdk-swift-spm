@@ -281,7 +281,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -305,79 +304,218 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-@protocol CrowdConnectedDelegate;
+/// SDK Configuration containing authentication Credentials and tracking mode.
+/// The Configuration class encapsulates all settings required to initialize and run
+/// the CrowdConnected SDK. It includes authentication credentials, enabled modules,
+/// and location tracking behavior.
+/// <em>Usage:</em>
+/// Create a Configuration using the fluent Builder pattern:
+/// \code
+/// let config = Configuration.Builder()
+///     .withCredentials(orgId: "your-org-id", 
+///                      appKey: "your-app-key",
+///                      clientId: "your-client-id",
+///                      clientSecret: "your-client-secret")
+///     .with(modules: [.geo, .ips])
+///     .with(trackingMode: .background)
+///     .build()
+///
+/// \endcodeOr use the direct initializer if you already have Credentials:
+/// \code
+/// let credentials = Credentials(orgId: "org", appKey: "key", clientId: "id", clientSecret: "secret")
+/// let config = Configuration(credentials: credentials, modules: [.geo], trackingMode: .foreground)
+///
+/// \endcode
+SWIFT_CLASS("_TtC18CrowdConnectedCore13Configuration")
+@interface Configuration : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Pixel coordinates representing a location on a 2D floor plan.
+SWIFT_CLASS("_TtC18CrowdConnectedCore10Coordinate")
+@interface Coordinate : NSObject
+/// The x coordinate of the location in pixels.
+@property (nonatomic) double xPixels;
+/// The y coordinate of the location in pixels.
+@property (nonatomic) double yPixels;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSString;
-@class SDKCredentials;
-enum LocationTrackingMode : NSInteger;
-enum CrowdConnectedValidationResult : NSInteger;
+/// Authentication Credentials used for the CrowdConnected SDK.
+/// All credential values are provided by CrowdConnected.
+SWIFT_CLASS("_TtC18CrowdConnectedCore11Credentials")
+@interface Credentials : NSObject
+/// Creates a new credentials object.
+/// \param orgId The unique organisation ID provided by CrowdConnected.
+///
+/// \param appKey The unique app key provided by CrowdConnected.
+///
+/// \param clientId The client ID provided by CrowdConnected.
+///
+/// \param clientSecret The client secret key provided by CrowdConnected.
+///
+- (nonnull instancetype)initWithOrgId:(NSString * _Nonnull)orgId appKey:(NSString * _Nonnull)appKey clientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@protocol CrowdConnectedDelegate;
+@class Location;
 /// The entry point class of the <code>CrowdConnected</code> SDK.
 SWIFT_CLASS("_TtC18CrowdConnectedCore14CrowdConnected")
 @interface CrowdConnected : NSObject
 /// A <code>CrowdConnectedDelegate</code> delegate used to return location data produced by the <code>CrowdConnected</code> SDK.
-/// Doesn’t need to be set if location updates are not expected or used by your app.
-/// Defaulted as <code>nil</code>.
+/// The delegate receives callbacks for:
+/// <ul>
+///   <li>
+///     <code>locationProvider(_:didStartSuccess:)</code> — called when SDK starts successfully
+///   </li>
+///   <li>
+///     <code>locationProvider(_:didStartFailure:)</code> — called if SDK start fails
+///   </li>
+///   <li>
+///     <code>locationProvider(_:didUpdateLocation:)</code> — called when new location data is available
+///   </li>
+/// </ul>
+/// Doesn’t need to be set if location updates are not expected or used by your app. Defaults to <code>nil</code>.
 @property (nonatomic, weak) id <CrowdConnectedDelegate> _Nullable delegate;
-/// The shared <code>CrowdConnected</code>instance.
+/// The shared <code>CrowdConnected</code> instance.
 /// Used for SDK configurations and communication.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CrowdConnected * _Nonnull shared;)
 + (CrowdConnected * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 /// The associated CrowdConnected device ID.
 /// Available after the SDK has been started successfully.
-@property (nonatomic, copy) NSString * _Nullable deviceID;
+@property (nonatomic, readonly, copy) NSString * _Nullable deviceID;
+/// Check if the SDK is currently running and successfully started.
+///
+/// returns:
+/// <code>true</code> if SDK is running, <code>false</code> otherwise.
+@property (nonatomic, readonly) BOOL isRunning;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Get the SDK version.
+///
+/// returns:
+/// The SDK version string in the format “version(build)”.
 + (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
 /// Start the SDK.
-/// \param credentials The unique credentials provided by CrowdConnected.
+/// Initiates the SDK lifecycle including authentication, device registration, and module activation.
+/// When this method is called:
+/// <ul>
+///   <li>
+///     If SDK is already running, the request is rejected.
+///   </li>
+///   <li>
+///     If SDK is transitioning (start/stop in progress), the request is queued and will execute when the current transition completes.
+///   </li>
+///   <li>
+///     Otherwise, the start process begins: credentials are validated, device registers with the server, and modules are activated.
+///   </li>
+/// </ul>
+/// The start operation is asynchronous. Results are reported through the delegate:
+/// <ul>
+///   <li>
+///     <code>locationProvider(_:didStartSuccess:)</code> is called when the SDK starts successfully with the device ID.
+///   </li>
+///   <li>
+///     <code>locationProvider(_:didStartFailure:)</code> is called if the SDK fails to start with an error code.
+///   </li>
+///   <li>
+///     Once started, <code>locationProvider(_:didUpdateLocation:)</code> will be called with location updates as they arrive.
+///   </li>
+/// </ul>
+/// \param configuration The SDK configuration containing authentication credentials, enabled modules, and tracking mode.
 ///
-/// \param trackingMode The tracking mode in which the SDK to operate.
-///
-/// \param completion The result of the SDK start operation.
-/// Returns a <code>DeviceID</code> as the first parameter if everything is set up correctly.
-/// Returns the validation result for app configuration as the second parameter. Can be used to identify any issues with the setup.
-///
-- (void)startWithCredentials:(SDKCredentials * _Nonnull)credentials trackingMode:(enum LocationTrackingMode)trackingMode completion:(void (^ _Nonnull)(NSString * _Nullable, enum CrowdConnectedValidationResult))completion;
+- (void)startWith:(Configuration * _Nonnull)configuration;
 /// Stop the SDK and all its processes.
+/// Stops all SDK operations including location tracking, data publishing, and background monitoring.
+/// The stop operation is asynchronous and serialized through the lifecycle queue.
+/// Call this method when you no longer need location tracking, such as on app termination or when
+/// transitioning to a state that doesn’t require the SDK.
 - (void)stop;
 /// Set and persist an alias for the current device.
+/// \param key The alias key.
+///
+/// \param value The alias value.
+///
 - (void)setAliasWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-/// Activate automatic background SDK refreshes.
-- (void)activateSDKBackgroundRefresh SWIFT_DEPRECATED_MSG("Will be removed in future versions. Background refreshes are now activated automatically upon SDK start.");
-/// Schedule the first background SDK refresh.
-- (void)scheduleRefresh SWIFT_DEPRECATED_MSG("Will be removed in future versions. Background refreshes are now scheduled automatically upon activation.");
+/// Get the last known location from the SDK.
+///
+/// returns:
+/// The last known location, or <code>nil</code> if no location has been received yet.
+- (Location * _Nullable)getLastLocation SWIFT_WARN_UNUSED_RESULT;
+/// Get the current SDK configuration.
+///
+/// returns:
+/// The SDK configuration, or <code>nil</code> if the SDK hasn’t been started yet.
+- (Configuration * _Nullable)getCurrentConfiguration SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class Location;
-/// A protocol used to return locations produced by the SDK.
+enum ErrorCode : NSInteger;
+/// A delegate protocol for receiving callbacks from the CrowdConnected SDK.
+/// Implement this protocol to receive location updates, success notifications, and error callbacks from the SDK.
+/// All methods are optional.
 SWIFT_PROTOCOL("_TtP18CrowdConnectedCore22CrowdConnectedDelegate_")
 @protocol CrowdConnectedDelegate
+@optional
 /// Called when new locations have been computed by the SDK.
+/// \param crowdConnected The <code>CrowdConnected</code> instance that generated the update.
+///
 /// \param locations An array of <code>Location</code> items in chronological order.
 ///
-- (void)didUpdateLocation:(NSArray<Location *> * _Nonnull)locations;
+- (void)locationProvider:(CrowdConnected * _Nonnull)crowdConnected didUpdateLocation:(Location * _Nonnull)location;
+/// Called when the SDK has successfully started and registered the device.
+/// \param crowdConnected The <code>CrowdConnected</code> instance that completed initialization.
+///
+/// \param deviceId The unique device identifier assigned by the CrowdConnected backend.
+///
+- (void)locationProvider:(CrowdConnected * _Nonnull)crowdConnected didStartSuccess:(NSString * _Nonnull)deviceId;
+/// Called when an error occurs in the SDK.
+/// \param crowdConnected The <code>CrowdConnected</code> instance where the error occurred.
+///
+/// \param errorCode A <code>ErrorCode</code> describing the error that occurred.
+///
+- (void)locationProvider:(CrowdConnected * _Nonnull)crowdConnected didStartFailure:(enum ErrorCode)errorCode;
 @end
 
-/// Validation result for SDK configuration.
-/// For a correct configuration, the value is <code>success</code>.
-/// Any other value represents an issue with the configuration and more details are in the <code>description</code> property.
-typedef SWIFT_ENUM(NSInteger, CrowdConnectedValidationResult, open) {
-  CrowdConnectedValidationResultSuccess = 0,
-  CrowdConnectedValidationResultAlreadyRunning = 1,
-  CrowdConnectedValidationResultMissingAppKey = 2,
-  CrowdConnectedValidationResultMissingToken = 3,
-  CrowdConnectedValidationResultMissingSecret = 4,
-  CrowdConnectedValidationResultDeviceRegistrationFailed = 5,
-  CrowdConnectedValidationResultNoModulesAreActive = 6,
-  CrowdConnectedValidationResultMissingBluetoothPermissionItem = 7,
-  CrowdConnectedValidationResultMissingWhileInUseLocationPermissionItem = 8,
-  CrowdConnectedValidationResultMissingAlwaysLocationPermissionItem = 9,
-  CrowdConnectedValidationResultMissingLocationBackgroundModeItem = 10,
-  CrowdConnectedValidationResultMissingBluetoothBackgroundModeItem = 11,
+/// Validation result for SDK Configuration and startup.
+/// Use the <code>description</code> property for detailed Error messages.
+typedef SWIFT_ENUM(NSInteger, ErrorCode, open) {
+/// SDK configuration and startup completed successfully.
+  ErrorCodeNoError = 0,
+/// SDK is already running and cannot be started again.
+  ErrorCodeAlreadyRunning = 1,
+/// App key is missing or empty in the credentials.
+  ErrorCodeMissingAppKey = 2,
+/// Token is missing or empty in the credentials.
+  ErrorCodeMissingToken = 3,
+/// Secret is missing or empty in the credentials.
+  ErrorCodeMissingSecret = 4,
+/// Device registration with the CrowdConnected backend failed.
+  ErrorCodeDeviceRegistrationFailed = 5,
+/// No SDK modules (Geo or IPS) are active.
+  ErrorCodeNoModulesAreActive = 6,
+/// <code>NSBluetoothAlwaysUsageDescription</code> is missing from Info.plist.
+  ErrorCodeMissingBluetoothPermissionItem = 7,
+/// <code>NSLocationWhenInUseUsageDescription</code> is missing from Info.plist.
+  ErrorCodeMissingWhileInUseLocationPermissionItem = 8,
+/// <code>NSLocationAlwaysAndWhenInUseUsageDescription</code> is missing from Info.plist.
+  ErrorCodeMissingAlwaysLocationPermissionItem = 9,
+/// <code>location</code> entry is missing from <code>UIBackgroundModes</code> in Info.plist.
+  ErrorCodeMissingLocationBackgroundModeItem = 10,
+/// <code>bluetooth-central</code> entry is missing from <code>UIBackgroundModes</code> in Info.plist.
+  ErrorCodeMissingBluetoothBackgroundModeItem = 11,
+  ErrorCodeNoGeoModuleImported = 15,
+  ErrorCodeNoIPSModuleImported = 17,
+  ErrorCodeNoCoreBluetoothModuleImported = 19,
 };
-static NSString * _Nonnull const CrowdConnectedValidationResultDomain = @"CrowdConnectedCore.CrowdConnectedValidationResult";
+static NSString * _Nonnull const ErrorCodeDomain = @"CrowdConnectedCore.ErrorCode";
 
-@class PixelCoordinates;
-/// An <code>NSObject</code> representing the accurate location of the device calculated by the SDK.
+/// A location computed by the CrowdConnected SDK.
+/// Contains geographic coordinates, metric positions, floor information, timestamps, and quality indicators.
 SWIFT_CLASS("_TtC18CrowdConnectedCore8Location")
 @interface Location : NSObject
 /// The x coordinate of the location in meters.
@@ -389,61 +527,54 @@ SWIFT_CLASS("_TtC18CrowdConnectedCore8Location")
 /// The longitude of the location.
 @property (nonatomic) double longitude;
 /// The coordinates of the location in pixels.
-@property (nonatomic, strong) PixelCoordinates * _Nullable pixelCoordinates;
+@property (nonatomic, strong) Coordinate * _Nullable pixelCoordinates;
 /// The floor number.
 @property (nonatomic) NSInteger floor;
 /// The surface of the location.
 @property (nonatomic, copy) NSString * _Nonnull surfaceID;
 /// The timestamp of the location.
 @property (nonatomic) int64_t timestamp;
-/// The type of the location. Can be either “IPS” or “GEO”.
+/// The type of the location.
+/// Can be either “IPS” (Indoor Positioning System) or “GEO” (GPS/Geographic).
 @property (nonatomic, copy) NSString * _Nonnull type;
-/// The quality of the location, with values from [0,1,2], where 2 represents the best accuracy.
+/// The quality of the location.
+/// Values range from 0 to 2, where 2 represents the best accuracy.
 @property (nonatomic) NSInteger quality;
-/// For IPS location type only. The maximum RSSI value recently observed. Defaults to <code>-1000</code>.
+/// For IPS location type only. The maximum RSSI value recently observed.
+/// Defaults to <code>-1000</code>.
 @property (nonatomic) double maxRSSI;
-/// For IPS location type only. The x-coordinate of the beacon from which the observation with the max RSSI value. Defaults to <code>0</code>.
+/// For IPS location type only. The x-coordinate of the beacon with the maximum RSSI value.
+/// Defaults to <code>0</code>.
 @property (nonatomic) double beaconXForMaxRSSI;
-/// For IPS location type only. The y-coordinate of the beacon from which the observation with the max RSSI value. Defaults to <code>0</code>.
+/// For IPS location type only. The y-coordinate of the beacon with the maximum RSSI value.
+/// Defaults to <code>0</code>.
 @property (nonatomic) double beaconYForMaxRSSI;
-/// For IPS location type only. The surface ID of the beacon from which the observation with the max RSSI value. Defaults to <code>00000000-0000-0000-0000-000000000000</code>.
+/// For IPS location type only. The surface ID of the beacon with the maximum RSSI value.
+/// Defaults to <code>00000000-0000-0000-0000-000000000000</code>.
 @property (nonatomic, copy) NSString * _Nonnull surfaceIDForMaxRSSI;
-/// For IPS location type only. The number of surfaces that we got observation(s) from at least one beacon on the surface.
+/// For IPS location type only. The number of surfaces with at least one beacon observation.
 @property (nonatomic) NSInteger observedSurfaces;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// Setting used to determine whether the SDK would track location data while the app is in the background.
+/// Location tracking mode determining whether the SDK tracks location in foreground only or both foreground and background.
 typedef SWIFT_ENUM(NSInteger, LocationTrackingMode, open) {
-  LocationTrackingModeForegroundOnly = 0,
-  LocationTrackingModeForegroundAndBackground = 1,
+/// Track location only when the app is in the foreground.
+  LocationTrackingModeForeground = 0,
+/// Track location both in foreground and background.
+  LocationTrackingModeBackground = 1,
 };
 
-/// An <code>NSObject</code> representing the location of the device in pixel coordinates calculated by the SDK.
-SWIFT_CLASS("_TtC18CrowdConnectedCore16PixelCoordinates")
-@interface PixelCoordinates : NSObject
-/// The x coordinate of the location in pixels.
-@property (nonatomic) double xPixels;
-/// The y coordinate of the location in pixels.
-@property (nonatomic) double yPixels;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-/// Grouped credentials used to authenticate in the CrowdConnected SDK.
-SWIFT_CLASS("_TtC18CrowdConnectedCore14SDKCredentials")
-@interface SDKCredentials : NSObject
-/// \param appKey The unique app key provided by CrowdConnected.
-///
-/// \param token The token provided by CrowdConnected.
-///
-/// \param secret The secret key provided by CrowdConnected.
-///
-- (nonnull instancetype)initWithAppKey:(NSString * _Nonnull)appKey token:(NSString * _Nonnull)token secret:(NSString * _Nonnull)secret OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
+/// Represents the modules available in the CrowdConnected SDK.
+typedef SWIFT_ENUM(NSInteger, Module, open) {
+/// Geofencing / location module.
+  ModuleGeo = 0,
+/// Indoor Positioning System (IPS) module.
+  ModuleIps = 1,
+/// Core Bluetooth module for BLE interactions.
+  ModuleCoreBluetooth = 2,
+};
 
 #endif
 #if __has_attribute(external_source_symbol)

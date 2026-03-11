@@ -10,7 +10,7 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CrowdConnectedGeo : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CrowdConnectedGeo : ObjectiveC.NSObject, CrowdConnectedShared.Module {
   @objc public static func activate()
   @objc deinit
 }

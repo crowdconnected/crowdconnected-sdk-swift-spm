@@ -76,10 +76,11 @@
             "mangledName": "$s27CrowdConnectedCoreBluetoothAAC8activateyyFZ",
             "moduleName": "CrowdConnectedCoreBluetooth",
             "static": true,
+            "objc_name": "activate",
             "declAttributes": [
               "Final",
-              "AccessControl",
               "ObjC",
+              "AccessControl",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -101,6 +102,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Module",
+            "printedName": "Module",
+            "usr": "c:@M@CrowdConnectedShared@objc(pl)Module",
+            "mangledName": "$s20CrowdConnectedShared6ModuleP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
