@@ -5617,41 +5617,41 @@
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "StringLiteral",
       "offset": 584,
-      "length": 46,
-      "value": "\"https:\/\/mobile.crowdconnected.com\/prod\/auth\/\""
+      "length": 45,
+      "value": "\"https:\/\/mobile.crowdconnected.com\/dev\/auth\/\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 964,
+      "offset": 963,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 1044,
+      "offset": 1043,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 1048,
+      "offset": 1047,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1800,
+      "offset": 1799,
       "length": 24,
       "value": "\"CrowdConnected.IAMAuth\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1858,
+      "offset": 1857,
       "length": 5,
       "value": "false"
     },
@@ -7577,8 +7577,8 @@
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Network\/APIRequest.swift",
       "kind": "StringLiteral",
       "offset": 323,
-      "length": 41,
-      "value": "\"https:\/\/mobile.crowdconnected.com\/prod\/\""
+      "length": 40,
+      "value": "\"https:\/\/mobile.crowdconnected.com\/dev\/\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/BeaconsLastSeenMonitor\/BeaconsLastSeenMonitor.swift",
