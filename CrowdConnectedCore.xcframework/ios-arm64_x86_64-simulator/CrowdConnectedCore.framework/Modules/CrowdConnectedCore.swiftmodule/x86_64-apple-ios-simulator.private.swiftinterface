@@ -19,7 +19,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public class Credentials : ObjectiveC.NSObject {
-  @objc public init(orgId: Swift.String, appKey: Swift.String, clientId: Swift.String, clientSecret: Swift.String)
+  @objc public init(appKey: Swift.String, clientId: Swift.String, clientSecret: Swift.String)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CrowdConnected : CrowdConnectedShared.CCObject {
@@ -40,13 +40,14 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public class Configuration : ObjectiveC.NSObject {
-  public init(credentials: CrowdConnectedCore.Credentials, modules: [CrowdConnectedCore.Module], trackingMode: CrowdConnectedCore.LocationTrackingMode)
+  public init(credentials: CrowdConnectedCore.Credentials, modules: [CrowdConnectedCore.Module], trackingMode: CrowdConnectedCore.LocationTrackingMode, customFields: [Swift.String : Swift.String] = [:])
   public class Builder {
     public init()
-    public func withCredentials(orgId: Swift.String, appKey: Swift.String, clientId: Swift.String, clientSecret: Swift.String) -> CrowdConnectedCore.Configuration.Builder
+    public func withCredentials(appKey: Swift.String, clientId: Swift.String, clientSecret: Swift.String) -> CrowdConnectedCore.Configuration.Builder
     public func with(modules: [CrowdConnectedCore.Module]) -> CrowdConnectedCore.Configuration.Builder
     public func with(module: CrowdConnectedCore.Module, enabled: Swift.Bool = true) -> CrowdConnectedCore.Configuration.Builder
     public func with(trackingMode: CrowdConnectedCore.LocationTrackingMode) -> CrowdConnectedCore.Configuration.Builder
+    public func with(customFields: [Swift.String : Swift.String]) -> CrowdConnectedCore.Configuration.Builder
     public func build() -> CrowdConnectedCore.Configuration
     @objc deinit
   }

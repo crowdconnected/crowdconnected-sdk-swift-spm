@@ -330,7 +330,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(orgId:appKey:clientId:clientSecret:)",
+            "printedName": "init(appKey:clientId:clientSecret:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -355,19 +355,13 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@CrowdConnectedCore@objc(cs)Credentials(im)initWithOrgId:appKey:clientId:clientSecret:",
-            "mangledName": "$s18CrowdConnectedCore11CredentialsC5orgId6appKey06clientF00I6SecretACSS_S3Stcfc",
+            "usr": "c:@M@CrowdConnectedCore@objc(cs)Credentials(im)initWithAppKey:clientId:clientSecret:",
+            "mangledName": "$s18CrowdConnectedCore11CredentialsC6appKey8clientId0G6SecretACSS_S2Stcfc",
             "moduleName": "CrowdConnectedCore",
-            "objc_name": "initWithOrgId:appKey:clientId:clientSecret:",
+            "objc_name": "initWithAppKey:clientId:clientSecret:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -479,17 +473,6 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftProtobuf",
-        "printedName": "SwiftProtobuf",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedCore",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
         ]
       },
       {
@@ -1228,7 +1211,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(credentials:modules:trackingMode:)",
+            "printedName": "init(credentials:modules:trackingMode:customFields:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1261,11 +1244,32 @@
                 "name": "LocationTrackingMode",
                 "printedName": "CrowdConnectedCore.LocationTrackingMode",
                 "usr": "c:@M@CrowdConnectedCore@E@LocationTrackingMode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18CrowdConnectedCore13ConfigurationC11credentials7modules12trackingModeAcA11CredentialsC_SayAA6ModuleOGAA016LocationTrackingH0Otcfc",
-            "mangledName": "$s18CrowdConnectedCore13ConfigurationC11credentials7modules12trackingModeAcA11CredentialsC_SayAA6ModuleOGAA016LocationTrackingH0Otcfc",
+            "usr": "s:18CrowdConnectedCore13ConfigurationC11credentials7modules12trackingMode12customFieldsAcA11CredentialsC_SayAA6ModuleOGAA016LocationTrackingH0OSDyS2SGtcfc",
+            "mangledName": "$s18CrowdConnectedCore13ConfigurationC11credentials7modules12trackingMode12customFieldsAcA11CredentialsC_SayAA6ModuleOGAA016LocationTrackingH0OSDyS2SGtcfc",
             "moduleName": "CrowdConnectedCore",
             "declAttributes": [
               "AccessControl",
@@ -1303,7 +1307,7 @@
               {
                 "kind": "Function",
                 "name": "withCredentials",
-                "printedName": "withCredentials(orgId:appKey:clientId:clientSecret:)",
+                "printedName": "withCredentials(appKey:clientId:clientSecret:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1328,17 +1332,11 @@
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:18CrowdConnectedCore13ConfigurationC7BuilderC15withCredentials5orgId6appKey06clientI00L6SecretAESS_S3StF",
-                "mangledName": "$s18CrowdConnectedCore13ConfigurationC7BuilderC15withCredentials5orgId6appKey06clientI00L6SecretAESS_S3StF",
+                "usr": "s:18CrowdConnectedCore13ConfigurationC7BuilderC15withCredentials6appKey8clientId0J6SecretAESS_S2StF",
+                "mangledName": "$s18CrowdConnectedCore13ConfigurationC7BuilderC15withCredentials6appKey8clientId0J6SecretAESS_S2StF",
                 "moduleName": "CrowdConnectedCore",
                 "declAttributes": [
                   "AccessControl",
@@ -1438,6 +1436,48 @@
                 "declKind": "Func",
                 "usr": "s:18CrowdConnectedCore13ConfigurationC7BuilderC4with12trackingModeAeA016LocationTrackingH0O_tF",
                 "mangledName": "$s18CrowdConnectedCore13ConfigurationC7BuilderC4with12trackingModeAeA016LocationTrackingH0O_tF",
+                "moduleName": "CrowdConnectedCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "with",
+                "printedName": "with(customFields:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "CrowdConnectedCore.Configuration.Builder",
+                    "usr": "s:18CrowdConnectedCore13ConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:18CrowdConnectedCore13ConfigurationC7BuilderC4with12customFieldsAESDyS2SG_tF",
+                "mangledName": "$s18CrowdConnectedCore13ConfigurationC7BuilderC4with12customFieldsAESDyS2SG_tF",
                 "moduleName": "CrowdConnectedCore",
                 "declAttributes": [
                   "AccessControl",
@@ -5496,6 +5536,17 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftProtobuf",
+        "printedName": "SwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5560,14 +5611,21 @@
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Utils\/AuthenticationSession.swift",
       "kind": "StringLiteral",
-      "offset": 744,
+      "offset": 740,
+      "length": 12,
+      "value": "\"cc_app_key\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Utils\/AuthenticationSession.swift",
+      "kind": "StringLiteral",
+      "offset": 790,
       "length": 14,
       "value": "\"cc_client_id\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Utils\/AuthenticationSession.swift",
       "kind": "StringLiteral",
-      "offset": 800,
+      "offset": 846,
       "length": 18,
       "value": "\"cc_client_secret\""
     },
@@ -5614,44 +5672,44 @@
       "value": "\"CrowdConnected.Alias.StorageKey\""
     },
     {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIConstants.swift",
       "kind": "StringLiteral",
-      "offset": 584,
-      "length": 45,
-      "value": "\"https:\/\/mobile.crowdconnected.com\/dev\/auth\/\""
+      "offset": 144,
+      "length": 35,
+      "value": "\"https:\/\/mobile.crowdconnected.com\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 963,
+      "offset": 855,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 1043,
+      "offset": 935,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 1047,
+      "offset": 939,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1799,
+      "offset": 1691,
       "length": 24,
       "value": "\"CrowdConnected.IAMAuth\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1857,
+      "offset": 1749,
       "length": 5,
       "value": "false"
     },
@@ -5696,125 +5754,6 @@
       "offset": 745,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "Array",
-      "offset": 3090,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "Dictionary",
-      "offset": 3553,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "Dictionary",
-      "offset": 4028,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4533,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4561,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "Array",
-      "offset": 4632,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 4811,
-      "length": 39,
-      "value": "\"net.crowdconnected.android.core.proto\""
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 5074,
-      "length": 14,
-      "value": "\".DynamoValue\""
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 5155,
-      "length": 109,
-      "value": "\"\u0000\u0003string_value\u0000\u0003number_value\u0000\u0003bool_value\u0000\u0003list_value\u0000\u0003map_value\u0000\u0003null_value\u0000\""
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 9685,
-      "length": 13,
-      "value": "\".DynamoList\""
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 9765,
-      "length": 17,
-      "value": "\"\u0000\u0001values\u0000\""
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 11037,
-      "length": 12,
-      "value": "\".DynamoMap\""
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 11116,
-      "length": 17,
-      "value": "\"\u0000\u0001fields\u0000\""
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 12627,
-      "length": 15,
-      "value": "\".SnapshotItem\""
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 12709,
-      "length": 21,
-      "value": "\"\u0000\u0001attributes\u0000\""
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 14246,
-      "length": 11,
-      "value": "\".Snapshot\""
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 14324,
-      "length": 104,
-      "value": "\"\u0000\u0003table_id\u0000\u0003table_name\u0000\u0003partition_key\u0000\u0003generated_at\u0000\u0003item_count\u0000\u0001items\u0000\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
@@ -6350,15 +6289,29 @@
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
+      "kind": "Dictionary",
+      "offset": 2571,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
       "kind": "Array",
-      "offset": 4648,
+      "offset": 4707,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
+      "kind": "Dictionary",
+      "offset": 5055,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 8942,
+      "offset": 8973,
       "length": 4,
       "value": "true"
     },
@@ -7485,84 +7438,77 @@
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 361,
-      "length": 9,
-      "value": "\"testOrg\""
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 457,
+      "offset": 341,
       "length": 10,
       "value": "\"settings\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 497,
+      "offset": 381,
       "length": 16,
       "value": "\"debug-settings\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 542,
+      "offset": 426,
       "length": 15,
       "value": "\"device-status\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 585,
+      "offset": 469,
       "length": 14,
       "value": "\"device-alias\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 633,
+      "offset": 517,
       "length": 21,
       "value": "\"device-alias\/cached\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 677,
+      "offset": 561,
       "length": 8,
       "value": "\"events\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 717,
+      "offset": 601,
       "length": 19,
       "value": "\"beacons\/last-seen\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 3190,
+      "offset": 3268,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 5704,
+      "offset": 5887,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 6725,
+      "offset": 6908,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 6745,
+      "offset": 6928,
       "length": 5,
       "value": "false"
     },
@@ -7572,13 +7518,6 @@
       "offset": 485,
       "length": 2,
       "value": "60"
-    },
-    {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Network\/APIRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 323,
-      "length": 40,
-      "value": "\"https:\/\/mobile.crowdconnected.com\/dev\/\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/BeaconsLastSeenMonitor\/BeaconsLastSeenMonitor.swift",
@@ -7628,6 +7567,125 @@
       "offset": 1639,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "Array",
+      "offset": 3090,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "Dictionary",
+      "offset": 3553,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "Dictionary",
+      "offset": 4028,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4533,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4561,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "Array",
+      "offset": 4632,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 4811,
+      "length": 39,
+      "value": "\"net.crowdconnected.android.core.proto\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 5074,
+      "length": 14,
+      "value": "\".DynamoValue\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 5155,
+      "length": 109,
+      "value": "\"\u0000\u0003string_value\u0000\u0003number_value\u0000\u0003bool_value\u0000\u0003list_value\u0000\u0003map_value\u0000\u0003null_value\u0000\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 9685,
+      "length": 13,
+      "value": "\".DynamoList\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 9765,
+      "length": 17,
+      "value": "\"\u0000\u0001values\u0000\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 11037,
+      "length": 12,
+      "value": "\".DynamoMap\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 11116,
+      "length": 17,
+      "value": "\"\u0000\u0001fields\u0000\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 12627,
+      "length": 15,
+      "value": "\".SnapshotItem\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 12709,
+      "length": 21,
+      "value": "\"\u0000\u0001attributes\u0000\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 14246,
+      "length": 11,
+      "value": "\".Snapshot\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 14324,
+      "length": 104,
+      "value": "\"\u0000\u0003table_id\u0000\u0003table_name\u0000\u0003partition_key\u0000\u0003generated_at\u0000\u0003item_count\u0000\u0001items\u0000\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DynamicIntervalsManager.swift",

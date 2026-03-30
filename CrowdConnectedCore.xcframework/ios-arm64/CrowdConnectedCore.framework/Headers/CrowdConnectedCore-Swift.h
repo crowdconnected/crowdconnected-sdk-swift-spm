@@ -312,8 +312,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Create a Configuration using the fluent Builder pattern:
 /// \code
 /// let config = Configuration.Builder()
-///     .withCredentials(orgId: "your-org-id", 
-///                      appKey: "your-app-key",
+///     .withCredentials(appKey: "your-app-key",
 ///                      clientId: "your-client-id",
 ///                      clientSecret: "your-client-secret")
 ///     .with(modules: [.geo, .ips])
@@ -322,7 +321,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 ///
 /// \endcodeOr use the direct initializer if you already have Credentials:
 /// \code
-/// let credentials = Credentials(orgId: "org", appKey: "key", clientId: "id", clientSecret: "secret")
+/// let credentials = Credentials(appKey: "key", clientId: "id", clientSecret: "secret")
 /// let config = Configuration(credentials: credentials, modules: [.geo], trackingMode: .foreground)
 ///
 /// \endcode
@@ -349,15 +348,13 @@ SWIFT_CLASS("_TtC18CrowdConnectedCore10Coordinate")
 SWIFT_CLASS("_TtC18CrowdConnectedCore11Credentials")
 @interface Credentials : NSObject
 /// Creates a new credentials object.
-/// \param orgId The unique organisation ID provided by CrowdConnected.
-///
 /// \param appKey The unique app key provided by CrowdConnected.
 ///
 /// \param clientId The client ID provided by CrowdConnected.
 ///
 /// \param clientSecret The client secret key provided by CrowdConnected.
 ///
-- (nonnull instancetype)initWithOrgId:(NSString * _Nonnull)orgId appKey:(NSString * _Nonnull)appKey clientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppKey:(NSString * _Nonnull)appKey clientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
