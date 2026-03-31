@@ -26,6 +26,7 @@ import os
       get
     }
   }
+  public static func reset()
   public static func log(level: CrowdConnectedShared.LogLevel, message: @autoclosure () -> Swift.String)
   public static func log(level: CrowdConnectedShared.LogLevel, tag: CrowdConnectedShared.MainLogger.LogTag? = nil, message: @autoclosure () -> Swift.String)
   public static func log(level: CrowdConnectedShared.LogLevel, tag: CrowdConnectedShared.MainLogger.LogTag? = nil, error: CrowdConnectedShared.DescriptiveError)

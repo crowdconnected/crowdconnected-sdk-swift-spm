@@ -619,13 +619,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "BackgroundTasks",
-        "printedName": "BackgroundTasks",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedCore"
-      },
-      {
         "kind": "TypeDecl",
         "name": "CrowdConnected",
         "printedName": "CrowdConnected",
@@ -6010,49 +6003,49 @@
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 2200,
+      "offset": 2173,
       "length": 38,
       "value": "\"com.crowdconnected.v3.libraryrefresh\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 2284,
+      "offset": 2257,
       "length": 28,
       "value": "\"com.crowdconnected.v3.lock\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 2368,
+      "offset": 2341,
       "length": 37,
       "value": "\"com.crowdconnected.v3.sdk.lifesycle\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "BooleanLiteral",
-      "offset": 2620,
+      "offset": 2593,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "BooleanLiteral",
-      "offset": 2883,
+      "offset": 2856,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "BooleanLiteral",
-      "offset": 3155,
+      "offset": 3128,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "IntegerLiteral",
-      "offset": 3469,
+      "offset": 3442,
       "length": 1,
       "value": "0"
     },

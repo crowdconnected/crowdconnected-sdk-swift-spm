@@ -345,6 +345,29 @@
           },
           {
             "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20CrowdConnectedShared10MainLoggerC5resetyyFZ",
+            "mangledName": "$s20CrowdConnectedShared10MainLoggerC5resetyyFZ",
+            "moduleName": "CrowdConnectedShared",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "log",
             "printedName": "log(level:message:)",
             "children": [
@@ -2152,6 +2175,16 @@
             "usr": "s:SY",
             "mangledName": "$sSY"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedShared",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -16617,6 +16650,34 @@
       "offset": 3463,
       "length": 40,
       "value": "\"CrowdConnectedApplicationWillTerminate\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/FileLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 436,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/FileLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
+      "length": 12,
+      "value": "\"cc_sdk.log\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/FileLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 592,
+      "length": 31,
+      "value": "\"com.crowdconnected.FileLogger\""
+    },
+    {
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/FileLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 733,
+      "length": 14,
+      "value": "\"HH:mm:ss.SSS\""
     },
     {
       "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Clocks\/SyncClock.swift",
