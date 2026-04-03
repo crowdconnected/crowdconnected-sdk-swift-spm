@@ -1291,7 +1291,12 @@
                 "usr": "s:18CrowdConnectedCore13ConfigurationC7BuilderCAEycfc",
                 "mangledName": "$s18CrowdConnectedCore13ConfigurationC7BuilderCAEycfc",
                 "moduleName": "CrowdConnectedCore",
+                "overriding": true,
+                "objc_name": "init",
                 "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override",
                   "AccessControl",
                   "RawDocComment"
                 ],
@@ -1331,8 +1336,11 @@
                 "usr": "s:18CrowdConnectedCore13ConfigurationC7BuilderC15withCredentials6appKey8clientId0J6SecretAESS_S2StF",
                 "mangledName": "$s18CrowdConnectedCore13ConfigurationC7BuilderC15withCredentials6appKey8clientId0J6SecretAESS_S2StF",
                 "moduleName": "CrowdConnectedCore",
+                "objc_name": "withCredentialsWithAppKey:clientId:clientSecret:",
                 "declAttributes": [
                   "AccessControl",
+                  "ObjC",
+                  "DiscardableResult",
                   "RawDocComment"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -1369,6 +1377,7 @@
                 "moduleName": "CrowdConnectedCore",
                 "declAttributes": [
                   "AccessControl",
+                  "DiscardableResult",
                   "RawDocComment"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -1402,8 +1411,11 @@
                 "usr": "s:18CrowdConnectedCore13ConfigurationC7BuilderC4with6module7enabledAeA6ModuleO_SbtF",
                 "mangledName": "$s18CrowdConnectedCore13ConfigurationC7BuilderC4with6module7enabledAeA6ModuleO_SbtF",
                 "moduleName": "CrowdConnectedCore",
+                "objc_name": "withModule:enabled:",
                 "declAttributes": [
                   "AccessControl",
+                  "ObjC",
+                  "DiscardableResult",
                   "RawDocComment"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -1430,8 +1442,11 @@
                 "usr": "s:18CrowdConnectedCore13ConfigurationC7BuilderC4with12trackingModeAeA016LocationTrackingH0O_tF",
                 "mangledName": "$s18CrowdConnectedCore13ConfigurationC7BuilderC4with12trackingModeAeA016LocationTrackingH0O_tF",
                 "moduleName": "CrowdConnectedCore",
+                "objc_name": "withTrackingMode:",
                 "declAttributes": [
                   "AccessControl",
+                  "ObjC",
+                  "DiscardableResult",
                   "RawDocComment"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -1472,8 +1487,11 @@
                 "usr": "s:18CrowdConnectedCore13ConfigurationC7BuilderC4with12customFieldsAESDyS2SG_tF",
                 "mangledName": "$s18CrowdConnectedCore13ConfigurationC7BuilderC4with12customFieldsAESDyS2SG_tF",
                 "moduleName": "CrowdConnectedCore",
+                "objc_name": "withCustomFields:",
                 "declAttributes": [
                   "AccessControl",
+                  "ObjC",
+                  "DiscardableResult",
                   "RawDocComment"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -1496,6 +1514,7 @@
                 "moduleName": "CrowdConnectedCore",
                 "declAttributes": [
                   "AccessControl",
+                  "ObjC",
                   "RawDocComment"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -1507,7 +1526,13 @@
             "moduleName": "CrowdConnectedCore",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
+            ],
+            "superclassUsr": "c:objc(cs)NSObject",
+            "inheritsConvenienceInitializers": true,
+            "superclassNames": [
+              "ObjectiveC.NSObject"
             ],
             "conformances": [
               {
@@ -1523,6 +1548,55 @@
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
               }
             ]
           },
@@ -1559,8 +1633,8 @@
         "moduleName": "CrowdConnectedCore",
         "declAttributes": [
           "AccessControl",
-          "RawDocComment",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "superclassNames": [
@@ -6283,28 +6357,28 @@
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
       "kind": "Dictionary",
-      "offset": 2571,
+      "offset": 2577,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
       "kind": "Array",
-      "offset": 4707,
+      "offset": 4729,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
       "kind": "Dictionary",
-      "offset": 5055,
+      "offset": 5077,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/Bitbucket\/atlassian-bitbucket-pipelines-runner\/temp\/0777b103-3821-5dd7-a0ed-8eb799e60235\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 8973,
+      "offset": 9097,
       "length": 4,
       "value": "true"
     },

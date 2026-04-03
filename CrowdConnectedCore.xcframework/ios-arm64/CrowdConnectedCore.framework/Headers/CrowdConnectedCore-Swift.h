@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -331,6 +332,177 @@ SWIFT_CLASS("_TtC18CrowdConnectedCore13Configuration")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSString;
+enum Module : NSInteger;
+enum LocationTrackingMode : NSInteger;
+/// Builder for creating Configuration objects with a fluent, chainable API.
+/// The Builder pattern provides a cleaner and more readable way to construct
+/// Configuration objects with all required credentials and optional settings.
+/// <em>Features:</em>
+/// <ul>
+///   <li>
+///     Fluent API with method chaining for easy configuration
+///   </li>
+///   <li>
+///     Consolidated credential setter for all authentication parameters
+///   </li>
+///   <li>
+///     Default values for optional parameters
+///   </li>
+///   <li>
+///     Single or bulk module addition
+///   </li>
+///   <li>
+///     Automatic duplicate module prevention
+///   </li>
+///   <li>
+///     Validation in build() to ensure all required credentials are set
+///   </li>
+/// </ul>
+/// <em>Example usage:</em>
+/// \code
+/// // Full configuration with all credentials and modules
+/// let config = Configuration.Builder()
+///     .withCredentials(appKey: "app-456",
+///                      clientId: "client-789",
+///                      clientSecret: "secret-abc")
+///     .with(modules: [.geo, .ips])
+///     .with(trackingMode: .background)
+///     .build()
+///
+/// // Add modules incrementally
+/// let customConfig = Configuration.Builder()
+///     .withCredentials(appKey: "app-456",
+///                      clientId: "client-789",
+///                      clientSecret: "secret-abc")
+///     .with(module: .geo)
+///     .with(module: .ips)
+///     .build()
+///
+/// \endcode
+SWIFT_CLASS("_TtCC18CrowdConnectedCore13Configuration7Builder")
+@interface Builder : NSObject
+/// Creates a new Builder instance for constructing Configuration objects.
+/// Initializes a Builder with all optional properties unset. You must call
+/// withCredentials() to set authentication credentials before calling build(),
+/// or a fatal error will be raised.
+/// Other properties have sensible defaults:
+/// <ul>
+///   <li>
+///     modules: Empty array (no modules enabled)
+///   </li>
+///   <li>
+///     trackingMode: .foreground (only track when app is in foreground)
+///   </li>
+/// </ul>
+/// <em>Typical usage:</em>
+/// \code
+/// let config = Configuration.Builder()
+///     .withCredentials(appKey: "key", clientId: "id", clientSecret: "secret")
+///     .with(module: .geo)
+///     .build()
+///
+/// \endcode
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Sets all required authentication credentials in one call.
+/// This method consolidates all credential parameters (appKey, clientId, clientSecret)
+/// into a single Credentials object. Must be called before build() to successfully
+/// create a Configuration.
+/// \param appKey Your unique application key provided by CrowdConnected.
+///
+/// \param clientId Your unique client ID provided by CrowdConnected for API authentication.
+///
+/// \param clientSecret Your unique client secret provided by CrowdConnected for API authentication.
+/// Keep this value secure and never hardcode it in production code.
+///
+///
+/// returns:
+/// Self for method chaining, allowing fluent API usage.
+- (Builder * _Nonnull)withCredentialsWithAppKey:(NSString * _Nonnull)appKey clientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret;
+/// Adds or removes a single module from the configuration’s module list.
+/// Use this method to add or remove modules one at a time. Multiple calls will append
+/// each module to the existing list or remove it as specified, allowing incremental
+/// module setup and modification.
+/// <em>Behavior:</em>
+/// <ul>
+///   <li>
+///     When <code>enabled</code> is <code>true</code> (default): Adds the module to the list if not already present.
+///     Duplicate modules are automatically prevented.
+///   </li>
+///   <li>
+///     When <code>enabled</code> is <code>false</code>: Removes all instances of the module from the list.
+///   </li>
+/// </ul>
+/// <em>Examples:</em>
+/// \code
+/// // Add modules
+/// builder.with(module: .geo)           // Add geo module (enabled=true by default)
+/// builder.with(module: .ips, enabled: true)   // Explicitly add IPS module
+///
+/// // Remove modules
+/// builder.with(module: .geo, enabled: false)  // Remove geo module
+///
+/// \endcode\param module A single Module instance to add or remove from the configuration.
+///
+/// \param enabled Boolean flag indicating whether to add (true) or remove (false) the module.
+/// Defaults to true (add the module).
+///
+///
+/// returns:
+/// Self for method chaining, allowing fluent API usage.
+- (Builder * _Nonnull)withModule:(enum Module)module_ enabled:(BOOL)enabled;
+/// Sets the location tracking mode for the SDK.
+/// This determines whether the SDK tracks user location in foreground,
+/// background, or both scenarios. The default is foreground-only tracking.
+/// \param trackingMode The desired LocationTrackingMode.
+///
+///
+/// returns:
+/// Self for method chaining, allowing fluent API usage.
+- (Builder * _Nonnull)withTrackingMode:(enum LocationTrackingMode)trackingMode;
+/// Sets a custom fields for internal use.
+/// \param baseUrl The custom fields.
+///
+///
+/// returns:
+/// Self for method chaining, allowing fluent API usage.
+- (Builder * _Nonnull)withCustomFields:(NSDictionary<NSString *, NSString *> * _Nonnull)customFields;
+/// Builds and returns the configured Configuration object.
+/// This method finalizes the builder and creates an immutable Configuration
+/// instance with all the settings specified through the builder methods.
+/// After a successful call to build(), the Configuration object is ready to be
+/// passed to the SDK’s start method.
+/// <em>Validation:</em>
+/// This method performs validation to ensure credentials have been set:
+/// <ul>
+///   <li>
+///     withCredentials() must be called before build()
+///   </li>
+/// </ul>
+/// If credentials have not been set, this method will raise a fatal error
+/// indicating that credentials are required.
+/// <em>Return Value:</em>
+/// A fully configured Configuration object with:
+/// <ul>
+///   <li>
+///     credentials: Set via withCredentials()
+///   </li>
+///   <li>
+///     modules: Set via with(modules:) or with(module:), defaults to empty array
+///   </li>
+///   <li>
+///     trackingMode: Set via with(trackingMode:), defaults to .foreground
+///   </li>
+/// </ul>
+///
+/// throws:
+/// Fatal error if credentials have not been set via withCredentials().
+///
+/// returns:
+/// A fully configured Configuration object.
+- (Configuration * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
+@end
+
 /// Pixel coordinates representing a location on a 2D floor plan.
 SWIFT_CLASS("_TtC18CrowdConnectedCore10Coordinate")
 @interface Coordinate : NSObject
@@ -342,7 +514,6 @@ SWIFT_CLASS("_TtC18CrowdConnectedCore10Coordinate")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 /// Authentication Credentials used for the CrowdConnected SDK.
 /// All credential values are provided by CrowdConnected.
 SWIFT_CLASS("_TtC18CrowdConnectedCore11Credentials")

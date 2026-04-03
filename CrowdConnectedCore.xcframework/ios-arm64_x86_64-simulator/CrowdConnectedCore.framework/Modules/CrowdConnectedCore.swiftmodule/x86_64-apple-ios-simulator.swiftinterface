@@ -40,14 +40,19 @@ import _SwiftConcurrencyShims
 }
 @objc public class Configuration : ObjectiveC.NSObject {
   public init(credentials: CrowdConnectedCore.Credentials, modules: [CrowdConnectedCore.Module], trackingMode: CrowdConnectedCore.LocationTrackingMode, customFields: [Swift.String : Swift.String] = [:])
-  public class Builder {
-    public init()
-    public func withCredentials(appKey: Swift.String, clientId: Swift.String, clientSecret: Swift.String) -> CrowdConnectedCore.Configuration.Builder
+  @_inheritsConvenienceInitializers @objc public class Builder : ObjectiveC.NSObject {
+    @objc override dynamic public init()
+    @discardableResult
+    @objc public func withCredentials(appKey: Swift.String, clientId: Swift.String, clientSecret: Swift.String) -> CrowdConnectedCore.Configuration.Builder
+    @discardableResult
     public func with(modules: [CrowdConnectedCore.Module]) -> CrowdConnectedCore.Configuration.Builder
-    public func with(module: CrowdConnectedCore.Module, enabled: Swift.Bool = true) -> CrowdConnectedCore.Configuration.Builder
-    public func with(trackingMode: CrowdConnectedCore.LocationTrackingMode) -> CrowdConnectedCore.Configuration.Builder
-    public func with(customFields: [Swift.String : Swift.String]) -> CrowdConnectedCore.Configuration.Builder
-    public func build() -> CrowdConnectedCore.Configuration
+    @discardableResult
+    @objc public func with(module: CrowdConnectedCore.Module, enabled: Swift.Bool = true) -> CrowdConnectedCore.Configuration.Builder
+    @discardableResult
+    @objc public func with(trackingMode: CrowdConnectedCore.LocationTrackingMode) -> CrowdConnectedCore.Configuration.Builder
+    @discardableResult
+    @objc public func with(customFields: [Swift.String : Swift.String]) -> CrowdConnectedCore.Configuration.Builder
+    @objc public func build() -> CrowdConnectedCore.Configuration
     @objc deinit
   }
   @objc deinit
