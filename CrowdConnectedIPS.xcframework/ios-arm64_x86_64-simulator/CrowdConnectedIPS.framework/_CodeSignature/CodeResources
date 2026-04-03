@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CrowdConnectedIPS-Swift.h</key>
 		<data>
-		N7uJWN6zY3Nw8w5rYR5rZm+fZjg=
+		HqJM7mxtz7t62JP9c8xM+K0Vqxk=
 		</data>
 		<key>Headers/CrowdConnectedIPS.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4W2TVFCUs7fnWh8m8IX8HZ+e2wQ=
+		5quOcSQ1JV1YBMMZcgMLoSAgLPM=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1YCiMu3yxQZBx3j63U3E4dwuI7M=
+		OjFzYPiOXq7u10GDYMksHntteI8=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1YCiMu3yxQZBx3j63U3E4dwuI7M=
+		OjFzYPiOXq7u10GDYMksHntteI8=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wd6LyYOdFBWo9G5JGQW8FdaxSh0=
+		Ed2TyjE0F7G6v3GTAaYo3uYh7O8=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4W2TVFCUs7fnWh8m8IX8HZ+e2wQ=
+		5quOcSQ1JV1YBMMZcgMLoSAgLPM=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1L4VO2OJGHqAAGt2ADSyruHSJzY=
+		VkojAemJYjyRP4YtmlEtUiO4TCI=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1L4VO2OJGHqAAGt2ADSyruHSJzY=
+		VkojAemJYjyRP4YtmlEtUiO4TCI=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jqfdDfnCrSs7hN8KKs9F2o5ci6I=
+		nOTGt/M6hdYoA66EQTw52uD81/U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T61vi7RpcJ6mio8NH8+y0H1LuN9OOMqDYeeWMjUjdfA=
+			rB5KRP3y6qpXFzygWacWpAp+HTE5lhvNZJMffFoK6Ec=
 			</data>
 		</dict>
 		<key>Headers/CrowdConnectedIPS.h</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ryUaPgdnr5CHavA6ua5BNkFU8LkNcAenmfu3ps5GrTM=
+			7e3tpK680qwGJxVIsPZwglcu/x0ev4GzaWZUYhIH32E=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dedNJUSmyUZ9W2sm/0ciGxx6okFQbIkdp4bdy1z56A4=
+			c+pktXLJV8I/XN00f7nu/4rdiXAoTby9utb7V4fZzrI=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dedNJUSmyUZ9W2sm/0ciGxx6okFQbIkdp4bdy1z56A4=
+			c+pktXLJV8I/XN00f7nu/4rdiXAoTby9utb7V4fZzrI=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lPfObR6WdAuAj6qgL44faKdnTj5QJ4zZ8UQ9c27GaVE=
+			+b3ME+QZltFJKqRQwIjrAoFX89mZdzXnP7+d88d3iHo=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ryUaPgdnr5CHavA6ua5BNkFU8LkNcAenmfu3ps5GrTM=
+			7e3tpK680qwGJxVIsPZwglcu/x0ev4GzaWZUYhIH32E=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kaMHFpEaz0RRUig6baOlcnIVCTxKVOMCZlt//EQYmM4=
+			yrblzG4OzrTE48zD8UoADwB3l7ria4nYPQxPkXvHqhk=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kaMHFpEaz0RRUig6baOlcnIVCTxKVOMCZlt//EQYmM4=
+			yrblzG4OzrTE48zD8UoADwB3l7ria4nYPQxPkXvHqhk=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gybGvSFCB1sF3AVPiS90MS1QxsEX17Pm2E8NewMpQTc=
+			MiGR9PP2QjYi1gl9Gmxl2uoThQ/QFfrv756UXGW8Xl8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

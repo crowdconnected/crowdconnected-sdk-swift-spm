@@ -12,7 +12,7 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CrowdConnectedIPS : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CrowdConnectedIPS : ObjectiveC.NSObject, CrowdConnectedShared.Module {
   @objc public static func activate()
   @objc public static var coreSDKVersion: Swift.String {
     @objc get

@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CrowdConnectedShared;
 @import ObjectiveC;
 #endif
 
@@ -306,7 +307,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 /// The entry point class of the <code>CrowdConnectedCoreBluetooth</code> module.
 SWIFT_CLASS("_TtC27CrowdConnectedCoreBluetooth27CrowdConnectedCoreBluetooth")
-@interface CrowdConnectedCoreBluetooth : NSObject
+@interface CrowdConnectedCoreBluetooth : NSObject <Module>
 /// Activate the Core Bluetooth module.
 /// Requires the IPS module to be activated as well.
 + (void)activate;

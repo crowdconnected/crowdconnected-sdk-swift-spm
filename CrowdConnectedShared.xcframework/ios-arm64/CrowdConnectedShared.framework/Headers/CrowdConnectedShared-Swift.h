@@ -303,6 +303,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+SWIFT_PROTOCOL("_TtP20CrowdConnectedShared6Module_")
+@protocol Module
++ (void)activate;
+@end
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

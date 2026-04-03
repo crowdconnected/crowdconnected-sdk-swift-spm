@@ -2,7 +2,6 @@
 // swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CrowdConnectedCore
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
-import BackgroundTasks
 import SystemConfiguration.CaptiveNetwork
 import CommonCrypto
 import CoreBluetooth
@@ -18,25 +17,57 @@ import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public class SDKCredentials : ObjectiveC.NSObject {
-  @objc public init(appKey: Swift.String, token: Swift.String, secret: Swift.String)
+@objc public class Credentials : ObjectiveC.NSObject {
+  @objc public init(appKey: Swift.String, clientId: Swift.String, clientSecret: Swift.String)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CrowdConnected : CrowdConnectedShared.CCObject {
   @objc weak public var delegate: (any CrowdConnectedCore.CrowdConnectedDelegate)?
   @objc public static let shared: CrowdConnectedCore.CrowdConnected
-  @objc public var deviceID: CrowdConnectedCore.DeviceID?
+  @objc public var deviceID: CrowdConnectedCore.DeviceID? {
+    @objc get
+  }
+  @objc public var isRunning: Swift.Bool {
+    @objc get
+  }
   @objc public static func getVersion() -> Swift.String
-  @objc public func start(credentials: CrowdConnectedCore.SDKCredentials, trackingMode: CrowdConnectedCore.LocationTrackingMode, completion: @escaping (CrowdConnectedCore.DeviceID?, CrowdConnectedCore.CrowdConnectedValidationResult) -> Swift.Void)
+  @objc public func start(with configuration: CrowdConnectedCore.Configuration)
   @objc public func stop()
   @objc public func setAlias(key: Swift.String, value: Swift.String)
-  @available(*, deprecated, message: "Will be removed in future versions. Background refreshes are now activated automatically upon SDK start.")
-  @objc public func activateSDKBackgroundRefresh()
-  @available(*, deprecated, message: "Will be removed in future versions. Background refreshes are now scheduled automatically upon activation.")
-  @objc public func scheduleRefresh()
+  @objc public func getLastLocation() -> CrowdConnectedCore.Location?
+  @objc public func getCurrentConfiguration() -> CrowdConnectedCore.Configuration?
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc public class PixelCoordinates : ObjectiveC.NSObject {
+@objc public class Configuration : ObjectiveC.NSObject {
+  public init(credentials: CrowdConnectedCore.Credentials, modules: [CrowdConnectedCore.Module], trackingMode: CrowdConnectedCore.LocationTrackingMode, customFields: [Swift.String : Swift.String] = [:])
+  @_inheritsConvenienceInitializers @objc public class Builder : ObjectiveC.NSObject {
+    @objc override dynamic public init()
+    @discardableResult
+    @objc public func withCredentials(appKey: Swift.String, clientId: Swift.String, clientSecret: Swift.String) -> CrowdConnectedCore.Configuration.Builder
+    @discardableResult
+    public func with(modules: [CrowdConnectedCore.Module]) -> CrowdConnectedCore.Configuration.Builder
+    @discardableResult
+    @objc public func with(module: CrowdConnectedCore.Module, enabled: Swift.Bool = true) -> CrowdConnectedCore.Configuration.Builder
+    @discardableResult
+    @objc public func with(trackingMode: CrowdConnectedCore.LocationTrackingMode) -> CrowdConnectedCore.Configuration.Builder
+    @discardableResult
+    @objc public func with(customFields: [Swift.String : Swift.String]) -> CrowdConnectedCore.Configuration.Builder
+    @objc public func build() -> CrowdConnectedCore.Configuration
+    @objc deinit
+  }
+  @objc deinit
+}
+@objc public enum Module : Swift.Int {
+  case geo = 0
+  case ips = 1
+  case coreBluetooth = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class Coordinate : ObjectiveC.NSObject {
   @objc public var xPixels: Swift.Double
   @objc public var yPixels: Swift.Double
   @objc deinit
@@ -46,7 +77,7 @@ import _SwiftConcurrencyShims
   @objc public var yMeters: Swift.Double
   @objc public var latitude: Swift.Double
   @objc public var longitude: Swift.Double
-  @objc public var pixelCoordinates: CrowdConnectedCore.PixelCoordinates?
+  @objc public var pixelCoordinates: CrowdConnectedCore.Coordinate?
   @objc public var floor: Swift.Int
   @objc public var surfaceID: Swift.String
   @objc public var timestamp: Swift.Int64
@@ -59,9 +90,9 @@ import _SwiftConcurrencyShims
   @objc public var observedSurfaces: Swift.Int
   @objc deinit
 }
-@objc public enum LocationTrackingMode : Swift.Int {
-  case foregroundOnly = 0
-  case foregroundAndBackground = 1
+@objc public enum LocationTrackingMode : Swift.Int, CrowdConnectedShared.CCCodable {
+  case foreground = 0
+  case background = 1
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -69,8 +100,8 @@ import _SwiftConcurrencyShims
   }
 }
 public typealias DeviceID = Swift.String
-@objc public enum CrowdConnectedValidationResult : Swift.Int {
-  case success = 0
+@objc public enum ErrorCode : Swift.Int {
+  case noError = 0
   case alreadyRunning = 1
   case missingAppKey = 2
   case missingToken = 3
@@ -82,6 +113,9 @@ public typealias DeviceID = Swift.String
   case missingAlwaysLocationPermissionItem = 9
   case missingLocationBackgroundModeItem = 10
   case missingBluetoothBackgroundModeItem = 11
+  case noGeoModuleImported = 15
+  case noIPSModuleImported = 17
+  case noCoreBluetoothModuleImported = 19
   public var description: Swift.String {
     get
   }
@@ -91,17 +125,22 @@ public typealias DeviceID = Swift.String
     get
   }
 }
-extension CrowdConnectedCore.CrowdConnectedValidationResult : Foundation.LocalizedError {
+extension CrowdConnectedCore.ErrorCode : Foundation.LocalizedError {
   public static var _nsErrorDomain: Swift.String {
     get
   }
 }
 @objc public protocol CrowdConnectedDelegate {
-  @objc func didUpdateLocation(_ locations: [CrowdConnectedCore.Location])
+  @objc optional func locationProvider(_ crowdConnected: CrowdConnectedCore.CrowdConnected, didUpdateLocation location: CrowdConnectedCore.Location)
+  @objc optional func locationProvider(_ crowdConnected: CrowdConnectedCore.CrowdConnected, didStartSuccess deviceId: CrowdConnectedCore.DeviceID)
+  @objc optional func locationProvider(_ crowdConnected: CrowdConnectedCore.CrowdConnected, didStartFailure errorCode: CrowdConnectedCore.ErrorCode)
 }
+extension CrowdConnectedCore.Module : Swift.Equatable {}
+extension CrowdConnectedCore.Module : Swift.Hashable {}
+extension CrowdConnectedCore.Module : Swift.RawRepresentable {}
 extension CrowdConnectedCore.LocationTrackingMode : Swift.Equatable {}
 extension CrowdConnectedCore.LocationTrackingMode : Swift.Hashable {}
 extension CrowdConnectedCore.LocationTrackingMode : Swift.RawRepresentable {}
-extension CrowdConnectedCore.CrowdConnectedValidationResult : Swift.Equatable {}
-extension CrowdConnectedCore.CrowdConnectedValidationResult : Swift.Hashable {}
-extension CrowdConnectedCore.CrowdConnectedValidationResult : Swift.RawRepresentable {}
+extension CrowdConnectedCore.ErrorCode : Swift.Equatable {}
+extension CrowdConnectedCore.ErrorCode : Swift.Hashable {}
+extension CrowdConnectedCore.ErrorCode : Swift.RawRepresentable {}

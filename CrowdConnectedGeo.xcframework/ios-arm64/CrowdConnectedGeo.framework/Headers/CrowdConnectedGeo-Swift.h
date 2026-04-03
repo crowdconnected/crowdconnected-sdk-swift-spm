@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CrowdConnectedShared;
 @import ObjectiveC;
 #endif
 
@@ -306,7 +307,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 /// The entry point class of the <code>CrowdConnectedGeo</code> module.
 SWIFT_CLASS("_TtC17CrowdConnectedGeo17CrowdConnectedGeo")
-@interface CrowdConnectedGeo : NSObject
+@interface CrowdConnectedGeo : NSObject <Module>
 /// Activate the Geo module.
 + (void)activate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
