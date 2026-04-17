@@ -1,24 +1,12 @@
 # Crowd Connected SDK for iOS
 
-A Swift Package Manager (SPM) distribution of the Crowd Connected iOS SDK, providing indoor positioning, location services, and Bluetooth functionality for iOS applications.
-
-## Overview
-
-The Crowd Connected SDK enables precise indoor positioning and location services using a combination of technologies including Bluetooth beacons, WiFi, and sensor fusion. This package provides pre-compiled XCFrameworks that support both device and simulator architectures.
-
-## Features
-
-- **Indoor Positioning System (IPS)**: High-accuracy indoor location tracking
-- **Core Location Services**: Fundamental location and positioning capabilities
-- **Bluetooth Integration**: Bluetooth beacon scanning and proximity detection
-- **Geolocation Services**: Enhanced GPS and outdoor positioning
-- **Shared Utilities**: Common functionality shared across all modules
+A Swift Package Manager (SPM) distribution of the Crowd Connected iOS SDK, providing indoor positioning, geolocation, and Bluetooth beacon functionality for iOS applications.
 
 ## Requirements
 
 - iOS 14.0+
-- Xcode 15.0+
-- Swift 6.1+
+- Xcode 26.3+
+- Swift 6.2+
 
 ## Installation
 
@@ -28,7 +16,7 @@ Add the following to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/crowdconnected/crowd-connected-sdk-swift-spm.git", from: "2.3.0")
+    .package(url: "https://github.com/crowdconnected/crowdconnected-sdk-swift-spm.git", from: "3.0.1")
 ]
 ```
 
@@ -36,134 +24,115 @@ Or add it through Xcode:
 
 1. Open your project in Xcode
 2. Go to **File** → **Add Package Dependencies**
-3. Enter the repository URL: `https://github.com/crowdconnected/crowd-connected-sdk-swift-spm.git`
-4. Select the version and add the desired target dependencies
+3. Enter the repository URL: `https://github.com/crowdconnected/crowdconnected-sdk-swift-spm.git`
+4. Select version `3.0.1` or later
+5. Add the desired product(s) to your target
 
-## Available Modules
+## Available Products
 
-The SDK is divided into several modules that can be imported independently:
+The SDK exposes three products. Add only the ones your app needs.
 
-### CrowdConnectedCore
-The main SDK module providing core functionality and services.
+### CrowdConnectedGeo
+Enhanced geolocation and outdoor positioning services.
 
 ```swift
-import CrowdConnectedCore
+// In Package.swift target dependencies:
+.product(name: "CrowdConnectedGeo", package: "crowdconnected-sdk-swift-spm")
 ```
 
 ### CrowdConnectedIPS
-Indoor Positioning System capabilities for precise indoor location tracking.
+Indoor Positioning System for precise indoor location tracking.
 
 ```swift
-import CrowdConnectedIPS
+// In Package.swift target dependencies:
+.product(name: "CrowdConnectedIPS", package: "crowdconnected-sdk-swift-spm")
 ```
 
-### CrowdConnectedGeo
-Enhanced geolocation services and outdoor positioning features.
+### EddystonePlugin
+Bluetooth beacon scanning and Eddystone proximity detection. Requires IPS to function.
 
 ```swift
-import CrowdConnectedGeo
-```
-
-### CrowdConnectedCoreBluetooth
-Bluetooth functionality including beacon scanning and proximity detection.
-
-```swift
-import CrowdConnectedCoreBluetooth
-```
-
-### CrowdConnectedShared
-Shared utilities and common functionality used across other modules.
-
-```swift
-import CrowdConnectedShared
+// In Package.swift target dependencies:
+.product(name: "CrowdConnectedCoreBluetooth", package: "crowdconnected-sdk-swift-spm")
 ```
 
 ## Usage
 
-### Using Multiple Modules
+### Starting the SDK
+
+Build a `Configuration` using the Builder pattern, assign a delegate, then call `start(with:)`:
 
 ```swift
-import CrowdConnectedShared
 import CrowdConnectedCore
-import CrowdConnectedIPS
-import CrowdConnectedCoreBluetooth
-import CrowdConnectedGeo
 
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        CrowdConnectedIPS.activate()
-        CrowdConnectedGeo.activate()
-        CrowdConnectedCoreBluetooth.activate()
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
-        CrowdConnected.shared.activateSDKBackgroundRefresh()
-        startSDK()
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        let configuration = Configuration.Builder()
+            .withCredentials(
+                appKey: "YOUR_APP_KEY",
+                clientId: "YOUR_CLIENT_ID",
+                clientSecret: "YOUR_CLIENT_SECRET"
+            )
+            .with(modules: [.geo, .ips])   // add .coreBluetooth for EddystonePlugin
+            .with(trackingMode: .background)
+            .build()
+
+        CrowdConnected.shared.delegate = self
+        CrowdConnected.shared.start(with: configuration)
 
         return true
-    }
-
-func startSDK() {
-    if sdkAppKey.isEmpty || sdkToken.isEmpty || sdkSecret.isEmpty {
-        return
-    }
-
-    let credentials = SDKCredentials(appKey: sdkAppKey, token: sdkToken, secret: sdkSecret)
-
-    CrowdConnected.shared.start(
-        credentials: credentials,
-        trackingMode: sdkTrackingMode.locationTrackingMode
-    ) { deviceID, validationResult in
-        guard case .success = validationResult else {
-            // SDK start had failed with a config validation error.
-            print(validationResult.description)
-            return
-        }
-
-        self.sdkDeviceId = deviceID ?? "unknown"
-        print("#DEBUG: SDK started successfully with device ID \(self.sdkDeviceId)")
     }
 }
 ```
 
-## Privacy
+### Handling Delegate Callbacks
 
-This SDK respects user privacy and follows Apple's privacy guidelines. The package includes privacy manifests (`PrivacyInfo.xcprivacy`) that declare:
+```swift
+extension AppDelegate: CrowdConnectedDelegate {
 
-- **Data Collection**: No personal data is collected by default
-- **API Usage**: Uses UserDefaults API for configuration storage
-- **Tracking**: No tracking domains are used
+    func locationProvider(_ crowdConnected: CrowdConnected, didStartSuccess deviceId: String) {
+        print("SDK started — device ID: \(deviceId)")
+    }
+
+    func locationProvider(_ crowdConnected: CrowdConnected, didStartFailure errorCode: ErrorCode) {
+        print("SDK failed to start: \(errorCode.description)")
+    }
+
+    func locationProvider(_ crowdConnected: CrowdConnected, didUpdateLocation location: Location) {
+        print("Location: \(location.latitude), \(location.longitude)")
+    }
+}
+```
+
+### Stopping the SDK
+
+```swift
+CrowdConnected.shared.stop()
+```
 
 ## Architecture Support
 
-The XCFrameworks included in this package support:
+All XCFrameworks support:
 
-- **iOS Device**: arm64 architecture
-- **iOS Simulator**: arm64 and x86_64 architectures
+- **iOS Device**: arm64
+- **iOS Simulator**: arm64 and x86_64
 
-This ensures compatibility with both Apple Silicon and Intel-based development machines.
+## Privacy
+
+Each module includes a `PrivacyInfo.xcprivacy` manifest declaring API usage in accordance with Apple's privacy requirements.
 
 ## Documentation
 
-For detailed documentation, API references, and integration guides, please visit:
-
+- [Integration Guide](https://docs.crowdconnected.com)
 - [Crowd Connected Portal](https://app.crowdconnected.com)
-- [API Documentation](https://crowdconnected.atlassian.net/wiki/spaces/SUP/pages/2888138783/SDK+Integration)
 
 ## Support
 
-For technical support, questions, or issues:
-
 - **Email**: support@crowdconnected.com
-- **Documentation**: [Developer Portal](https://crowdconnected.atlassian.net/wiki/spaces/SUP/pages/2888138783/SDK+Integration)
-- **Issues**: Please report issues through the GitHub repository
+- **Issues**: Please report via the GitHub repository
 
 ## License
 
-This SDK is proprietary software owned by Crowd Connected Ltd. Please refer to your license agreement or contact Crowd Connected for licensing terms.
-
-## About Crowd Connected
-
-Crowd Connected provides enterprise-grade indoor positioning and location intelligence solutions. Our technology enables businesses to understand and optimize the movement of people and assets in indoor environments.
-
----
-
-For more information about Crowd Connected and our solutions, visit [crowdconnected.com](https://www.crowdconnected.com).
+Proprietary software owned by Crowd Connected Ltd. Please refer to your license agreement or contact Crowd Connected for licensing terms.
