@@ -6,13 +6,11 @@ import CoreLocation
 import CoreMotion
 @_exported import CrowdConnectedShared
 import Foundation
-import OSLog
 import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-import os
 @_hasMissingDesignatedInitializers public class MainLogger {
   public enum LogTag : Swift.String {
     case IPS

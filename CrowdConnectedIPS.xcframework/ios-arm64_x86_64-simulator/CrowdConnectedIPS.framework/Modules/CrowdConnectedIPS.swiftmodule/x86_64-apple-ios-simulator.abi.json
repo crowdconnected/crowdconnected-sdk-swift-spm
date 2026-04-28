@@ -199,7 +199,10 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "CrowdConnectedIPS"
+        "moduleName": "CrowdConnectedIPS",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -216,14 +219,20 @@
         "name": "CoreMotion",
         "printedName": "CoreMotion",
         "declKind": "Import",
-        "moduleName": "CrowdConnectedIPS"
+        "moduleName": "CrowdConnectedIPS",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "CrowdConnectedIPS"
+        "moduleName": "CrowdConnectedIPS",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -366,7 +375,10 @@
         "name": "CoreMotion",
         "printedName": "CoreMotion",
         "declKind": "Import",
-        "moduleName": "CrowdConnectedIPS"
+        "moduleName": "CrowdConnectedIPS",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -759,8 +771,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "CrowdConnectedIPS",
         "declAttributes": [
@@ -769,17 +781,20 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
         "declKind": "Import",
         "moduleName": "CrowdConnectedIPS"
       },
       {
         "kind": "Import",
-        "name": "CrowdConnectedShared",
-        "printedName": "CrowdConnectedShared",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "CrowdConnectedIPS"
+        "moduleName": "CrowdConnectedIPS",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -969,63 +984,63 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "FloatLiteral",
-      "offset": 549,
+      "offset": 567,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "FloatLiteral",
-      "offset": 555,
+      "offset": 573,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "IntegerLiteral",
-      "offset": 651,
+      "offset": 669,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "IntegerLiteral",
-      "offset": 729,
+      "offset": 747,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 899,
+      "offset": 917,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 940,
+      "offset": 958,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "IntegerLiteral",
-      "offset": 1137,
+      "offset": 1155,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "StringLiteral",
-      "offset": 1262,
+      "offset": 1280,
       "length": 46,
       "value": "\"CrowdConnectedIPS.AccelerometerUpdates.Queue\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/MotionManagement\/StepsObserver\/StepsObserver.swift",
       "kind": "StringLiteral",
-      "offset": 1506,
+      "offset": 1524,
       "length": 39,
       "value": "\"CrowdConnectedIPS.MotionUpdates.Queue\""
     },
@@ -1333,28 +1348,28 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
       "kind": "StringLiteral",
-      "offset": 884,
+      "offset": 893,
       "length": 37,
       "value": "\"CrowdConnected.IPSPositioner.Access\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1032,
+      "offset": 1041,
       "length": 4,
       "value": "-100"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1683,
+      "offset": 1692,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/Positioner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1738,
+      "offset": 1747,
       "length": 5,
       "value": "false"
     }

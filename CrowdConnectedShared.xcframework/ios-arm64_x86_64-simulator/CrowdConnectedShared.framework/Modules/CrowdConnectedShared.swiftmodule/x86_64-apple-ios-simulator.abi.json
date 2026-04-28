@@ -3547,14 +3547,20 @@
         "name": "os",
         "printedName": "os",
         "declKind": "Import",
-        "moduleName": "CrowdConnectedShared"
+        "moduleName": "CrowdConnectedShared",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "OSLog",
         "printedName": "OSLog",
         "declKind": "Import",
-        "moduleName": "CrowdConnectedShared"
+        "moduleName": "CrowdConnectedShared",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -16945,21 +16951,21 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/ConsoleLogger.swift",
       "kind": "StringLiteral",
-      "offset": 596,
+      "offset": 614,
       "length": 5,
       "value": "\"SDK\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/ConsoleLogger.swift",
       "kind": "StringLiteral",
-      "offset": 3288,
+      "offset": 3306,
       "length": 24,
       "value": "\"com.crowdconnected.SDK\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorShared\/CrowdConnectedShared\/Logging\/ConsoleLogger.swift",
       "kind": "StringLiteral",
-      "offset": 3324,
+      "offset": 3342,
       "length": 12,
       "value": "\"SDKLogging\""
     },
