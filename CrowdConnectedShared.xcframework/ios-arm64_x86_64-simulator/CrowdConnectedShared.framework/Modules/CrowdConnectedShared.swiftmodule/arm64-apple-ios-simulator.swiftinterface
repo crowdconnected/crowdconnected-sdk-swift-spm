@@ -1,18 +1,16 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CrowdConnectedShared
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import CoreLocation
 import CoreMotion
 @_exported import CrowdConnectedShared
 import Foundation
-import OSLog
 import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-import os
 @_hasMissingDesignatedInitializers public class MainLogger {
   public enum LogTag : Swift.String {
     case IPS
@@ -20,7 +18,9 @@ import os
     case BLE
     case API
     case AUT
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -28,13 +28,17 @@ import os
   }
   public static func reset()
   public static func log(level: CrowdConnectedShared.LogLevel, message: @autoclosure () -> Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func log(level: CrowdConnectedShared.LogLevel, tag: CrowdConnectedShared.MainLogger.LogTag? = nil, message: @autoclosure () -> Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func log(level: CrowdConnectedShared.LogLevel, tag: CrowdConnectedShared.MainLogger.LogTag? = nil, error: CrowdConnectedShared.DescriptiveError)
+  #endif
   public static func log(level: CrowdConnectedShared.LogLevel, error: CrowdConnectedShared.DescriptiveError)
   @objc deinit
 }
-extension CoreLocation.CLLocationCoordinate2D : @retroactive Swift.Equatable {
-  public static func == (lhs: CoreLocation.CLLocationCoordinate2D, rhs: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
+extension _LocationEssentials.CLLocationCoordinate2D : @retroactive Swift.Equatable {
+  public static func == (lhs: _LocationEssentials.CLLocationCoordinate2D, rhs: _LocationEssentials.CLLocationCoordinate2D) -> Swift.Bool
 }
 public enum ReactiveNotification : Swift.String {
   case updateSettings
@@ -77,7 +81,9 @@ public enum ReactiveNotification : Swift.String {
   public var name: Foundation.NSNotification.Name {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -88,7 +94,7 @@ public enum ReactiveNotification : Swift.String {
   public static func getSeconds() -> Swift.Double
   @objc deinit
 }
-public protocol LoggerProtocol {
+public protocol LoggerProtocol : AnyObject {
   func log(level: CrowdConnectedShared.LogLevel, message: @autoclosure () -> Swift.String)
 }
 public enum LogLevel : Swift.String, Swift.CaseIterable {
@@ -98,7 +104,9 @@ public enum LogLevel : Swift.String, Swift.CaseIterable {
   case warning
   case error
   case critical
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [CrowdConnectedShared.LogLevel]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [CrowdConnectedShared.LogLevel] {
@@ -161,10 +169,14 @@ extension Foundation.Date {
 }
 @_hasMissingDesignatedInitializers public class ReactiveNotificationsCenter : CrowdConnectedShared.ReactiveNotificationsProtocol {
   public static let shared: CrowdConnectedShared.ReactiveNotificationsCenter
+  #if compiler(>=5.3) && $NonescapableTypes
   public func post(notification: CrowdConnectedShared.ReactiveNotification, dictionary: CrowdConnectedShared.ReactiveNotificationsCenter.NotificationData = nil)
+  #endif
   public func addObserver(_ observer: Swift.AnyObject, for notification: CrowdConnectedShared.ReactiveNotification, selector: ObjectiveC.Selector)
   public func removeObserver(_ observer: Swift.AnyObject, for notification: CrowdConnectedShared.ReactiveNotification)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getState(of notification: CrowdConnectedShared.ReactiveNotification) -> CrowdConnectedShared.ReactiveNotificationsCenter.NotificationData
+  #endif
   @objc deinit
 }
 public enum CrowdConnectedDecodingError : Swift.Error, CrowdConnectedShared.DescribingError {
@@ -192,13 +204,47 @@ public protocol Clock {
 }
 public protocol ReactiveNotificationsProtocol {
   typealias NotificationData = [Swift.String : Swift.AnyHashable]?
+  #if compiler(>=5.3) && $NonescapableTypes
   func post(notification: CrowdConnectedShared.ReactiveNotification, dictionary: Self.NotificationData)
+  #endif
   func addObserver(_ observer: Swift.AnyObject, for notification: CrowdConnectedShared.ReactiveNotification, selector: ObjectiveC.Selector)
   func removeObserver(_ observer: Swift.AnyObject, for notification: CrowdConnectedShared.ReactiveNotification)
+  #if compiler(>=5.3) && $NonescapableTypes
   func getState(of notification: CrowdConnectedShared.ReactiveNotification) -> Self.NotificationData
+  #endif
 }
 extension CrowdConnectedShared.ReactiveNotificationsProtocol {
   public func post(notification: CrowdConnectedShared.ReactiveNotification)
+}
+public protocol GpsSimulationSink : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func injectLocation(lat: Swift.Double, lng: Swift.Double, accuracyMetres: Swift.Float, surfaceId: Swift.String?)
+  #endif
+  func onSimulationStarted()
+  func onSimulationStopped()
+}
+public protocol IpsSimulationSink : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func injectIpsPosition(xMetres: Swift.Double, yMetres: Swift.Double, latitude: Swift.Double, longitude: Swift.Double, surfaceId: Swift.String?)
+  #endif
+  func onSimulationStarted()
+  func onSimulationStopped()
+}
+extension CrowdConnectedShared.IpsSimulationSink {
+  public func onSimulationStarted()
+  public func onSimulationStopped()
+}
+@_hasMissingDesignatedInitializers final public class SimulationSinkRegistry {
+  public static let shared: CrowdConnectedShared.SimulationSinkRegistry
+  final public func register(gpsSink: any CrowdConnectedShared.GpsSimulationSink)
+  final public func register(ipsSink: any CrowdConnectedShared.IpsSimulationSink)
+  final public var gpsSinks: [any CrowdConnectedShared.GpsSimulationSink] {
+    get
+  }
+  final public var ipsSinks: [any CrowdConnectedShared.IpsSimulationSink] {
+    get
+  }
+  @objc deinit
 }
 public enum DataType {
   case positions
@@ -219,7 +265,9 @@ public enum PositionDataType : Swift.String {
   public var exportValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -229,7 +277,9 @@ public enum TrackingMode : Swift.Int {
   case foreground
   case background
   case deactivated
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -237,8 +287,12 @@ public enum TrackingMode : Swift.Int {
 }
 public typealias CCObject = ObjectiveC.NSObject
 public class RepeatingTimer {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(deadline: Dispatch.DispatchTime, repeating: Dispatch.DispatchTimeInterval = .never, leeway: Dispatch.DispatchTimeInterval = .nanoseconds(0), queue: Dispatch.DispatchQueue? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(repeating: Dispatch.DispatchTimeInterval = .never, leeway: Dispatch.DispatchTimeInterval = .nanoseconds(0), queue: Dispatch.DispatchQueue? = nil)
+  #endif
   public var timeInterval: Dispatch.DispatchTimeInterval {
     get
   }
@@ -264,7 +318,9 @@ public enum CrowdConnectedConstants {
 public enum CrowdConnectedWrapperKey : Swift.String {
   case string
   case number
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -277,22 +333,36 @@ public protocol CCCodable : Swift.Decodable, Swift.Encodable {
   static func getStringValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey) throws -> Swift.String where T : Swift.CodingKey
   static func getIntValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey) throws -> Swift.Int where T : Swift.CodingKey
   static func getDoubleValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey) throws -> Swift.Double where T : Swift.CodingKey
+  #if compiler(>=5.3) && $NonescapableTypes
   static func getOptionalIntValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey) -> Swift.Int? where T : Swift.CodingKey
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   static func getOptionalDoubleValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey) -> Swift.Double? where T : Swift.CodingKey
+  #endif
 }
 extension CrowdConnectedShared.CCCodable {
   public static func getStringValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey = .string) throws -> Swift.String where T : Swift.CodingKey
   public static func getIntValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey = .number) throws -> Swift.Int where T : Swift.CodingKey
   public static func getDoubleValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey = .number) throws -> Swift.Double where T : Swift.CodingKey
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getOptionalStringValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey = .string) -> Swift.String? where T : Swift.CodingKey
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getOptionalIntValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey = .number) -> Swift.Int? where T : Swift.CodingKey
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getOptionalDoubleValue<T>(for key: CrowdConnectedShared.StringCodingKey, from container: Swift.KeyedDecodingContainer<T>, wrapperKey: CrowdConnectedShared.CrowdConnectedWrapperKey = .number) -> Swift.Double? where T : Swift.CodingKey
+  #endif
 }
 extension CrowdConnectedShared.CCCodable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(from dictionary: [Swift.String : Swift.AnyHashable])
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var asDictionary: [Swift.String : Swift.AnyHashable]? {
     get
   }
+  #endif
 }
 public struct DataPublishRule : Swift.Codable, Swift.Hashable {
   public init(shouldPublishPositionData: Swift.Bool, shouldPublishRawObservationData: Swift.Bool)
@@ -315,7 +385,9 @@ public enum TaskState : Swift.Equatable {
 }
 final public class TaskTracker<Success> {
   final public var state: CrowdConnectedShared.TaskState
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(priority: _Concurrency.TaskPriority? = nil, operation: @escaping @Sendable () async throws -> Success)
+  #endif
   final public func cancel()
   final public var isCancelled: Swift.Bool {
     get
@@ -327,10 +399,14 @@ public protocol DescribingError {
   var descriptiveError: CrowdConnectedShared.DescriptiveError { get }
 }
 public struct DescriptiveError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String, message: Swift.String? = nil, code: Swift.Int? = nil)
+  #endif
   public init(_ error: any Swift.Error)
   public func isExpiredToken() -> Swift.Bool
 }
@@ -379,10 +455,14 @@ extension CrowdConnectedShared.CrowdConnectedSDKSettings {
   }
   public struct Beacon : CrowdConnectedShared.CCCodable, Swift.Equatable {
     public var rfid: Swift.String?
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(type: Swift.String? = nil, rfid: Swift.String? = nil, surfaceId: Swift.String? = nil, encryptedValue: Swift.String? = nil, encryptedValueLength: Swift.Int? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public var validBeacon: CrowdConnectedShared.CrowdConnectedSDKSettings.ValidBeacon? {
       get
     }
+    #endif
     public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings.Beacon, b: CrowdConnectedShared.CrowdConnectedSDKSettings.Beacon) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws

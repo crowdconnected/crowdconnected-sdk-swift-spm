@@ -1,19 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CrowdConnectedCore
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
-import SystemConfiguration.CaptiveNetwork
-import CommonCrypto
-import CoreBluetooth
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import CoreLocation
 @_exported import CrowdConnectedCore
 import CrowdConnectedShared
 import Foundation
-import SQLite3
 import Swift
-import SystemConfiguration
-import UIKit
-import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -24,9 +17,11 @@ import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CrowdConnected : CrowdConnectedShared.CCObject {
   @objc weak public var delegate: (any CrowdConnectedCore.CrowdConnectedDelegate)?
   @objc public static let shared: CrowdConnectedCore.CrowdConnected
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var deviceID: CrowdConnectedCore.DeviceID? {
     @objc get
   }
+  #endif
   @objc public var isRunning: Swift.Bool {
     @objc get
   }
@@ -34,11 +29,19 @@ import _SwiftConcurrencyShims
   @objc public func start(with configuration: CrowdConnectedCore.Configuration)
   @objc public func stop()
   @objc public func setAlias(key: Swift.String, value: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getLastLocation() -> CrowdConnectedCore.Location?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getCurrentConfiguration() -> CrowdConnectedCore.Configuration?
+  #endif
   @objc deinit
 }
 @objc public class Configuration : ObjectiveC.NSObject {
+  @objc final public let credentials: CrowdConnectedCore.Credentials
+  final public let modules: [CrowdConnectedCore.Module]
+  @objc final public let trackingMode: CrowdConnectedCore.LocationTrackingMode
+  @objc final public let customFields: [Swift.String : Swift.String]
   public init(credentials: CrowdConnectedCore.Credentials, modules: [CrowdConnectedCore.Module], trackingMode: CrowdConnectedCore.LocationTrackingMode, customFields: [Swift.String : Swift.String] = [:])
   @_inheritsConvenienceInitializers @objc public class Builder : ObjectiveC.NSObject {
     @objc override dynamic public init()
@@ -61,7 +64,9 @@ import _SwiftConcurrencyShims
   case geo = 0
   case ips = 1
   case coreBluetooth = 2
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -93,7 +98,9 @@ import _SwiftConcurrencyShims
 @objc public enum LocationTrackingMode : Swift.Int, CrowdConnectedShared.CCCodable {
   case foreground = 0
   case background = 1
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -119,7 +126,9 @@ public typealias DeviceID = Swift.String
   public var description: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -129,6 +138,18 @@ extension CrowdConnectedCore.ErrorCode : Foundation.LocalizedError {
   public static var _nsErrorDomain: Swift.String {
     get
   }
+}
+extension CrowdConnectedCore.CrowdConnected {
+  @objc dynamic public func activateSimulation(token: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func activateSimulation(token: Swift.String, callback: (any CrowdConnectedCore.SimulationCallback)?)
+  #endif
+  @objc dynamic public func deactivateSimulation()
+}
+@objc public protocol SimulationCallback {
+  @objc func onSimulationConnected()
+  @objc func onSimulationError(reason: Swift.String)
+  @objc func onSimulationDisconnected()
 }
 @objc public protocol CrowdConnectedDelegate {
   @objc optional func locationProvider(_ crowdConnected: CrowdConnectedCore.CrowdConnected, didUpdateLocation location: CrowdConnectedCore.Location)
