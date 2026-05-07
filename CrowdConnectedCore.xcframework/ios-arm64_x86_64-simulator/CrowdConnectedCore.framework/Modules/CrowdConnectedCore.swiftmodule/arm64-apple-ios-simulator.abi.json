@@ -6298,36 +6298,43 @@
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 504,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 855,
+      "offset": 955,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 935,
+      "offset": 1035,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 939,
+      "offset": 1039,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1691,
+      "offset": 1791,
       "length": 24,
       "value": "\"CrowdConnected.IAMAuth\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1749,
+      "offset": 1849,
       "length": 5,
       "value": "false"
     },
@@ -8105,28 +8112,28 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 3268,
+      "offset": 3364,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 5887,
+      "offset": 5983,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 6908,
+      "offset": 7004,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/v5\/39d361ed-66e5-5b2d-b3ed-9dbb2fcca6c9\/build\/colocator-v3-ios\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 6928,
+      "offset": 7024,
       "length": 5,
       "value": "false"
     },
