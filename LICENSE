@@ -1,49 +1,87 @@
-Crowd Connected SDK License Agreement
+Crowd Connected
+SDK Licence Agreement
+Version 2.0
+Date: April 2026
+________________
 
-Copyright (c) 2025 Crowd Connected Ltd. All rights reserved.
 
-IMPORTANT - READ CAREFULLY: This License Agreement ("Agreement") is a legal agreement between you (either an individual or a single entity) and Crowd Connected Ltd. ("Crowd Connected") for the use of the Crowd Connected iOS SDK software, including any associated documentation, examples, and related materials (collectively, the "SDK").
+IMPORTANT -- READ CAREFULLY: This SDK Licence Agreement ("Agreement") is a legal agreement between you (either an individual developer or a single entity) ("Developer", "you", or "your") and Crowd Connected Ltd ("CC"), a company registered in England (number 08417106) with offices at Surrey Technology Centre, Guildford, GU2 7YG, for the use of CC's software development kits, including any associated documentation, examples, sample code, and related materials (collectively, the "SDK").
+The SDK is available for multiple platforms including iOS and Android. This Agreement applies to all SDK platforms unless otherwise stated.
+BY DOWNLOADING, INSTALLING, OR USING THE SDK, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT DOWNLOAD, INSTALL, OR USE THE SDK.
+1. Definitions
+"Applicable Law" means all laws, statutes, regulations, directions, guidelines, codes of conduct of any governmental or other regulatory body of competent jurisdiction, any orders of any court or other tribunal of competent jurisdiction which are applicable to your Developer Application or to the performance by you or CC of its obligations under this Agreement.
+“CC APIs” means any application programming interface CC makes available to the Customer as part of the CC Services.
+“CC Console” means the web-based management interface available at https://app.crowdconnected.com or such other successor URL.
+“CC Documentation” means documentation that CC makes available in connection with the CC Services, including CC's online knowledge base, CC Information Security Policy, each as updated from time to time.
+"CC Services" means CC’s entire software platform, including CC Console, CC APIs, and associated services operated by CC.
+“Customer” means any customer of CC.
+"Developer Application" means a mobile application or other software developed by or on behalf of the Developer that incorporates or integrates with the SDK.
+"Diagnostic Data" means non-personal technical data collected by the SDK for the purposes of service quality, calibration, and performance monitoring, such as device sensor readings, signal strength measurements, and battery level information.
+"End User" means any individual who uses a Developer Application that incorporates the SDK.
+"Location Data" means data relating to the physical position of an End User's device, whether derived from GPS, Wi-Fi, Bluetooth, or other positioning technologies.
+2. Grant of licence
+2.1 Subject to the terms of this Agreement, CC grants you a non-exclusive, non-transferable, royalty-free, worldwide licence to:
+(a) use the SDK solely for the purpose of developing Developer Applications that integrate with CC Services;
+(b) distribute the SDK as an embedded component of your Developer Applications, provided such distribution complies with the terms of this Agreement; and
+(c) use CC Documentation provided in connection with the SDK.
 
-BY DOWNLOADING, INSTALLING, OR USING THE SDK, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT DOWNLOAD, INSTALL, OR USE THE SDK.
 
-1. GRANT OF LICENSE
-Subject to the terms and conditions of this Agreement, Crowd Connected grants you a non-exclusive, non-transferable license to:
-   a) Use the SDK solely for the purpose of developing applications that integrate with Crowd Connected services
-   b) Distribute the SDK as part of your applications, provided such distribution complies with the terms herein
+3. Restrictions
+3.1 You may not:
+(a) reverse engineer, decompile, disassemble, or attempt to derive the source code of the SDK, except to the extent expressly permitted by applicable law;
+(b) modify, adapt, or create derivative works based on the SDK;
+(c) remove, alter, or obscure any proprietary notices on the SDK;
+(d) use the SDK for any unlawful purpose or in any manner that violates applicable laws;
+(e) distribute the SDK as a standalone product or independently of a Developer Application;
+(f) use the SDK to collect Location Data or Diagnostic Data without complying with the end-user requirements set out in section 5; or
+(g) use the SDK in a manner that circumvents or is designed to circumvent any usage limits, security features, or access controls in CC Services.
+4. Proprietary rights
+4.1 The SDK and all intellectual property rights therein are and shall remain the exclusive property of CC. This Agreement does not grant you any rights to trademarks, service marks, or trade names of CC.
+4.2 You retain all rights in Developer Applications you create, subject to CC's rights in the SDK components embedded within them.
+4.3 Any feedback, suggestions, or improvements you provide to CC regarding the SDK shall be treated in accordance with the feedback provisions of the applicable commercial agreement between you and CC.
+5. End-user requirements
+5.1 Before activating any SDK functionality that collects Location Data or Diagnostic Data from End Users, you must:
+(a) provide End Users with a clear, prominent, and easily accessible privacy disclosure that explains:
+(i) that the Developer Application uses CC's technology to collect Location Data and/or Diagnostic Data;
+(ii) the types of data collected (in plain language appropriate for a general audience);
+(iii) the purposes for which the data is collected and processed;
+(iv) that Location Data and Diagnostic Data are transmitted to CC's platform for processing on behalf of the Developer; and
+(v) how End Users can exercise their data protection rights;
+(b) obtain each End User's freely given, specific, informed and unambiguous consent before activating any SDK feature that collects Location Data. This consent must meet the requirements of applicable data protection law (including, where applicable, the UK GDPR and EU GDPR);
+(c) provide End Users with a clear and accessible mechanism to withdraw consent and opt out of Location Data collection at any time, and ensure that withdrawal of consent is as easy as giving it; and
+(d) ensure that your privacy policy or notice is available to End Users before they are asked to provide consent.
+5.2 You shall not use Location Data for any purpose other than those disclosed to End Users in accordance with clause 5.1(a).
+5.3 You acknowledge that CC acts as a data processor when processing Location Data and Diagnostic Data collected through the SDK on your behalf. You (or the Customer on whose behalf you develop the Developer Application) are the data controller for this data. The data processing relationship is governed by a data processing addendum agreed between CC and the Customer
+5.4 You shall indemnify CC against any losses, damages, costs, claims or expenses arising from your failure to comply with this section 5, including any failure to obtain required consent from End Users.
+6. Privacy and data compliance
+6.1 Your use of the SDK must comply with all applicable privacy and data protection laws, including (where applicable) the UK GDPR, the EU GDPR, and the Privacy and Electronic Communications Regulations.
+6.2 You are responsible for ensuring that your Developer Application's data collection practices are fully disclosed to End Users and comply with Applicable Law.
+6.3 CC may audit your compliance with the end-user requirements in section 5 upon reasonable notice. You shall cooperate with any such audit and provide CC with reasonable access to relevant documentation and systems.
+7. Support and updates
+7.1 CC may, but is not obligated to, provide support or updates for the SDK. Any support or updates provided shall be subject to this Agreement unless expressly provided for in a separate agreement between CC and you.
+7.2 You acknowledge that CC may release updated versions of the SDK from time to time and that older versions may be deprecated. CC will use reasonable efforts to provide advance notice of deprecation.
+7.3 CC recommends that you keep the SDK updated to the latest version to benefit from performance improvements, security patches, and compatibility updates.
+8. Warranty disclaimer
+8.1 THE SDK IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. CC DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+8.2 CC does not warrant that the SDK will be error-free, uninterrupted, or compatible with all Developer Applications or platforms.
+9. Limitation of liability
+9.1 Nothing in this Agreement shall limit or exclude either party's liability for death or personal injury caused by negligence, fraud or fraudulent misrepresentation, or any liability that cannot be limited or excluded by applicable law.
+9.2 Subject to clause 9.1, in no event shall CC be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or use, arising out of or relating to this Agreement or the use of the SDK.
+9.3 Subject to clause 9.1, CC's total aggregate liability arising out of or in connection with this Agreement shall not exceed one hundred pounds sterling (GBP 100).
+10. Termination
+10.1 This Agreement is effective from the date you first download, install, or use the SDK and continues until terminated.
+10.2 CC may terminate this Agreement immediately if you materially breach any term of this Agreement.
+10.3 This Agreement terminates automatically if the commercial agreement between you (or your customer to whom you provide your Developer Application) and CC terminates or expires.
+10.4 Upon termination, you must cease all use of the SDK and destroy all copies in your possession. You must also remove the SDK from any Developer Applications that have not yet been distributed.
+10.5 Sections 3 (Restrictions), 4 (Proprietary Rights), 5.2 (use of Location Data), 8 (Warranty Disclaimer), 9 (Limitation of Liability), and 12 (Governing Law) shall survive termination of this Agreement.
+11. Export compliance
+11.1 You shall comply with all applicable export control laws and regulations in connection with your use and distribution of the SDK.
+12. General provisions
+12.1 Entire agreement. This Agreement, together with the applicable commercial agreement between the Developer (or the Customer) and CC, constitutes the entire agreement between the parties relating to the SDK and supersedes all prior agreements on the subject.
+12.2 Assignment. You may not assign this Agreement without CC's prior written consent. CC may assign this Agreement in connection with a merger, acquisition, or sale of all or substantially all of its assets.
+12.3 Severability. If any provision of this Agreement is held to be unenforceable, that provision shall be limited to the minimum extent necessary so that this Agreement otherwise remains in effect.
+12.4 Waiver. No waiver by either party of any breach shall be considered a waiver of any subsequent breach of the same or any other provision.
+12.5 Governing law. This Agreement shall be governed by and construed in accordance with the laws of England and Wales. The parties shall submit to the exclusive jurisdiction of the English courts.
 
-2. RESTRICTIONS
-You may not:
-   a) Reverse engineer, decompile, disassemble, or attempt to derive the source code of the SDK
-   b) Modify, adapt, or create derivative works based on the SDK
-   c) Remove, alter, or obscure any proprietary notices on the SDK
-   d) Use the SDK for any unlawful purpose or in any manner that violates applicable laws
-   e) Distribute the SDK as a standalone product
 
-3. PROPRIETARY RIGHTS
-The SDK and all intellectual property rights therein are and shall remain the exclusive property of Crowd Connected. This Agreement does not grant you any rights to trademarks, service marks, or trade names of Crowd Connected.
-
-4. PRIVACY AND DATA
-Your use of the SDK must comply with all applicable privacy laws and Crowd Connected's Privacy Policy. You are responsible for obtaining all necessary consents from end users.
-
-5. SUPPORT AND UPDATES
-Crowd Connected may, but is not obligated to, provide support or updates for the SDK. Any updates provided shall be subject to this Agreement unless accompanied by a separate license agreement.
-
-6. WARRANTY DISCLAIMER
-THE SDK IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. CROWD CONNECTED DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
-
-7. LIMITATION OF LIABILITY
-IN NO EVENT SHALL CROWD CONNECTED BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, OR USE, ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE USE OF THE SDK.
-
-8. TERMINATION
-This Agreement is effective until terminated. Crowd Connected may terminate this Agreement immediately if you breach any term hereof. Upon termination, you must cease all use of the SDK and destroy all copies in your possession.
-
-9. GOVERNING LAW
-This Agreement shall be governed by and construed in accordance with the laws of England and Wales, without regard to conflict of law principles.
-
-10. ENTIRE AGREEMENT
-This Agreement constitutes the entire agreement between the parties and supersedes all prior agreements relating to the subject matter hereof.
-
-For questions about this license, please contact: legal@crowdconnected.com
-
-Crowd Connected Ltd.
-Registered in England and Wales
+For questions about this licence, please contact: legal@crowdconnected.com
