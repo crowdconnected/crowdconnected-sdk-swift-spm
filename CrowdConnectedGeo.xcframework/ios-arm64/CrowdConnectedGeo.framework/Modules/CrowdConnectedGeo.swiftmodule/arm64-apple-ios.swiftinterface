@@ -14,3 +14,10 @@ import _SwiftConcurrencyShims
   @objc public static func activate()
   @objc deinit
 }
+extension CrowdConnectedGeo.CrowdConnectedGeo : CrowdConnectedShared.GpsSimulationSink {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func injectLocation(lat: Swift.Double, lng: Swift.Double, accuracyMetres: Swift.Float, surfaceId: Swift.String?)
+  #endif
+  public func onSimulationStarted()
+  public func onSimulationStopped()
+}

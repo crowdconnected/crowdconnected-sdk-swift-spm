@@ -4,7 +4,7 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import CoreLocation
 @_exported import CrowdConnectedCore
-import CrowdConnectedShared
+@_spi(CoreSDK) import CrowdConnectedShared
 import Foundation
 import Swift
 import _Concurrency
@@ -138,6 +138,18 @@ extension CrowdConnectedCore.ErrorCode : Foundation.LocalizedError {
   public static var _nsErrorDomain: Swift.String {
     get
   }
+}
+extension CrowdConnectedCore.CrowdConnected {
+  @objc dynamic public func activateSimulation(token: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func activateSimulation(token: Swift.String, callback: (any CrowdConnectedCore.SimulationCallback)?)
+  #endif
+  @objc dynamic public func deactivateSimulation()
+}
+@objc public protocol SimulationCallback {
+  @objc func onSimulationConnected()
+  @objc func onSimulationError(reason: Swift.String)
+  @objc func onSimulationDisconnected()
 }
 @objc public protocol CrowdConnectedDelegate {
   @objc optional func locationProvider(_ crowdConnected: CrowdConnectedCore.CrowdConnected, didUpdateLocation location: CrowdConnectedCore.Location)

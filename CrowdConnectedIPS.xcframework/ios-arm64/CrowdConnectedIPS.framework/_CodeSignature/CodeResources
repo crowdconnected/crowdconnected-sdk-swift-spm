@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		JuZd91BqHVlhi29GO+LdqxiOLFU=
+		QvGzvGC5SKqMu38/P9XLdeSKbkg=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Ba54b8aaKuAuCJC29NhqzC+xbf4=
+		Oor1CrjW2fF5EqiINB3cEyl/53k=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		sFlGvxblLqhvIIPraN89HT+jS/w=
+		izSbchEnpiWUvF88NUFL65dPMLY=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Ba54b8aaKuAuCJC29NhqzC+xbf4=
+		Oor1CrjW2fF5EqiINB3cEyl/53k=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		/1cBF4D9DFXw4tH8zp26MIciHew=
+		jvkbCPF+O6zZwvgzZQjQ8iUW84g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,35 +65,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KqAcQTZcnYiCcSN5vX7wmdO8J9PpZA3hqGT97IMMrmw=
+			+0RRJkAylPXub9cLl4orX2AQBuwBcFlBwBOe38nDcrU=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			45G2HkCX7DUljMwIHhRFxx1BwX49wa1rI1tRWGZ0waE=
+			lloc6fkxgIItzHACutUvMYfdPX+nQUUj6TH5FS6ZvUc=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XG0QRMyMYHt/mu6d6o2ivudk9ibWg/YOpTRGMf5DJSU=
+			ebdZHpLe7dLbmtvh+biqymHICSZmvC7v2M/NfAIjsc4=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			45G2HkCX7DUljMwIHhRFxx1BwX49wa1rI1tRWGZ0waE=
+			lloc6fkxgIItzHACutUvMYfdPX+nQUUj6TH5FS6ZvUc=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rLVruELTfujONcAxhYlHE9CgdoUd5pJyDgIR6113Nc8=
+			FMHGCP64Nm4TjcZwEhbdBxnCT7huEyZabMXGYCfcw7g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

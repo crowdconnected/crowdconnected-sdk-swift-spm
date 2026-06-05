@@ -17,3 +17,10 @@ import _SwiftConcurrencyShims
   }
   @objc deinit
 }
+extension CrowdConnectedIPS.CrowdConnectedIPS : CrowdConnectedShared.IpsSimulationSink {
+  public func onSimulationStarted()
+  public func onSimulationStopped()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func injectIpsPosition(xMetres: Swift.Double, yMetres: Swift.Double, latitude: Swift.Double, longitude: Swift.Double, surfaceId: Swift.String?)
+  #endif
+}

@@ -94,7 +94,7 @@ public enum ReactiveNotification : Swift.String {
   public static func getSeconds() -> Swift.Double
   @objc deinit
 }
-public protocol LoggerProtocol {
+public protocol LoggerProtocol : AnyObject {
   func log(level: CrowdConnectedShared.LogLevel, message: @autoclosure () -> Swift.String)
 }
 public enum LogLevel : Swift.String, Swift.CaseIterable {
@@ -215,6 +215,36 @@ public protocol ReactiveNotificationsProtocol {
 }
 extension CrowdConnectedShared.ReactiveNotificationsProtocol {
   public func post(notification: CrowdConnectedShared.ReactiveNotification)
+}
+public protocol GpsSimulationSink : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func injectLocation(lat: Swift.Double, lng: Swift.Double, accuracyMetres: Swift.Float, surfaceId: Swift.String?)
+  #endif
+  func onSimulationStarted()
+  func onSimulationStopped()
+}
+public protocol IpsSimulationSink : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func injectIpsPosition(xMetres: Swift.Double, yMetres: Swift.Double, latitude: Swift.Double, longitude: Swift.Double, surfaceId: Swift.String?)
+  #endif
+  func onSimulationStarted()
+  func onSimulationStopped()
+}
+extension CrowdConnectedShared.IpsSimulationSink {
+  public func onSimulationStarted()
+  public func onSimulationStopped()
+}
+@_hasMissingDesignatedInitializers final public class SimulationSinkRegistry {
+  public static let shared: CrowdConnectedShared.SimulationSinkRegistry
+  final public func register(gpsSink: any CrowdConnectedShared.GpsSimulationSink)
+  final public func register(ipsSink: any CrowdConnectedShared.IpsSimulationSink)
+  final public var gpsSinks: [any CrowdConnectedShared.GpsSimulationSink] {
+    get
+  }
+  final public var ipsSinks: [any CrowdConnectedShared.IpsSimulationSink] {
+    get
+  }
+  @objc deinit
 }
 public enum DataType {
   case positions

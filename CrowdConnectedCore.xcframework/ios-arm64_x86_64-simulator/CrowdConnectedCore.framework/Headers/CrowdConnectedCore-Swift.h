@@ -631,6 +631,35 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CrowdConnect
 - (Configuration * _Nullable)getCurrentConfiguration SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@protocol SimulationCallback;
+@interface CrowdConnected (SWIFT_EXTENSION(CrowdConnectedCore))
+/// Activates a simulation session using the provided JWT token.
+/// The SDK must already be started before calling this method.
+/// A second call replaces any existing session (the previous one is deactivated first).
+/// since:
+/// 3.1.0
+/// \param token A signed JWT containing the <code>sid</code> (session ID) and <code>exp</code> claims.
+///
+- (void)activateSimulationWithToken:(NSString * _Nonnull)token;
+/// Activates a simulation session with an optional callback for session events.
+/// The SDK must already be started before calling this method.
+/// A second call replaces any existing session (the previous one is deactivated first).
+/// All callbacks fire on a background thread — marshal to the main thread if you need to update UI.
+/// since:
+/// 3.1.0
+/// \param token A signed JWT containing the <code>sid</code> (session ID) and <code>exp</code> claims.
+///
+/// \param callback An optional object that receives connection, error, and disconnection events.
+///
+- (void)activateSimulationWithToken:(NSString * _Nonnull)token callback:(id <SimulationCallback> _Nullable)callback;
+/// Stops any active simulation session.
+/// Safe to call at any time, including when no session is active.
+/// <code>onSimulationDisconnected</code> is <em>not</em> called when you stop the session explicitly.
+/// since:
+/// 3.1.0
+- (void)deactivateSimulation;
+@end
+
 enum ErrorCode : NSInteger;
 /// A delegate protocol for receiving callbacks from the CrowdConnected SDK.
 /// Implement this protocol to receive location updates, success notifications, and error callbacks from the SDK.
@@ -752,6 +781,25 @@ typedef SWIFT_ENUM(NSInteger, Module, open) {
 /// Core Bluetooth module for BLE interactions.
   ModuleCoreBluetooth = 2,
 };
+
+/// Receives lifecycle events from an active simulation session.
+/// All methods are called on a background thread.
+/// Marshal to the main thread if you need to update UI.
+/// since:
+/// 3.1.0
+SWIFT_PROTOCOL("_TtP18CrowdConnectedCore18SimulationCallback_")
+@protocol SimulationCallback
+/// The AppSync subscription is live and simulation events will begin flowing.
+- (void)onSimulationConnected;
+/// A connection or subscription problem occurred (network error, expired token, invalid session, etc.).
+/// \param reason A human-readable description of the failure.
+///
+- (void)onSimulationErrorWithReason:(NSString * _Nonnull)reason;
+/// The session ended — either the server sent <code>SESSION_ENDED</code>, the subscription completed,
+/// or the WebSocket closed unexpectedly.
+/// Not called when you explicitly call <code>deactivateSimulation()</code>.
+- (void)onSimulationDisconnected;
+@end
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -1394,6 +1442,35 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CrowdConnect
 - (Configuration * _Nullable)getCurrentConfiguration SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@protocol SimulationCallback;
+@interface CrowdConnected (SWIFT_EXTENSION(CrowdConnectedCore))
+/// Activates a simulation session using the provided JWT token.
+/// The SDK must already be started before calling this method.
+/// A second call replaces any existing session (the previous one is deactivated first).
+/// since:
+/// 3.1.0
+/// \param token A signed JWT containing the <code>sid</code> (session ID) and <code>exp</code> claims.
+///
+- (void)activateSimulationWithToken:(NSString * _Nonnull)token;
+/// Activates a simulation session with an optional callback for session events.
+/// The SDK must already be started before calling this method.
+/// A second call replaces any existing session (the previous one is deactivated first).
+/// All callbacks fire on a background thread — marshal to the main thread if you need to update UI.
+/// since:
+/// 3.1.0
+/// \param token A signed JWT containing the <code>sid</code> (session ID) and <code>exp</code> claims.
+///
+/// \param callback An optional object that receives connection, error, and disconnection events.
+///
+- (void)activateSimulationWithToken:(NSString * _Nonnull)token callback:(id <SimulationCallback> _Nullable)callback;
+/// Stops any active simulation session.
+/// Safe to call at any time, including when no session is active.
+/// <code>onSimulationDisconnected</code> is <em>not</em> called when you stop the session explicitly.
+/// since:
+/// 3.1.0
+- (void)deactivateSimulation;
+@end
+
 enum ErrorCode : NSInteger;
 /// A delegate protocol for receiving callbacks from the CrowdConnected SDK.
 /// Implement this protocol to receive location updates, success notifications, and error callbacks from the SDK.
@@ -1515,6 +1592,25 @@ typedef SWIFT_ENUM(NSInteger, Module, open) {
 /// Core Bluetooth module for BLE interactions.
   ModuleCoreBluetooth = 2,
 };
+
+/// Receives lifecycle events from an active simulation session.
+/// All methods are called on a background thread.
+/// Marshal to the main thread if you need to update UI.
+/// since:
+/// 3.1.0
+SWIFT_PROTOCOL("_TtP18CrowdConnectedCore18SimulationCallback_")
+@protocol SimulationCallback
+/// The AppSync subscription is live and simulation events will begin flowing.
+- (void)onSimulationConnected;
+/// A connection or subscription problem occurred (network error, expired token, invalid session, etc.).
+/// \param reason A human-readable description of the failure.
+///
+- (void)onSimulationErrorWithReason:(NSString * _Nonnull)reason;
+/// The session ended — either the server sent <code>SESSION_ENDED</code>, the subscription completed,
+/// or the WebSocket closed unexpectedly.
+/// Not called when you explicitly call <code>deactivateSimulation()</code>.
+- (void)onSimulationDisconnected;
+@end
 
 #endif
 #if __has_attribute(external_source_symbol)
