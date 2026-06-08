@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		B5RGUXreyHmY0kvZQlb4OGXOuVU=
+		g0MT/uQnoCRXHssJ9WzpvDqLHxY=
 		</data>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LpKnNjpGgD7SmoCz+O6rxXyrE1E=
+		HKofRpiyiCga8rOt8jybr+uUr4M=
 		</data>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		B5RGUXreyHmY0kvZQlb4OGXOuVU=
+		g0MT/uQnoCRXHssJ9WzpvDqLHxY=
 		</data>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9w8iOCOlPRpoehxmWRanEBaiZYo=
+		+a/+8/QnWx8nsrhFOB66g0maeS8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ESrwT6a/1dCfJYIdVsI0mL3+vZO2afiWGsPZEXpew5c=
+			RLNgHqDeS5ExCGx0my8/Vt5PTPjXMDHX4l7hVEOs1AM=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -113,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xnfxS7bLVQ33ZUXAoS75lZYV98YUgQ2A7QDwCU1Tgw0=
+			5z5wmcy9/81Z1Wn+jHNKrSucyd9T6QEaAOpIQfX5otE=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ESrwT6a/1dCfJYIdVsI0mL3+vZO2afiWGsPZEXpew5c=
+			RLNgHqDeS5ExCGx0my8/Vt5PTPjXMDHX4l7hVEOs1AM=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VeZeZagEXACKO8W99Ee9aeWdypakQ8v/ktkx46KRvY4=
+			LBQ8WQmgt97d0FM1pw6T0Z4AMW2FYzZHOzpNG1J3SfA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
