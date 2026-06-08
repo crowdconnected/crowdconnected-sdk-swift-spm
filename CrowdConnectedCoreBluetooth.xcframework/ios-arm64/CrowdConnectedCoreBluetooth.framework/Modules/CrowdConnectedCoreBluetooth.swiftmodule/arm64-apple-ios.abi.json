@@ -223,70 +223,70 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
       "kind": "StringLiteral",
       "offset": 425,
       "length": 39,
       "value": "\"CrowdConnected.Eddystone.ScannerQueue\""
     },
     {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
       "kind": "StringLiteral",
       "offset": 511,
       "length": 6,
       "value": "\"FEAA\""
     },
     {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
       "kind": "BooleanLiteral",
       "offset": 785,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
       "kind": "BooleanLiteral",
       "offset": 827,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
       "kind": "BooleanLiteral",
       "offset": 885,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Scanner\/BeaconScanner.swift",
       "kind": "Array",
       "offset": 931,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 339,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 392,
       "length": 4,
       "value": "0x10"
     },
     {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 445,
       "length": 4,
       "value": "0x20"
     },
     {
-      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/colocator-v3-ios\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
+      "filePath": "\/Users\/kin\/runner-v5\/atlassian-bitbucket-pipelines-runner\/temp\/runnerv5\/887bdee6-c2e0-593d-8376-d4d462d42d0b\/build\/CrowdConnectedCoreBluetooth\/CrowdConnectedCoreBluetooth\/Models\/EddystoneBeaconInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 498,
       "length": 4,
