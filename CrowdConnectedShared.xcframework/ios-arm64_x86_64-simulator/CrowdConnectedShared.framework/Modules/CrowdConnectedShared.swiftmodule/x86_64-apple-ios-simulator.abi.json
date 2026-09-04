@@ -17698,21 +17698,21 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Utils\/RepeatingTimer.swift",
       "kind": "IntegerLiteral",
-      "offset": 738,
+      "offset": 1029,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Utils\/RepeatingTimer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1356,
+      "offset": 1770,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Utils\/RepeatingTimer.swift",
       "kind": "StringLiteral",
-      "offset": 2279,
+      "offset": 3078,
       "length": 30,
       "value": "\"cc.repeatingTimer.stateQueue\""
     },
