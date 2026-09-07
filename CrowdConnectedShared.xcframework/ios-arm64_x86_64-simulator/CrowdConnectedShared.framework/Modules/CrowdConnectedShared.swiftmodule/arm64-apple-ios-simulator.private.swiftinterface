@@ -75,6 +75,7 @@ public enum ReactiveNotification : Swift.String {
   case didEnterRegion
   case didExitRegion
   case updateTrackingMode
+  case updateSnapPaths
   case uploadAllRecords
   case uploadPositionRecords
   case uploadRawObservationRecords
@@ -426,6 +427,8 @@ public struct CrowdConnectedSDKSettings : CrowdConnectedShared.CCCodable, Swift.
   public var beacons: [CrowdConnectedShared.CrowdConnectedSDKSettings.Beacon]?
   public var minBeaconCount: Swift.Int?
   public var minObsCount: Swift.Int?
+  public var pathSegments: [CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment]?
+  public var maxSnapDistance: Swift.Double?
   public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings, b: CrowdConnectedShared.CrowdConnectedSDKSettings) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -506,6 +509,26 @@ extension CrowdConnectedShared.CrowdConnectedSDKSettings {
     public var floor: Swift.Int?
     public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings.Surface, b: CrowdConnectedShared.CrowdConnectedSDKSettings.Surface) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension CrowdConnectedShared.CrowdConnectedSDKSettings {
+  public struct PathSegment : Swift.Codable, Swift.Equatable, Swift.Hashable {
+    public var surfaceId: Swift.String
+    public var floor: Swift.Int?
+    public var x1: Swift.Double
+    public var y1: Swift.Double
+    public var x2: Swift.Double
+    public var y2: Swift.Double
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(surfaceId: Swift.String, floor: Swift.Int? = nil, x1: Swift.Double, y1: Swift.Double, x2: Swift.Double, y2: Swift.Double)
+    #endif
+    public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment, b: CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
     public init(from decoder: any Swift.Decoder) throws
   }
 }

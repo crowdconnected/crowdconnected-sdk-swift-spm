@@ -1443,7 +1443,7 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorIPS\/CrowdConnectedIPS\/Interface\/CrowdConnectedIPS.swift",
       "kind": "StringLiteral",
-      "offset": 1400,
+      "offset": 1452,
       "length": 7,
       "value": "\"0.0.0\""
     },

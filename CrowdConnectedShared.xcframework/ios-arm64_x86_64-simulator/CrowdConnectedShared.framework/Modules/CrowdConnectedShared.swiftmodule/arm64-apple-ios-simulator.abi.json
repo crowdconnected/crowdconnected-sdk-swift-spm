@@ -1884,6 +1884,43 @@
           },
           {
             "kind": "Var",
+            "name": "updateSnapPaths",
+            "printedName": "updateSnapPaths",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrowdConnectedShared.ReactiveNotification.Type) -> CrowdConnectedShared.ReactiveNotification",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReactiveNotification",
+                    "printedName": "CrowdConnectedShared.ReactiveNotification",
+                    "usr": "s:20CrowdConnectedShared20ReactiveNotificationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrowdConnectedShared.ReactiveNotification.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReactiveNotification",
+                        "printedName": "CrowdConnectedShared.ReactiveNotification",
+                        "usr": "s:20CrowdConnectedShared20ReactiveNotificationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20CrowdConnectedShared20ReactiveNotificationO15updateSnapPathsyA2CmF",
+            "mangledName": "$s20CrowdConnectedShared20ReactiveNotificationO15updateSnapPathsyA2CmF",
+            "moduleName": "CrowdConnectedShared"
+          },
+          {
+            "kind": "Var",
             "name": "uploadAllRecords",
             "printedName": "uploadAllRecords",
             "children": [
@@ -10658,6 +10695,250 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "pathSegments",
+            "printedName": "pathSegments",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PathSegment",
+                        "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment",
+                        "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV12pathSegmentsSayAC11PathSegmentVGSgvp",
+            "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV12pathSegmentsSayAC11PathSegmentVGSgvp",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PathSegment",
+                            "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment",
+                            "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV12pathSegmentsSayAC11PathSegmentVGSgvg",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV12pathSegmentsSayAC11PathSegmentVGSgvg",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PathSegment",
+                            "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment",
+                            "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV12pathSegmentsSayAC11PathSegmentVGSgvs",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV12pathSegmentsSayAC11PathSegmentVGSgvs",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV12pathSegmentsSayAC11PathSegmentVGSgvM",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV12pathSegmentsSayAC11PathSegmentVGSgvM",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxSnapDistance",
+            "printedName": "maxSnapDistance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV15maxSnapDistanceSdSgvp",
+            "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV15maxSnapDistanceSdSgvp",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV15maxSnapDistanceSdSgvg",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV15maxSnapDistanceSdSgvg",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV15maxSnapDistanceSdSgvs",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV15maxSnapDistanceSdSgvs",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV15maxSnapDistanceSdSgvM",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV15maxSnapDistanceSdSgvM",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -14216,6 +14497,813 @@
                 "mangledName": "$sSE"
               }
             ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "PathSegment",
+            "printedName": "PathSegment",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "surfaceId",
+                "printedName": "surfaceId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9surfaceIdSSvp",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9surfaceIdSSvp",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9surfaceIdSSvg",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9surfaceIdSSvg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9surfaceIdSSvs",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9surfaceIdSSvs",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9surfaceIdSSvM",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9surfaceIdSSvM",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "floor",
+                "printedName": "floor",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV5floorSiSgvp",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV5floorSiSgvp",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV5floorSiSgvg",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV5floorSiSgvg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV5floorSiSgvs",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV5floorSiSgvs",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV5floorSiSgvM",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV5floorSiSgvM",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "x1",
+                "printedName": "x1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x1Sdvp",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x1Sdvp",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x1Sdvg",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x1Sdvg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x1Sdvs",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x1Sdvs",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x1SdvM",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x1SdvM",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "y1",
+                "printedName": "y1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y1Sdvp",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y1Sdvp",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y1Sdvg",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y1Sdvg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y1Sdvs",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y1Sdvs",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y1SdvM",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y1SdvM",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "x2",
+                "printedName": "x2",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x2Sdvp",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x2Sdvp",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x2Sdvg",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x2Sdvg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x2Sdvs",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x2Sdvs",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x2SdvM",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2x2SdvM",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "y2",
+                "printedName": "y2",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y2Sdvp",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y2Sdvp",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y2Sdvg",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y2Sdvg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y2Sdvs",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y2Sdvs",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y2SdvM",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2y2SdvM",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(surfaceId:floor:x1:y1:x2:y2:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PathSegment",
+                    "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9surfaceId5floor2x12y12x22y2AESS_SiSgS4dtcfc",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9surfaceId5floor2x12y12x22y2AESS_SiSgS4dtcfc",
+                "moduleName": "CrowdConnectedShared",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PathSegment",
+                    "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV6encode2toys7Encoder_p_tKF",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PathSegment",
+                    "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PathSegment",
+                    "printedName": "CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV2eeoiySbAE_AEtFZ",
+                "moduleName": "CrowdConnectedShared",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9hashValueSivp",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9hashValueSivp",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9hashValueSivg",
+                    "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV9hashValueSivg",
+                    "moduleName": "CrowdConnectedShared",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV4hash4intoys6HasherVz_tF",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV4hash4intoys6HasherVz_tF",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV",
+            "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV11PathSegmentV",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -17432,35 +18520,42 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3111,
+      "offset": 3112,
+      "length": 31,
+      "value": "\"CrowdConnectedUpdateSnapPaths\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 3194,
       "length": 32,
       "value": "\"CrowdConnectedUploadAllRecords\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3193,
+      "offset": 3276,
       "length": 37,
       "value": "\"CrowdConnectedUploadPositionRecords\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3280,
+      "offset": 3363,
       "length": 43,
       "value": "\"CrowdConnectedUploadRawObservationRecords\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3374,
+      "offset": 3457,
       "length": 34,
       "value": "\"CrowdConnectedInvalidAccessToken\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/ReactiveCommunication\/ReactiveNotification.swift",
       "kind": "StringLiteral",
-      "offset": 3463,
+      "offset": 3546,
       "length": 40,
       "value": "\"CrowdConnectedApplicationWillTerminate\""
     },
@@ -17698,21 +18793,21 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Utils\/RepeatingTimer.swift",
       "kind": "IntegerLiteral",
-      "offset": 738,
+      "offset": 1029,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Utils\/RepeatingTimer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1356,
+      "offset": 1770,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Utils\/RepeatingTimer.swift",
       "kind": "StringLiteral",
-      "offset": 2279,
+      "offset": 3078,
       "length": 30,
       "value": "\"cc.repeatingTimer.stateQueue\""
     },
@@ -17740,70 +18835,70 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1363,
+      "offset": 1447,
       "length": 9,
       "value": "\"IBEACON\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1398,
+      "offset": 1482,
       "length": 11,
       "value": "\"EDDYSTONE\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 2608,
+      "offset": 2692,
       "length": 6,
       "value": "\"RFID\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3131,
+      "offset": 3215,
       "length": 13,
       "value": "\"frequency_2\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3169,
+      "offset": 3253,
       "length": 13,
       "value": "\"frequency_1\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3501,
+      "offset": 3585,
       "length": 8,
       "value": "\"zoneID\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3583,
+      "offset": 3667,
       "length": 10,
       "value": "\"radius_1\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3623,
+      "offset": 3707,
       "length": 10,
       "value": "\"radius_2\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 4376,
+      "offset": 4460,
       "length": 7,
       "value": "\"max_x\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 4408,
+      "offset": 4492,
       "length": 7,
       "value": "\"min_y\""
     }

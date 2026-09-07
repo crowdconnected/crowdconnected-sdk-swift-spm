@@ -18,43 +18,43 @@
 		</data>
 		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZwVbfW+O6O+0B+DH2UwxgC+j3s0=
+		ZXIH4P2C1RS5oTUXmZfbxkyHvNY=
 		</data>
 		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		2vIX4a5yNqlBNqfmSB2MErLjor8=
+		dtcx5PaGoD8TzKkd9f3LJ/vxJZQ=
 		</data>
 		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		VpHecnPJWdv2OS9oMTRGlbzh2II=
+		h5OPOaJg7cEZZ0s3g8NbFrBFqj0=
 		</data>
 		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pPspbA8Onp5rhdM2gseNDXSozEg=
+		RZ68y2CboMiWfIwEBSsf1wpvgrU=
 		</data>
 		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YgheKVRUDqv9FLbjBGVpatpx2/w=
+		bpoz3Ose4VTBiGF9bQz1dvmXhyQ=
 		</data>
 		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZwVbfW+O6O+0B+DH2UwxgC+j3s0=
+		ZXIH4P2C1RS5oTUXmZfbxkyHvNY=
 		</data>
 		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		IfLPayhiHgBjrjgtoQE5tj4n0ec=
+		pz/JCEzJEtfqB4MQ/USZnIBa954=
 		</data>
 		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		EbV7ljdIOz4e8LL7k5lU8lXNuVE=
+		PoSDCh9IO+6qqK0+Ebyjsqz/L30=
 		</data>
 		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aHww4OCYx5ETgZa1TLwCy+5voBg=
+		K9rAerSNLevtKXT9OxGfULFRFu4=
 		</data>
 		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aQmyrLE1RB8GpB7ZY/6Vv9V6Ctg=
+		bMTiIU5f7fdoWHVY0pijRwwGHaI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,70 +85,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SNZBffMOr3GxzVGRZe8DuG3eWAZKq/VuL5mXIQn2wm8=
+			LOethcybd4oVoUfNeCgvsC0KLF6RRTvz+eb9qCK1Lho=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2cTal7jExi1WIBwp3ljGnPSfbFI/ZhTz30saU+8Rs2o=
+			yEGXyXOTAEJB2lu3i1hL768jPkuOuQ4rPfPZdO347P8=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IBb5dcKR3v5ijt3kdy6GBixlubN97lb8QzX36z96ihQ=
+			fECxYHwDoir/2zS4rI8HdO3lLzWwO76cmCn5qd0tj+I=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3gzEup1lKbHDv2MQTaiA4EH43m4qLNzw6XShREAeaNs=
+			jX6CO6unzqGn4E8nC+QZb2PK3/hc+bAZFolOULof3M4=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rs1exHGu17QD+5e/NmXaQq6dBwx6FQlYWhR2DGluZX0=
+			nVzGNAGVspz43i/2cSP8cNxAt9t5UKqHdODVdVG1WyY=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SNZBffMOr3GxzVGRZe8DuG3eWAZKq/VuL5mXIQn2wm8=
+			LOethcybd4oVoUfNeCgvsC0KLF6RRTvz+eb9qCK1Lho=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P2AERyX3vJwnbGCPy7DoEFfwr+jVwr/AY0uEFsG0RkQ=
+			Pul9l6lczj6qBuQ4XNI19ja+R6MsnK/9QYGd4ZGfqXI=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			87x+SwGnShAyhT4vW6vYZt/Z72BBhXhW+HPSGATA8RQ=
+			4gWHJ/yXvLVu7tUpJVtUML05CjDTk986lXc6o05qcis=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GhnntxtbQbnxupRL6i3D8UU0mdQTIMAgCicePG2/QRw=
+			8beCXJvT5Iw9KQV4kQap9P7eaQGAC4QzIR+Jbly3dxg=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VrnD3wHcFO3/3FE/kMXlA8Cl1i0eqG6E6C89tJiQxcY=
+			cj0mAOvs7LKiE4r6USWcwMZ9E5/BpIRPetDHypfTJug=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
