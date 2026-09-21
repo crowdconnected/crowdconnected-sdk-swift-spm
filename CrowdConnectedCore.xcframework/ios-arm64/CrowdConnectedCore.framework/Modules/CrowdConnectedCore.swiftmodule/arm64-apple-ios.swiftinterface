@@ -10,6 +10,18 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension CrowdConnectedCore.CrowdConnected {
+  @objc dynamic public func activateSimulation(token: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func activateSimulation(token: Swift.String, callback: (any CrowdConnectedCore.SimulationCallback)?)
+  #endif
+  @objc dynamic public func deactivateSimulation()
+}
+@objc public protocol SimulationCallback {
+  @objc func onSimulationConnected()
+  @objc func onSimulationError(reason: Swift.String)
+  @objc func onSimulationDisconnected()
+}
 @objc public class Credentials : ObjectiveC.NSObject {
   @objc public init(appKey: Swift.String, clientId: Swift.String, clientSecret: Swift.String)
   @objc deinit
@@ -138,18 +150,6 @@ extension CrowdConnectedCore.ErrorCode : Foundation.LocalizedError {
   public static var _nsErrorDomain: Swift.String {
     get
   }
-}
-extension CrowdConnectedCore.CrowdConnected {
-  @objc dynamic public func activateSimulation(token: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func activateSimulation(token: Swift.String, callback: (any CrowdConnectedCore.SimulationCallback)?)
-  #endif
-  @objc dynamic public func deactivateSimulation()
-}
-@objc public protocol SimulationCallback {
-  @objc func onSimulationConnected()
-  @objc func onSimulationError(reason: Swift.String)
-  @objc func onSimulationDisconnected()
 }
 @objc public protocol CrowdConnectedDelegate {
   @objc optional func locationProvider(_ crowdConnected: CrowdConnectedCore.CrowdConnected, didUpdateLocation location: CrowdConnectedCore.Location)

@@ -307,6 +307,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSString;
 /// The entry point class of the <code>CrowdConnectedIPS</code> module.
+/// <code>IpsSimulationSink</code> conformance is declared inline here (rather than in a separate
+/// <code>extension</code>) because this class shares its name with its module. A library-evolution
+/// <code>.swiftinterface</code> always fully-qualifies the extended type in a standalone <code>extension</code>
+/// block, and Swift’s qualified-lookup resolves that self-referential qualification to the
+/// class instead of the module, which some toolchains (e.g. Swift 6.3.3) fail to verify.
+/// See https://github.com/apple/swift/issues/56573.
 SWIFT_CLASS("_TtC17CrowdConnectedIPS17CrowdConnectedIPS")
 @interface CrowdConnectedIPS : NSObject <Module>
 /// Activate the Indoor Positioning module.

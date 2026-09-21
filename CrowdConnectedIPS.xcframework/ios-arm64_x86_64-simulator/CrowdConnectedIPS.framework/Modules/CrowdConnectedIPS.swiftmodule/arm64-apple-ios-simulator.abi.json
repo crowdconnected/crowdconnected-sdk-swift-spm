@@ -629,9 +629,9 @@
             "mangledName": "$s17CrowdConnectedIPSAAC19onSimulationStartedyyF",
             "moduleName": "CrowdConnectedIPS",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -652,7 +652,6 @@
             "declAttributes": [
               "AccessControl"
             ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -712,7 +711,6 @@
               "AccessControl",
               "RawDocComment"
             ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -738,6 +736,13 @@
             "printedName": "Module",
             "usr": "c:@M@CrowdConnectedShared@objc(pl)Module",
             "mangledName": "$s20CrowdConnectedShared6ModuleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IpsSimulationSink",
+            "printedName": "IpsSimulationSink",
+            "usr": "s:20CrowdConnectedShared17IpsSimulationSinkP",
+            "mangledName": "$s20CrowdConnectedShared17IpsSimulationSinkP"
           },
           {
             "kind": "Conformance",
@@ -801,13 +806,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "IpsSimulationSink",
-            "printedName": "IpsSimulationSink",
-            "usr": "s:20CrowdConnectedShared17IpsSimulationSinkP",
-            "mangledName": "$s20CrowdConnectedShared17IpsSimulationSinkP"
           }
         ]
       },
@@ -1436,14 +1434,14 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorIPS\/CrowdConnectedIPS\/Interface\/CrowdConnectedIPS.swift",
       "kind": "IntegerLiteral",
-      "offset": 394,
+      "offset": 919,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorIPS\/CrowdConnectedIPS\/Interface\/CrowdConnectedIPS.swift",
       "kind": "StringLiteral",
-      "offset": 1400,
+      "offset": 1977,
       "length": 7,
       "value": "\"0.0.0\""
     },
