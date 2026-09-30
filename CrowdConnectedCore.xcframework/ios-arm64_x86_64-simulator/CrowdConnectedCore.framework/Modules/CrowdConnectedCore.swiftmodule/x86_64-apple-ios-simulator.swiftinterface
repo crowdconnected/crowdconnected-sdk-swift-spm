@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CrowdConnectedCore
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CrowdConnectedCore
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import CoreLocation
 @_exported import CrowdConnectedCore
@@ -10,6 +10,10 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc public class Credentials : ObjectiveC.NSObject {
+  @objc public init(appKey: Swift.String, clientId: Swift.String, clientSecret: Swift.String)
+  @objc deinit
+}
 extension CrowdConnectedCore.CrowdConnected {
   @objc dynamic public func activateSimulation(token: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -21,10 +25,6 @@ extension CrowdConnectedCore.CrowdConnected {
   @objc func onSimulationConnected()
   @objc func onSimulationError(reason: Swift.String)
   @objc func onSimulationDisconnected()
-}
-@objc public class Credentials : ObjectiveC.NSObject {
-  @objc public init(appKey: Swift.String, clientId: Swift.String, clientSecret: Swift.String)
-  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CrowdConnected : CrowdConnectedShared.CCObject {
   @objc weak public var delegate: (any CrowdConnectedCore.CrowdConnectedDelegate)?

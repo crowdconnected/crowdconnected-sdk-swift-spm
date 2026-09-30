@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dWsvPOFpukfTjmQCA+bTplxs77Y=
+		Ew7dabwHM1h3SOuLFI7Wos3me/g=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		WXf5uOuEIHiKO0/o2qXwwv+3byQ=
+		dzJBjQL3MAf+INwE+2D2cFjRGGU=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		pVlHYxn+DjSp5evbCZR80nfaJqg=
+		dSrbx0H3ukuEsKjF2SmMkinPvx0=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		WXf5uOuEIHiKO0/o2qXwwv+3byQ=
+		dzJBjQL3MAf+INwE+2D2cFjRGGU=
 		</data>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		L9OLspIKoM4IKLOnzARkO/Ip25U=
+		4pcgT8fiSz4VXkFnsMRPm+rw7U4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,28 +72,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cqnlUfhOteBOCcWkW9sVs1P8Iqnh6sWD7SjJIX5n6cI=
+			VlWjsYM9/l8Avc9241oXWhG9G0B89h8r308+z/0a0ZM=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WOCasfcSPnx+WISvM47QHARz5KjTnrKkAzREsfw/c10=
+			84GVlMbd0T4MfZMJqWKbXxXyEmyDod0vKq4+4YY+kNo=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cqnlUfhOteBOCcWkW9sVs1P8Iqnh6sWD7SjJIX5n6cI=
+			VlWjsYM9/l8Avc9241oXWhG9G0B89h8r308+z/0a0ZM=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/6TEIJwwC7r6F5xaPazVIEQ4ky2Woipp+XLaii6KeQw=
+			qL1a1RgW0D5WkM/pkhlu9/v9uWmtKITaty6QyTL5ZvI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

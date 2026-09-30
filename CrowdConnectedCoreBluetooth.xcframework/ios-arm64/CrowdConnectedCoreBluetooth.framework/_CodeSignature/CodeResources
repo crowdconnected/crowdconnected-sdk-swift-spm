@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aLim6L5ysu/leUYt4MiDanFK28Y=
+		Nk9NN+4FrRK4U7Ys9V9OJEUz/U4=
 		</data>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		DIlENRXwaH/VcGqX75HBCgLS9Ns=
+		l74p5MKE8wpT2ZvRio6VFJXEwiA=
 		</data>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		to4h0iv3yqieDq7+O6J9Cz0d5YA=
+		unmvdoQumy7KSDsDH9hOATITFmQ=
 		</data>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		DIlENRXwaH/VcGqX75HBCgLS9Ns=
+		l74p5MKE8wpT2ZvRio6VFJXEwiA=
 		</data>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		pBeFumxtdWH2Kc7QfbYnLtGKIow=
+		FNNgncSutnDQuWsxltmjx0Tg2Oo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,28 +72,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oVKKWGhCWPbUfWUQreDJrfHSFNNYClRopJzlAO/WQ5A=
+			YpAky5ge8gJYbX/idgXriIKvHxjdIfxCTYE3872tNkQ=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JzQXlpfIRjV2UUo9Qhj0d/idiYHXtbhGfI8Epu6GkBU=
+			2GQ1KRuGgBlOWtLTaw2/FiCH4AmL1Zbeq7Q4DMxraAA=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oVKKWGhCWPbUfWUQreDJrfHSFNNYClRopJzlAO/WQ5A=
+			YpAky5ge8gJYbX/idgXriIKvHxjdIfxCTYE3872tNkQ=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cE3mHwz3ucA2IK83BytaLXsqPODqBzWIP2TBZSEtcbk=
+			hkW2nFgiTwowQ5AoCvj1I92UEtODkrz5f6JBJMjqlu4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
