@@ -252,9 +252,9 @@
             "mangledName": "$s17CrowdConnectedGeoAAC14injectLocation3lat3lng14accuracyMetres9surfaceIdySd_SdSfSSSgtF",
             "moduleName": "CrowdConnectedGeo",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -275,7 +275,6 @@
             "declAttributes": [
               "AccessControl"
             ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -296,7 +295,6 @@
             "declAttributes": [
               "AccessControl"
             ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -322,6 +320,13 @@
             "printedName": "Module",
             "usr": "c:@M@CrowdConnectedShared@objc(pl)Module",
             "mangledName": "$s20CrowdConnectedShared6ModuleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "GpsSimulationSink",
+            "printedName": "GpsSimulationSink",
+            "usr": "s:20CrowdConnectedShared17GpsSimulationSinkP",
+            "mangledName": "$s20CrowdConnectedShared17GpsSimulationSinkP"
           },
           {
             "kind": "Conformance",
@@ -385,13 +390,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "GpsSimulationSink",
-            "printedName": "GpsSimulationSink",
-            "usr": "s:20CrowdConnectedShared17GpsSimulationSinkP",
-            "mangledName": "$s20CrowdConnectedShared17GpsSimulationSinkP"
           }
         ]
       },
