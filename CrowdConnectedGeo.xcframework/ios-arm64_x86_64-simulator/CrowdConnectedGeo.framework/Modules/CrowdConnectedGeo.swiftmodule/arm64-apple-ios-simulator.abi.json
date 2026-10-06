@@ -458,92 +458,99 @@
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1222,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 1498,
+      "offset": 2104,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 2228,
+      "offset": 2834,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 2279,
+      "offset": 2885,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 2322,
+      "offset": 2928,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 2479,
+      "offset": 3085,
       "length": 122,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 2507,
+      "offset": 3113,
       "length": 5,
       "value": "\" Start monitoring Geo locations at an interval of \""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 2592,
+      "offset": 3198,
       "length": 7,
       "value": "\" seconds\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 2689,
+      "offset": 3295,
       "length": 59,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 2717,
+      "offset": 3323,
       "length": 4,
       "value": "\" Stop monitoring Geo locations\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 2359,
+      "offset": 2965,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 3849,
+      "offset": 4455,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 4232,
+      "offset": 4838,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 4308,
+      "offset": 4914,
       "length": 9,
       "value": "\"publish\""
     }

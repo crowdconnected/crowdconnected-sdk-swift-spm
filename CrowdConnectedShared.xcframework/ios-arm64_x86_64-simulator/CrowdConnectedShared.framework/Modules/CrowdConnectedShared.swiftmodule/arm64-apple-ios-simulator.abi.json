@@ -10939,6 +10939,158 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "snap2path",
+            "printedName": "snap2path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV9snap2pathSbSgvp",
+            "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV9snap2pathSbSgvp",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV9snap2pathSbSgvg",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV9snap2pathSbSgvg",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV9snap2pathSbSgvs",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV9snap2pathSbSgvs",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV9snap2pathSbSgvM",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV9snap2pathSbSgvM",
+                "moduleName": "CrowdConnectedShared",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hasSnapToPath",
+            "printedName": "hasSnapToPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV13hasSnapToPathSbvp",
+            "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV13hasSnapToPathSbvp",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20CrowdConnectedShared0aB11SDKSettingsV13hasSnapToPathSbvg",
+                "mangledName": "$s20CrowdConnectedShared0aB11SDKSettingsV13hasSnapToPathSbvg",
+                "moduleName": "CrowdConnectedShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -18835,70 +18987,70 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1447,
+      "offset": 1704,
       "length": 9,
       "value": "\"IBEACON\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1482,
+      "offset": 1739,
       "length": 11,
       "value": "\"EDDYSTONE\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 2692,
+      "offset": 2949,
       "length": 6,
       "value": "\"RFID\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3215,
+      "offset": 3472,
       "length": 13,
       "value": "\"frequency_2\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3253,
+      "offset": 3510,
       "length": 13,
       "value": "\"frequency_1\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3585,
+      "offset": 3842,
       "length": 8,
       "value": "\"zoneID\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3667,
+      "offset": 3924,
       "length": 10,
       "value": "\"radius_1\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3707,
+      "offset": 3964,
       "length": 10,
       "value": "\"radius_2\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 4460,
+      "offset": 4717,
       "length": 7,
       "value": "\"max_x\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorShared\/CrowdConnectedShared\/Models\/CrowdConnectedSDKSettings.swift",
       "kind": "StringLiteral",
-      "offset": 4492,
+      "offset": 4749,
       "length": 7,
       "value": "\"min_y\""
     }

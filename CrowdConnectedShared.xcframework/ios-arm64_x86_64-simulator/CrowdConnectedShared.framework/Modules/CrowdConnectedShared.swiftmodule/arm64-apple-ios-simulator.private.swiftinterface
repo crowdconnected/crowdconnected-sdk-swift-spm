@@ -429,6 +429,10 @@ public struct CrowdConnectedSDKSettings : CrowdConnectedShared.CCCodable, Swift.
   public var minObsCount: Swift.Int?
   public var pathSegments: [CrowdConnectedShared.CrowdConnectedSDKSettings.PathSegment]?
   public var maxSnapDistance: Swift.Double?
+  public var snap2path: Swift.Bool?
+  public var hasSnapToPath: Swift.Bool {
+    get
+  }
   public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings, b: CrowdConnectedShared.CrowdConnectedSDKSettings) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws

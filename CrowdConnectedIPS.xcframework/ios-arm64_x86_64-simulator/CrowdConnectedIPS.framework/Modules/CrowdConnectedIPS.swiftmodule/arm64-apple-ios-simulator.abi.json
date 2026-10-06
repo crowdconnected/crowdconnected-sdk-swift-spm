@@ -1091,14 +1091,14 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "IntegerLiteral",
-      "offset": 6328,
+      "offset": 6390,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorIPS\/CrowdConnectedIPS\/Positioner\/PositionUpdater.swift",
       "kind": "IntegerLiteral",
-      "offset": 6342,
+      "offset": 6404,
       "length": 1,
       "value": "0"
     },
@@ -1441,7 +1441,7 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorIPS\/CrowdConnectedIPS\/Interface\/CrowdConnectedIPS.swift",
       "kind": "StringLiteral",
-      "offset": 1977,
+      "offset": 2081,
       "length": 7,
       "value": "\"0.0.0\""
     },
