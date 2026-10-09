@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/CrowdConnectedIPS.framework/CrowdConnectedIPS</key>
 		<data>
-		UNpd2RVW4ARUCsg5AIwJpk9OkBo=
+		sg59Gi5Ys392ICV4znHG0dR/bL8=
 		</data>
 		<key>ios-arm64/CrowdConnectedIPS.framework/Headers/CrowdConnectedIPS-Swift.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedIPS.framework/CrowdConnectedIPS</key>
 		<data>
-		cYUqMAIeQ5hpiXLiq5/w53udh9c=
+		8/9+rIiGfXbBRlNSx5ZGo7VJUZs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedIPS.framework/Headers/CrowdConnectedIPS-Swift.h</key>
 		<data>
@@ -115,11 +115,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UNpd2RVW4ARUCsg5AIwJpk9OkBo=
+			sg59Gi5Ys392ICV4znHG0dR/bL8=
 			</data>
 			<key>hash2</key>
 			<data>
-			dt7A2SKJ5X3JjxR7C67FUsST6AuJCQ2zL/NxTF0ElEU=
+			Wm925mWu4ciXy/hHSSE9LUeYD3uX3SOrWDvvx5IxfJo=
 			</data>
 		</dict>
 		<key>ios-arm64/CrowdConnectedIPS.framework/Headers/CrowdConnectedIPS-Swift.h</key>
@@ -236,11 +236,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cYUqMAIeQ5hpiXLiq5/w53udh9c=
+			8/9+rIiGfXbBRlNSx5ZGo7VJUZs=
 			</data>
 			<key>hash2</key>
 			<data>
-			A/ejCIJyOmwLK+2QtVhpazpHotrGxSB1nEJBFWdRIMk=
+			4/x/uVUqSuFak5TJ10fWeJ1HJQbOiklJ75pvtmm0sDc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedIPS.framework/Headers/CrowdConnectedIPS-Swift.h</key>

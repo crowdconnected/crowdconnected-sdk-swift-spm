@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/CrowdConnectedGeo.framework/CrowdConnectedGeo</key>
 		<data>
-		wwijFfoTbjhQlQIRE348QSwt7NI=
+		yJEHWvq1Jew1tXaZza6ypzJIECE=
 		</data>
 		<key>ios-arm64/CrowdConnectedGeo.framework/Headers/CrowdConnectedGeo-Swift.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedGeo.framework/CrowdConnectedGeo</key>
 		<data>
-		oGFnjKvOxhNqS2J0S65PmlDaA24=
+		Q4F/zZsIEokH7lWy5rKvXgvZyUI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedGeo.framework/Headers/CrowdConnectedGeo-Swift.h</key>
 		<data>
@@ -115,11 +115,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wwijFfoTbjhQlQIRE348QSwt7NI=
+			yJEHWvq1Jew1tXaZza6ypzJIECE=
 			</data>
 			<key>hash2</key>
 			<data>
-			52rP0cgEzVSre86H+++au29NJ4NDWRlq5v2aXL5gCsk=
+			QvBAvF1kYaSm/TAy5CVxtKFiVs3MLzo2fH4n6ZCmvxE=
 			</data>
 		</dict>
 		<key>ios-arm64/CrowdConnectedGeo.framework/Headers/CrowdConnectedGeo-Swift.h</key>
@@ -236,11 +236,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oGFnjKvOxhNqS2J0S65PmlDaA24=
+			Q4F/zZsIEokH7lWy5rKvXgvZyUI=
 			</data>
 			<key>hash2</key>
 			<data>
-			IEoPLaADTUJu9mW/JpeX/EeUuWTtmFRtRRhyie9X+5Y=
+			vunnQE/FsVRB1Ne60qhjCR3OhfM/WwEv5cMw7HfNCX8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedGeo.framework/Headers/CrowdConnectedGeo-Swift.h</key>
