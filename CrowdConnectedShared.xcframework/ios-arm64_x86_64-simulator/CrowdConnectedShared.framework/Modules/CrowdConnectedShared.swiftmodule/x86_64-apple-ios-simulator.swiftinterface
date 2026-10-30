@@ -414,7 +414,7 @@ public struct DescriptiveError : Foundation.LocalizedError {
 public struct CrowdConnectedSDKSettings : CrowdConnectedShared.CCCodable, Swift.Equatable {
   public var pollingFrequency: Swift.Int64
   public var active: Swift.Bool
-  public var deviceIdList: [Swift.String]
+  public var deviceIdList: [Swift.String]?
   public var dataSending: CrowdConnectedShared.CrowdConnectedSDKSettings.DataSendingSettings
   public var tx: Swift.Int?
   public var geo: CrowdConnectedShared.CrowdConnectedSDKSettings.GeoSettings?
@@ -509,6 +509,7 @@ extension CrowdConnectedShared.CrowdConnectedSDKSettings {
     public var approxLat: Swift.Double?
     public var approxLng: Swift.Double?
     public var floor: Swift.Int?
+    public var geoConversion: Swift.Bool?
     public static func == (a: CrowdConnectedShared.CrowdConnectedSDKSettings.Surface, b: CrowdConnectedShared.CrowdConnectedSDKSettings.Surface) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws

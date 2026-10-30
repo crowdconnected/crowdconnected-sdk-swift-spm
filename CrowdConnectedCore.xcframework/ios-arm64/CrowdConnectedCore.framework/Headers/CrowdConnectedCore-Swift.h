@@ -488,8 +488,8 @@ SWIFT_CLASS("_TtCC18CrowdConnectedCore13Configuration7Builder")
 ///     withCredentials() must be called before build()
 ///   </li>
 /// </ul>
-/// If credentials have not been set, this method will raise a fatal error
-/// indicating that credentials are required.
+/// If credentials have not been set, the configuration gets empty credentials, and
+/// <code>start(with:)</code> reports <code>ErrorCode/missingAppKey</code> instead of crashing the app.
 /// <em>Return Value:</em>
 /// A fully configured Configuration object with:
 /// <ul>
@@ -503,9 +503,6 @@ SWIFT_CLASS("_TtCC18CrowdConnectedCore13Configuration7Builder")
 ///     trackingMode: Set via with(trackingMode:), defaults to .foreground
 ///   </li>
 /// </ul>
-///
-/// throws:
-/// Fatal error if credentials have not been set via withCredentials().
 ///
 /// returns:
 /// A fully configured Configuration object.
@@ -634,7 +631,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CrowdConnect
 @protocol SimulationCallback;
 @interface CrowdConnected (SWIFT_EXTENSION(CrowdConnectedCore))
 /// Activates a simulation session using the provided JWT token.
-/// The SDK must already be started before calling this method.
+/// The SDK must already be started before calling this method. If it isn’t, the session isn’t created.
 /// A second call replaces any existing session (the previous one is deactivated first).
 /// since:
 /// 3.1.0
@@ -642,7 +639,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CrowdConnect
 ///
 - (void)activateSimulationWithToken:(NSString * _Nonnull)token;
 /// Activates a simulation session with an optional callback for session events.
-/// The SDK must already be started before calling this method.
+/// The SDK must already be started before calling this method. If it isn’t, <code>callback</code> gets
+/// <code>onSimulationError(reason:)</code> with “SDK not started” and no session is created.
 /// A second call replaces any existing session (the previous one is deactivated first).
 /// All callbacks fire on a background thread — marshal to the main thread if you need to update UI.
 /// since:
@@ -717,6 +715,8 @@ typedef SWIFT_ENUM(NSInteger, ErrorCode, open) {
   ErrorCodeNoGeoModuleImported = 15,
   ErrorCodeNoIPSModuleImported = 17,
   ErrorCodeNoCoreBluetoothModuleImported = 19,
+/// The SDK has no valid cached settings and couldn’t fetch them from the CrowdConnected backend.
+  ErrorCodeFailedToLoadSettings = 20,
 };
 static NSString * _Nonnull const ErrorCodeDomain = @"CrowdConnectedCore.ErrorCode";
 
@@ -735,7 +735,10 @@ SWIFT_CLASS("_TtC18CrowdConnectedCore8Location")
 /// The coordinates of the location in pixels.
 @property (nonatomic, strong) Coordinate * _Nullable pixelCoordinates;
 /// The floor number.
+/// <code>0</code> when the floor isn’t known. Check <code>hasFloor</code> first, because <code>0</code> is also a real floor.
 @property (nonatomic) NSInteger floor;
+/// Whether <code>floor</code> is known. <code>false</code> when the surface has no floor set, as Android reports a <code>null</code> floor.
+@property (nonatomic) BOOL hasFloor;
 /// The surface of the location.
 @property (nonatomic, copy) NSString * _Nonnull surfaceID;
 /// The timestamp of the location.

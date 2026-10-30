@@ -53,9 +53,166 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "CrowdConnectedCore"
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCore"
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SimulationCallback",
+        "printedName": "SimulationCallback",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onSimulationConnected",
+            "printedName": "onSimulationConnected()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CrowdConnectedCore@objc(pl)SimulationCallback(im)onSimulationConnected",
+            "mangledName": "$s18CrowdConnectedCore18SimulationCallbackP02ondB0yyF",
+            "moduleName": "CrowdConnectedCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedCore.SimulationCallback>",
+            "sugared_genericSig": "<Self where Self : CrowdConnectedCore.SimulationCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSimulationError",
+            "printedName": "onSimulationError(reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CrowdConnectedCore@objc(pl)SimulationCallback(im)onSimulationErrorWithReason:",
+            "mangledName": "$s18CrowdConnectedCore18SimulationCallbackP02onD5Error6reasonySS_tF",
+            "moduleName": "CrowdConnectedCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedCore.SimulationCallback>",
+            "sugared_genericSig": "<Self where Self : CrowdConnectedCore.SimulationCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSimulationDisconnected",
+            "printedName": "onSimulationDisconnected()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CrowdConnectedCore@objc(pl)SimulationCallback(im)onSimulationDisconnected",
+            "mangledName": "$s18CrowdConnectedCore18SimulationCallbackP02onD12DisconnectedyyF",
+            "moduleName": "CrowdConnectedCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedCore.SimulationCallback>",
+            "sugared_genericSig": "<Self where Self : CrowdConnectedCore.SimulationCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@CrowdConnectedCore@objc(pl)SimulationCallback",
+        "mangledName": "$s18CrowdConnectedCore18SimulationCallbackP",
+        "moduleName": "CrowdConnectedCore",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCore"
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
         "moduleName": "CrowdConnectedCore",
         "declAttributes": [
-          "RawDocComment"
+          "SPIAccessControl"
         ]
       },
       {
@@ -582,173 +739,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "CrowdConnectedCore"
-      },
-      {
-        "kind": "Import",
-        "name": "CrowdConnectedShared",
-        "printedName": "CrowdConnectedShared",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedCore"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedCore"
-      },
-      {
-        "kind": "Import",
-        "name": "CrowdConnectedShared",
-        "printedName": "CrowdConnectedShared",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedCore"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedCore"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SimulationCallback",
-        "printedName": "SimulationCallback",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onSimulationConnected",
-            "printedName": "onSimulationConnected()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@CrowdConnectedCore@objc(pl)SimulationCallback(im)onSimulationConnected",
-            "mangledName": "$s18CrowdConnectedCore18SimulationCallbackP02ondB0yyF",
-            "moduleName": "CrowdConnectedCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedCore.SimulationCallback>",
-            "sugared_genericSig": "<Self where Self : CrowdConnectedCore.SimulationCallback>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onSimulationError",
-            "printedName": "onSimulationError(reason:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@CrowdConnectedCore@objc(pl)SimulationCallback(im)onSimulationErrorWithReason:",
-            "mangledName": "$s18CrowdConnectedCore18SimulationCallbackP02onD5Error6reasonySS_tF",
-            "moduleName": "CrowdConnectedCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedCore.SimulationCallback>",
-            "sugared_genericSig": "<Self where Self : CrowdConnectedCore.SimulationCallback>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onSimulationDisconnected",
-            "printedName": "onSimulationDisconnected()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@CrowdConnectedCore@objc(pl)SimulationCallback(im)onSimulationDisconnected",
-            "mangledName": "$s18CrowdConnectedCore18SimulationCallbackP02onD12DisconnectedyyF",
-            "moduleName": "CrowdConnectedCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : CrowdConnectedCore.SimulationCallback>",
-            "sugared_genericSig": "<Self where Self : CrowdConnectedCore.SimulationCallback>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@CrowdConnectedCore@objc(pl)SimulationCallback",
-        "mangledName": "$s18CrowdConnectedCore18SimulationCallbackP",
-        "moduleName": "CrowdConnectedCore",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedCore"
-      },
-      {
-        "kind": "Import",
-        "name": "CrowdConnectedShared",
-        "printedName": "CrowdConnectedShared",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedCore",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "CrowdConnectedCore",
         "declAttributes": [
           "RawDocComment"
@@ -770,6 +760,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCore"
       },
       {
         "kind": "Import",
@@ -1477,6 +1474,16 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
         "declKind": "Import",
         "moduleName": "CrowdConnectedCore",
         "declAttributes": [
@@ -2572,6 +2579,17 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftProtobuf",
+        "printedName": "SwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CrowdConnectedShared",
         "printedName": "CrowdConnectedShared",
         "declKind": "Import",
@@ -3518,6 +3536,99 @@
                 "declKind": "Accessor",
                 "usr": "s:18CrowdConnectedCore8LocationC5floorSivM",
                 "mangledName": "$s18CrowdConnectedCore8LocationC5floorSivM",
+                "moduleName": "CrowdConnectedCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hasFloor",
+            "printedName": "hasFloor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CrowdConnectedCore@objc(cs)Location(py)hasFloor",
+            "mangledName": "$s18CrowdConnectedCore8LocationC8hasFloorSbvp",
+            "moduleName": "CrowdConnectedCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CrowdConnectedCore@objc(cs)Location(im)hasFloor",
+                "mangledName": "$s18CrowdConnectedCore8LocationC8hasFloorSbvg",
+                "moduleName": "CrowdConnectedCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CrowdConnectedCore@objc(cs)Location(im)setHasFloor:",
+                "mangledName": "$s18CrowdConnectedCore8LocationC8hasFloorSbvs",
+                "moduleName": "CrowdConnectedCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18CrowdConnectedCore8LocationC8hasFloorSbvM",
+                "mangledName": "$s18CrowdConnectedCore8LocationC8hasFloorSbvM",
                 "moduleName": "CrowdConnectedCore",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5456,6 +5567,48 @@
           },
           {
             "kind": "Var",
+            "name": "failedToLoadSettings",
+            "printedName": "failedToLoadSettings",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CrowdConnectedCore.ErrorCode.Type) -> CrowdConnectedCore.ErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorCode",
+                    "printedName": "CrowdConnectedCore.ErrorCode",
+                    "usr": "c:@M@CrowdConnectedCore@E@ErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CrowdConnectedCore.ErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErrorCode",
+                        "printedName": "CrowdConnectedCore.ErrorCode",
+                        "usr": "c:@M@CrowdConnectedCore@E@ErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CrowdConnectedCore@E@ErrorCode@ErrorCodeFailedToLoadSettings",
+            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO20failedToLoadSettingsyA2CmF",
+            "moduleName": "CrowdConnectedCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -5718,17 +5871,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftProtobuf",
-        "printedName": "SwiftProtobuf",
-        "declKind": "Import",
-        "moduleName": "CrowdConnectedCore",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "CrowdConnectedShared",
         "printedName": "CrowdConnectedShared",
         "declKind": "Import",
@@ -5768,6 +5910,13 @@
         "kind": "Import",
         "name": "CoreLocation",
         "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCore"
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
         "declKind": "Import",
         "moduleName": "CrowdConnectedCore"
       },
@@ -6212,6 +6361,48 @@
       "value": "5000"
     },
     {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 307,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 348,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 460,
+      "length": 14,
+      "value": "\"HH:mm:ss.SSS\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimLogger.swift",
+      "kind": "Array",
+      "offset": 538,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimulationSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 659,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimulationSession.swift",
+      "kind": "StringLiteral",
+      "offset": 814,
+      "length": 38,
+      "value": "\"com.crowdconnected.simulation.replay\""
+    },
+    {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/AuthenticationSession.swift",
       "kind": "StringLiteral",
       "offset": 185,
@@ -6319,9 +6510,16 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Aliases\/AliasesManager.swift",
       "kind": "Array",
-      "offset": 852,
+      "offset": 1003,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Aliases\/AliasesManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1156,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/API\/APIConstants.swift",
@@ -6380,6 +6578,13 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Login\/IAMAuthenticationProvider.swift",
+      "kind": "Dictionary",
+      "offset": 2827,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/RecordsDatabase\/RecordsManager.swift",
       "kind": "StringLiteral",
       "offset": 521,
@@ -6417,9 +6622,16 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 754,
+      "offset": 1088,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1309,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
@@ -6444,101 +6656,115 @@
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1351,
+      "length": 6,
+      "value": "50000"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1378,
+      "length": 6,
+      "value": "50000"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1421,
+      "length": 7,
+      "value": "200000"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "StringLiteral",
-      "offset": 1856,
+      "offset": 2158,
       "length": 43,
       "value": "\"https:\/\/firehose.us-east-1.amazonaws.com\/\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "Array",
-      "offset": 1940,
+      "offset": 2242,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "Array",
-      "offset": 1978,
+      "offset": 2280,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "Array",
-      "offset": 2032,
+      "offset": 2334,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "StringLiteral",
-      "offset": 2689,
+      "offset": 2991,
       "length": 15,
       "value": "\"positions.txt\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "StringLiteral",
-      "offset": 2733,
+      "offset": 3035,
       "length": 11,
       "value": "\"steps.txt\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "StringLiteral",
-      "offset": 2789,
+      "offset": 3091,
       "length": 27,
       "value": "\"bluetoothObservations.txt\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "StringLiteral",
-      "offset": 2871,
+      "offset": 3173,
       "length": 28,
       "value": "\"FirehoseDatabase.syncQueue\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "Dictionary",
-      "offset": 3003,
+      "offset": 3305,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "IntegerLiteral",
-      "offset": 3042,
+      "offset": 3344,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "Dictionary",
-      "offset": 3101,
+      "offset": 3403,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "IntegerLiteral",
-      "offset": 3148,
+      "offset": 3450,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
       "kind": "StringLiteral",
-      "offset": 3295,
+      "offset": 3597,
       "length": 33,
       "value": "\"FirehoseDatabase.uploadTracking\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseDatabase.swift",
-      "kind": "BooleanLiteral",
-      "offset": 21002,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/SQLiteDatabase\/SQLiteDatabase+Commands.swift",
@@ -6597,48 +6823,6 @@
       "value": "\"(\nID INTEGER PRIMARY KEY AUTOINCREMENT,\nRECORD TEXT);\""
     },
     {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 307,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 348,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 460,
-      "length": 14,
-      "value": "\"HH:mm:ss.SSS\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimLogger.swift",
-      "kind": "Array",
-      "offset": 538,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimulationSession.swift",
-      "kind": "BooleanLiteral",
-      "offset": 659,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Simulation\/SimulationSession.swift",
-      "kind": "StringLiteral",
-      "offset": 814,
-      "length": 38,
-      "value": "\"com.crowdconnected.simulation.replay\""
-    },
-    {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/ModulesManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1370,
@@ -6662,56 +6846,63 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 613,
+      "offset": 633,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceStatusProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2229,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceStatusProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2273,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceStatusProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2323,
-      "length": 5,
-      "value": "false"
+      "kind": "StringLiteral",
+      "offset": 803,
+      "length": 39,
+      "value": "\"CrowdConnected.DeviceStatus.aliasKeys\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2487,
+      "offset": 885,
+      "length": 50,
+      "value": "\"CrowdConnected.DeviceStatus.ipsPositionGenerated\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceStatusProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 978,
+      "length": 50,
+      "value": "\"CrowdConnected.DeviceStatus.gpsPositionGenerated\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceStatusProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1077,
+      "length": 56,
+      "value": "\"CrowdConnected.DeviceStatus.gpsPositionGeneratedInZone\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceStatusProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 5547,
       "length": 79,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2513,
+      "offset": 5573,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2539,
+      "offset": 5599,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2565,
+      "offset": 5625,
       "length": 1,
       "value": "\"\""
     },
@@ -6746,28 +6937,28 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "BooleanLiteral",
-      "offset": 3252,
+      "offset": 3517,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "BooleanLiteral",
-      "offset": 3515,
+      "offset": 3780,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "BooleanLiteral",
-      "offset": 3787,
+      "offset": 4052,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "IntegerLiteral",
-      "offset": 4101,
+      "offset": 4366,
       "length": 1,
       "value": "0"
     },
@@ -7005,28 +7196,28 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
       "kind": "Dictionary",
-      "offset": 2623,
+      "offset": 2652,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
       "kind": "Array",
-      "offset": 4775,
+      "offset": 4804,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
       "kind": "Dictionary",
-      "offset": 5123,
+      "offset": 5152,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9143,
+      "offset": 9172,
       "length": 4,
       "value": "true"
     },
@@ -7969,18 +8160,137 @@
       "value": "\"isActive\""
     },
     {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/AppConfigurationValidator.swift",
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "Array",
+      "offset": 3090,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "Dictionary",
+      "offset": 3553,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "Dictionary",
+      "offset": 4028,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 727,
+      "offset": 4533,
       "length": 1,
-      "value": "2"
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4561,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "Array",
+      "offset": 4632,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 4811,
+      "length": 39,
+      "value": "\"net.crowdconnected.android.core.proto\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 5074,
+      "length": 14,
+      "value": "\".DynamoValue\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 5155,
+      "length": 109,
+      "value": "\"\u0000\u0003string_value\u0000\u0003number_value\u0000\u0003bool_value\u0000\u0003list_value\u0000\u0003map_value\u0000\u0003null_value\u0000\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 9685,
+      "length": 13,
+      "value": "\".DynamoList\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 9765,
+      "length": 17,
+      "value": "\"\u0000\u0001values\u0000\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 11037,
+      "length": 12,
+      "value": "\".DynamoMap\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 11116,
+      "length": 17,
+      "value": "\"\u0000\u0001fields\u0000\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 12627,
+      "length": 15,
+      "value": "\".SnapshotItem\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 12709,
+      "length": 21,
+      "value": "\"\u0000\u0001attributes\u0000\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 14246,
+      "length": 11,
+      "value": "\".Snapshot\""
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 14324,
+      "length": 104,
+      "value": "\"\u0000\u0003table_id\u0000\u0003table_name\u0000\u0003partition_key\u0000\u0003generated_at\u0000\u0003item_count\u0000\u0001items\u0000\""
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/DataStreamManagers\/SDKSettingsFetcher.swift",
       "kind": "IntegerLiteral",
-      "offset": 1396,
+      "offset": 1642,
       "length": 2,
       "value": "30"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/Location.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2629,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Network\/AWSSigV4Signer.swift",
@@ -8042,6 +8352,20 @@
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "BooleanLiteral",
       "offset": 1287,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1428,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1616,
       "length": 5,
       "value": "false"
     },
@@ -8165,123 +8489,11 @@
       "value": "19"
     },
     {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "Array",
-      "offset": 3090,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "Dictionary",
-      "offset": 3553,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "Dictionary",
-      "offset": 4028,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 4533,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4561,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "Array",
-      "offset": 4632,
+      "offset": 1869,
       "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 4811,
-      "length": 39,
-      "value": "\"net.crowdconnected.android.core.proto\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 5074,
-      "length": 14,
-      "value": "\".DynamoValue\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 5155,
-      "length": 109,
-      "value": "\"\u0000\u0003string_value\u0000\u0003number_value\u0000\u0003bool_value\u0000\u0003list_value\u0000\u0003map_value\u0000\u0003null_value\u0000\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 9685,
-      "length": 13,
-      "value": "\".DynamoList\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 9765,
-      "length": 17,
-      "value": "\"\u0000\u0001values\u0000\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 11037,
-      "length": 12,
-      "value": "\".DynamoMap\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 11116,
-      "length": 17,
-      "value": "\"\u0000\u0001fields\u0000\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 12627,
-      "length": 15,
-      "value": "\".SnapshotItem\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 12709,
-      "length": 21,
-      "value": "\"\u0000\u0001attributes\u0000\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 14246,
-      "length": 11,
-      "value": "\".Snapshot\""
-    },
-    {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Proto\/Generated\/beacon_snapshot.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 14324,
-      "length": 104,
-      "value": "\"\u0000\u0003table_id\u0000\u0003table_name\u0000\u0003partition_key\u0000\u0003generated_at\u0000\u0003item_count\u0000\u0001items\u0000\""
+      "value": "20"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
@@ -8370,56 +8582,56 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 11655,
+      "offset": 10496,
       "length": 12,
       "value": "111132.95255"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 11696,
+      "offset": 10537,
       "length": 10,
       "value": "-559.84957"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 11735,
+      "offset": 10576,
       "length": 7,
       "value": "1.17514"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 11771,
+      "offset": 10612,
       "length": 8,
       "value": "-0.00230"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 11808,
+      "offset": 10649,
       "length": 12,
       "value": "111412.87733"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 11849,
+      "offset": 10690,
       "length": 9,
       "value": "-93.50412"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 11887,
+      "offset": 10728,
       "length": 7,
       "value": "0.11774"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 11923,
+      "offset": 10764,
       "length": 9,
       "value": "-0.000165"
     },
@@ -8494,9 +8706,16 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/BeaconsLastSeenMonitor\/BeaconsLastSeenMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1082,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 670,
+      "offset": 930,
       "length": 5,
       "value": "false"
     },
