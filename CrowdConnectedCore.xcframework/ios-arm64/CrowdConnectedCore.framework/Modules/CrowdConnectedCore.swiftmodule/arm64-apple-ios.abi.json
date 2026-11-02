@@ -3456,16 +3456,25 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@CrowdConnectedCore@objc(cs)Location(py)floor",
-            "mangledName": "$s18CrowdConnectedCore8LocationC5floorSivp",
+            "mangledName": "$s18CrowdConnectedCore8LocationC5floorSo8NSNumberCSgvp",
             "moduleName": "CrowdConnectedCore",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl",
               "ObjC",
@@ -3480,14 +3489,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@CrowdConnectedCore@objc(cs)Location(im)floor",
-                "mangledName": "$s18CrowdConnectedCore8LocationC5floorSivg",
+                "mangledName": "$s18CrowdConnectedCore8LocationC5floorSo8NSNumberCSgvg",
                 "moduleName": "CrowdConnectedCore",
                 "implicit": true,
                 "declAttributes": [
@@ -3507,14 +3524,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@CrowdConnectedCore@objc(cs)Location(im)setFloor:",
-                "mangledName": "$s18CrowdConnectedCore8LocationC5floorSivs",
+                "mangledName": "$s18CrowdConnectedCore8LocationC5floorSo8NSNumberCSgvs",
                 "moduleName": "CrowdConnectedCore",
                 "implicit": true,
                 "declAttributes": [
@@ -3534,101 +3559,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18CrowdConnectedCore8LocationC5floorSivM",
-                "mangledName": "$s18CrowdConnectedCore8LocationC5floorSivM",
-                "moduleName": "CrowdConnectedCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "hasFloor",
-            "printedName": "hasFloor",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@CrowdConnectedCore@objc(cs)Location(py)hasFloor",
-            "mangledName": "$s18CrowdConnectedCore8LocationC8hasFloorSbvp",
-            "moduleName": "CrowdConnectedCore",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@CrowdConnectedCore@objc(cs)Location(im)hasFloor",
-                "mangledName": "$s18CrowdConnectedCore8LocationC8hasFloorSbvg",
-                "moduleName": "CrowdConnectedCore",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@CrowdConnectedCore@objc(cs)Location(im)setHasFloor:",
-                "mangledName": "$s18CrowdConnectedCore8LocationC8hasFloorSbvs",
-                "moduleName": "CrowdConnectedCore",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18CrowdConnectedCore8LocationC8hasFloorSbvM",
-                "mangledName": "$s18CrowdConnectedCore8LocationC8hasFloorSbvM",
+                "usr": "s:18CrowdConnectedCore8LocationC5floorSo8NSNumberCSgvM",
+                "mangledName": "$s18CrowdConnectedCore8LocationC5floorSo8NSNumberCSgvM",
                 "moduleName": "CrowdConnectedCore",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5066,8 +4998,8 @@
           },
           {
             "kind": "Var",
-            "name": "missingToken",
-            "printedName": "missingToken",
+            "name": "missingClientId",
+            "printedName": "missingClientId",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -5097,8 +5029,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@CrowdConnectedCore@E@ErrorCode@ErrorCodeMissingToken",
-            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO12missingTokenyA2CmF",
+            "usr": "c:@M@CrowdConnectedCore@E@ErrorCode@ErrorCodeMissingClientId",
+            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO15missingClientIdyA2CmF",
             "moduleName": "CrowdConnectedCore",
             "declAttributes": [
               "RawDocComment",
@@ -5108,8 +5040,8 @@
           },
           {
             "kind": "Var",
-            "name": "missingSecret",
-            "printedName": "missingSecret",
+            "name": "missingClientSecret",
+            "printedName": "missingClientSecret",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -5139,8 +5071,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@CrowdConnectedCore@E@ErrorCode@ErrorCodeMissingSecret",
-            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO13missingSecretyA2CmF",
+            "usr": "c:@M@CrowdConnectedCore@E@ErrorCode@ErrorCodeMissingClientSecret",
+            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO19missingClientSecretyA2CmF",
             "moduleName": "CrowdConnectedCore",
             "declAttributes": [
               "RawDocComment",
@@ -5758,6 +5690,100 @@
                 "moduleName": "CrowdConnectedCore",
                 "static": true,
                 "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "missingToken",
+            "printedName": "missingToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ErrorCode",
+                "printedName": "CrowdConnectedCore.ErrorCode",
+                "usr": "c:@M@CrowdConnectedCore@E@ErrorCode"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18CrowdConnectedCore9ErrorCodeO12missingTokenACvpZ",
+            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO12missingTokenACvpZ",
+            "moduleName": "CrowdConnectedCore",
+            "static": true,
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorCode",
+                    "printedName": "CrowdConnectedCore.ErrorCode",
+                    "usr": "c:@M@CrowdConnectedCore@E@ErrorCode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18CrowdConnectedCore9ErrorCodeO12missingTokenACvgZ",
+                "mangledName": "$s18CrowdConnectedCore9ErrorCodeO12missingTokenACvgZ",
+                "moduleName": "CrowdConnectedCore",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "missingSecret",
+            "printedName": "missingSecret",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ErrorCode",
+                "printedName": "CrowdConnectedCore.ErrorCode",
+                "usr": "c:@M@CrowdConnectedCore@E@ErrorCode"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18CrowdConnectedCore9ErrorCodeO13missingSecretACvpZ",
+            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO13missingSecretACvpZ",
+            "moduleName": "CrowdConnectedCore",
+            "static": true,
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorCode",
+                    "printedName": "CrowdConnectedCore.ErrorCode",
+                    "usr": "c:@M@CrowdConnectedCore@E@ErrorCode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18CrowdConnectedCore9ErrorCodeO13missingSecretACvgZ",
+                "mangledName": "$s18CrowdConnectedCore9ErrorCodeO13missingSecretACvgZ",
+                "moduleName": "CrowdConnectedCore",
+                "static": true,
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
@@ -8286,13 +8312,6 @@
       "value": "30"
     },
     {
-      "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/Location.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2629,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Network\/AWSSigV4Signer.swift",
       "kind": "StringLiteral",
       "offset": 445,
@@ -8407,91 +8426,91 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 674,
+      "offset": 681,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 761,
+      "offset": 781,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 872,
+      "offset": 892,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 957,
+      "offset": 977,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1078,
+      "offset": 1098,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1210,
+      "offset": 1230,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1347,
+      "offset": 1367,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1475,
+      "offset": 1495,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1614,
+      "offset": 1634,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1653,
+      "offset": 1673,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1687,
+      "offset": 1707,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1731,
+      "offset": 1751,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1869,
+      "offset": 1889,
       "length": 2,
       "value": "20"
     },
@@ -8582,56 +8601,56 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 10496,
+      "offset": 10420,
       "length": 12,
       "value": "111132.95255"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 10537,
+      "offset": 10461,
       "length": 10,
       "value": "-559.84957"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 10576,
+      "offset": 10500,
       "length": 7,
       "value": "1.17514"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 10612,
+      "offset": 10536,
       "length": 8,
       "value": "-0.00230"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 10649,
+      "offset": 10573,
       "length": 12,
       "value": "111412.87733"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 10690,
+      "offset": 10614,
       "length": 9,
       "value": "-93.50412"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 10728,
+      "offset": 10652,
       "length": 7,
       "value": "0.11774"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Utils\/PositionsProcessor.swift",
       "kind": "FloatLiteral",
-      "offset": 10764,
+      "offset": 10688,
       "length": 9,
       "value": "-0.000165"
     },

@@ -32,10 +32,6 @@
 		<data>
 		ErmKtR+6XQ0uzPe/MinhrNhtcuU=
 		</data>
-		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		/n94CiyZ2V0QcP8t4944GVxfcXw=
-		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Ieafy8Vyy1IYBwALA9nolFKH+2c=
@@ -87,13 +83,6 @@
 			<key>hash2</key>
 			<data>
 			5OBesaq2Fd7HhDcE/M/cWe3G1ojtGgJ+ulmDz/5ZWrw=
-			</data>
-		</dict>
-		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QDCS0nXRtyLHk5Kpn4ZXapPbXQjfA7M9qZhmp/vhiAs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
