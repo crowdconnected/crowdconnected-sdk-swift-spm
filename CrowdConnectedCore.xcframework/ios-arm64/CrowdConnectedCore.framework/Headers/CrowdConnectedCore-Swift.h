@@ -668,7 +668,7 @@ SWIFT_PROTOCOL("_TtP18CrowdConnectedCore22CrowdConnectedDelegate_")
 /// Called when new locations have been computed by the SDK.
 /// \param crowdConnected The <code>CrowdConnected</code> instance that generated the update.
 ///
-/// \param locations An array of <code>Location</code> items in chronological order.
+/// \param location The latest <code>Location</code> computed by the SDK.
 ///
 - (void)locationProvider:(CrowdConnected * _Nonnull)crowdConnected didUpdateLocation:(Location * _Nonnull)location;
 /// Called when the SDK has successfully started and registered the device.
@@ -694,10 +694,10 @@ typedef SWIFT_ENUM(NSInteger, ErrorCode, open) {
   ErrorCodeAlreadyRunning = 1,
 /// App key is missing or empty in the credentials.
   ErrorCodeMissingAppKey = 2,
-/// Token is missing or empty in the credentials.
-  ErrorCodeMissingToken = 3,
-/// Secret is missing or empty in the credentials.
-  ErrorCodeMissingSecret = 4,
+/// Client ID is missing or empty in the credentials.
+  ErrorCodeMissingClientId = 3,
+/// Client secret is missing or empty in the credentials.
+  ErrorCodeMissingClientSecret = 4,
 /// Device registration with the CrowdConnected backend failed.
   ErrorCodeDeviceRegistrationFailed = 5,
 /// No SDK modules (Geo or IPS) are active.

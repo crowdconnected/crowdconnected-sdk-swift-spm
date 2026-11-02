@@ -32,10 +32,6 @@
 		<data>
 		l74p5MKE8wpT2ZvRio6VFJXEwiA=
 		</data>
-		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		FNNgncSutnDQuWsxltmjx0Tg2Oo=
-		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Jt2oMQkUwWdfCJO1u3hOPz9ryLM=
@@ -87,13 +83,6 @@
 			<key>hash2</key>
 			<data>
 			YpAky5ge8gJYbX/idgXriIKvHxjdIfxCTYE3872tNkQ=
-			</data>
-		</dict>
-		<key>Modules/CrowdConnectedCoreBluetooth.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hkW2nFgiTwowQ5AoCvj1I92UEtODkrz5f6JBJMjqlu4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

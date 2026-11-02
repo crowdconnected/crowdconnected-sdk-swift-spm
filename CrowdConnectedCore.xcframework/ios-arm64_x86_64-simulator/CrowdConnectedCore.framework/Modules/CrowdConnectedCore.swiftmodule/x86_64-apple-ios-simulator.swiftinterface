@@ -124,8 +124,8 @@ public typealias DeviceID = Swift.String
   case noError = 0
   case alreadyRunning = 1
   case missingAppKey = 2
-  case missingToken = 3
-  case missingSecret = 4
+  case missingClientId = 3
+  case missingClientSecret = 4
   case deviceRegistrationFailed = 5
   case noModulesAreActive = 6
   case missingBluetoothPermissionItem = 7
@@ -150,6 +150,16 @@ public typealias DeviceID = Swift.String
 }
 extension CrowdConnectedCore.ErrorCode : Foundation.LocalizedError {
   public static var _nsErrorDomain: Swift.String {
+    get
+  }
+}
+extension CrowdConnectedCore.ErrorCode {
+  @available(*, deprecated, renamed: "missingClientId")
+  public static var missingToken: CrowdConnectedCore.ErrorCode {
+    get
+  }
+  @available(*, deprecated, renamed: "missingClientSecret")
+  public static var missingSecret: CrowdConnectedCore.ErrorCode {
     get
   }
 }

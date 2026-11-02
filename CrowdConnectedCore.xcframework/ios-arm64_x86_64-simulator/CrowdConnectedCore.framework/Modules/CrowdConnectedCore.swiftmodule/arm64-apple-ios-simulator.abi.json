@@ -5066,8 +5066,8 @@
           },
           {
             "kind": "Var",
-            "name": "missingToken",
-            "printedName": "missingToken",
+            "name": "missingClientId",
+            "printedName": "missingClientId",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -5097,8 +5097,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@CrowdConnectedCore@E@ErrorCode@ErrorCodeMissingToken",
-            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO12missingTokenyA2CmF",
+            "usr": "c:@M@CrowdConnectedCore@E@ErrorCode@ErrorCodeMissingClientId",
+            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO15missingClientIdyA2CmF",
             "moduleName": "CrowdConnectedCore",
             "declAttributes": [
               "RawDocComment",
@@ -5108,8 +5108,8 @@
           },
           {
             "kind": "Var",
-            "name": "missingSecret",
-            "printedName": "missingSecret",
+            "name": "missingClientSecret",
+            "printedName": "missingClientSecret",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -5139,8 +5139,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@CrowdConnectedCore@E@ErrorCode@ErrorCodeMissingSecret",
-            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO13missingSecretyA2CmF",
+            "usr": "c:@M@CrowdConnectedCore@E@ErrorCode@ErrorCodeMissingClientSecret",
+            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO19missingClientSecretyA2CmF",
             "moduleName": "CrowdConnectedCore",
             "declAttributes": [
               "RawDocComment",
@@ -5758,6 +5758,100 @@
                 "moduleName": "CrowdConnectedCore",
                 "static": true,
                 "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "missingToken",
+            "printedName": "missingToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ErrorCode",
+                "printedName": "CrowdConnectedCore.ErrorCode",
+                "usr": "c:@M@CrowdConnectedCore@E@ErrorCode"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18CrowdConnectedCore9ErrorCodeO12missingTokenACvpZ",
+            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO12missingTokenACvpZ",
+            "moduleName": "CrowdConnectedCore",
+            "static": true,
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorCode",
+                    "printedName": "CrowdConnectedCore.ErrorCode",
+                    "usr": "c:@M@CrowdConnectedCore@E@ErrorCode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18CrowdConnectedCore9ErrorCodeO12missingTokenACvgZ",
+                "mangledName": "$s18CrowdConnectedCore9ErrorCodeO12missingTokenACvgZ",
+                "moduleName": "CrowdConnectedCore",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "missingSecret",
+            "printedName": "missingSecret",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ErrorCode",
+                "printedName": "CrowdConnectedCore.ErrorCode",
+                "usr": "c:@M@CrowdConnectedCore@E@ErrorCode"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18CrowdConnectedCore9ErrorCodeO13missingSecretACvpZ",
+            "mangledName": "$s18CrowdConnectedCore9ErrorCodeO13missingSecretACvpZ",
+            "moduleName": "CrowdConnectedCore",
+            "static": true,
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorCode",
+                    "printedName": "CrowdConnectedCore.ErrorCode",
+                    "usr": "c:@M@CrowdConnectedCore@E@ErrorCode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18CrowdConnectedCore9ErrorCodeO13missingSecretACvgZ",
+                "mangledName": "$s18CrowdConnectedCore9ErrorCodeO13missingSecretACvgZ",
+                "moduleName": "CrowdConnectedCore",
+                "static": true,
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
@@ -8407,91 +8501,91 @@
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 674,
+      "offset": 681,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 761,
+      "offset": 781,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 872,
+      "offset": 892,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 957,
+      "offset": 977,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1078,
+      "offset": 1098,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1210,
+      "offset": 1230,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1347,
+      "offset": 1367,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1475,
+      "offset": 1495,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1614,
+      "offset": 1634,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1653,
+      "offset": 1673,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1687,
+      "offset": 1707,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1731,
+      "offset": 1751,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/kin\/atlassian-bitbucket-pipelines-runner\/temp\/runner2\/7432f55d-b6b9-576b-8030-00b6606d68d9\/build\/ColocatorCore\/CrowdConnectedCore\/Interface\/ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1869,
+      "offset": 1889,
       "length": 2,
       "value": "20"
     },
