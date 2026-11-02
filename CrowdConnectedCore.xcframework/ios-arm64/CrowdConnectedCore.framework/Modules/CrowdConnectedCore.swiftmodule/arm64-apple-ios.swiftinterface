@@ -95,8 +95,7 @@ extension CrowdConnectedCore.CrowdConnected {
   @objc public var latitude: Swift.Double
   @objc public var longitude: Swift.Double
   @objc public var pixelCoordinates: CrowdConnectedCore.Coordinate?
-  @objc public var floor: Swift.Int
-  @objc public var hasFloor: Swift.Bool
+  @objc public var floor: Foundation.NSNumber?
   @objc public var surfaceID: Swift.String
   @objc public var timestamp: Swift.Int64
   @objc public var type: Swift.String

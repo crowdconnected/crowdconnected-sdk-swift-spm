@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/CrowdConnectedShared.framework/CrowdConnectedShared</key>
 		<data>
-		9tjkk/GLzvJuceKWQwHShZdDqlQ=
+		DwhFVI2t+Z+g2HuffVzomeiA3zQ=
 		</data>
 		<key>ios-arm64/CrowdConnectedShared.framework/Headers/CrowdConnectedShared-Swift.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedShared.framework/CrowdConnectedShared</key>
 		<data>
-		9WNLPWeIn3SMxbfaVA9OCqZkIK0=
+		3D34gd8R0C6I65TPGd96HlXzk/k=
 		</data>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedShared.framework/Headers/CrowdConnectedShared-Swift.h</key>
 		<data>
@@ -115,11 +115,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9tjkk/GLzvJuceKWQwHShZdDqlQ=
+			DwhFVI2t+Z+g2HuffVzomeiA3zQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			3IUMw09zMSsI5skwAx73V10Wy6wbPWbTt554wC9F/1A=
+			PNyjlxxRmA4CPIWdupjWE1v28WuVR+Yuh3ZswZF6wkU=
 			</data>
 		</dict>
 		<key>ios-arm64/CrowdConnectedShared.framework/Headers/CrowdConnectedShared-Swift.h</key>
@@ -236,11 +236,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9WNLPWeIn3SMxbfaVA9OCqZkIK0=
+			3D34gd8R0C6I65TPGd96HlXzk/k=
 			</data>
 			<key>hash2</key>
 			<data>
-			df8lMA0/6/GR9S0tFKzNUgagvjikrPG4G3GRa1iW2Ns=
+			nAEFr5uYCaggbeG/7yRxUEw76Q1yqLLmhhgPH5Ji7ds=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedShared.framework/Headers/CrowdConnectedShared-Swift.h</key>

@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/CrowdConnectedCoreBluetooth.framework/CrowdConnectedCoreBluetooth</key>
 		<data>
-		LrcKt8xluFaeoJfe2tBzibsJOcg=
+		hRPhzMhdu/fQfIFB2k9ZBeW8YzY=
 		</data>
 		<key>ios-arm64/CrowdConnectedCoreBluetooth.framework/Headers/CrowdConnectedCoreBluetooth-Swift.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedCoreBluetooth.framework/CrowdConnectedCoreBluetooth</key>
 		<data>
-		O6Dao+1pUEV+g84zDlRnKxOi5rQ=
+		BRWPWgNZ+KBbnrYBYuZulq4F7io=
 		</data>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedCoreBluetooth.framework/Headers/CrowdConnectedCoreBluetooth-Swift.h</key>
 		<data>
@@ -115,11 +115,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LrcKt8xluFaeoJfe2tBzibsJOcg=
+			hRPhzMhdu/fQfIFB2k9ZBeW8YzY=
 			</data>
 			<key>hash2</key>
 			<data>
-			LCOlzue6qUxQDklBwniOm+E7UzGX67pD6YFWDLmg7Vo=
+			CuB4/g4pP94+LyXP+ajtPX0BXsyyX4FJ325jhIZeVzY=
 			</data>
 		</dict>
 		<key>ios-arm64/CrowdConnectedCoreBluetooth.framework/Headers/CrowdConnectedCoreBluetooth-Swift.h</key>
@@ -236,11 +236,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O6Dao+1pUEV+g84zDlRnKxOi5rQ=
+			BRWPWgNZ+KBbnrYBYuZulq4F7io=
 			</data>
 			<key>hash2</key>
 			<data>
-			8iAHrjtTs2FB8aVs4h17SoeDe24Sguow8QnFPtUodHw=
+			bVsqNyAZXEkctA1fXfRTvEQIeqqPyYal/Fu/7FhtKyQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/CrowdConnectedCoreBluetooth.framework/Headers/CrowdConnectedCoreBluetooth-Swift.h</key>

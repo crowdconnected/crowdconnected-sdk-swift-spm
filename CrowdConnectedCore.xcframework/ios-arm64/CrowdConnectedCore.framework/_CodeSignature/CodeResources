@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CrowdConnectedCore-Swift.h</key>
 		<data>
-		X53IVQcvgFYOCn3L1KRCW0M93ns=
+		mMor3LumrigClJGZIDXR9YFdbRY=
 		</data>
 		<key>Headers/CrowdConnectedCore.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rCmO5huzfQmJ7SSDSkrhg3Zmjhw=
+		1K3mMuMp8RsBPxbWmOm02z6VErM=
 		</data>
 		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		z4yN4hVh91gWfWQV/j0t6ylJuvs=
+		NUz61b8YHo5nKzcKRW3VzzhBFK8=
 		</data>
 		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		pXSdo7En0TpV+SwgbMzztXr6Tkk=
+		QUO9K9zTqSNJ2igkY67wp3uWjJs=
 		</data>
 		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		1e54laXKAXG60nizaadx60XEet4=
+		mivWKOHrm/6XMKyTRN1XdIy7Mi0=
 		</data>
 		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		72IhI1nhX68SHKXVgkBY4iph3UM=
+		8ApspAfWqOfSefW4E+xXSqW9dQs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rYxroItk6T0UTTttstE1T7Wl8Zri1AKJTeFywlV/t6o=
+			32k82Lm2pbk1MMxf8yg3TNSmddouYmL3BTgb/WcX6N4=
 			</data>
 		</dict>
 		<key>Headers/CrowdConnectedCore.h</key>
@@ -61,28 +61,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xrt/N2ywRkIUasLe+S18nVlCSL6g+orFv0wLHTlsmPk=
+			Ma4UpbbOiGvUs6IKU6JJ3dAQiFyYn9ToegxIUJdWenc=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+wBI0KT3t0hT7qg6OOcJkbErGyes6l/29W56XX76+58=
+			/QPXKZ3yHT0zk/lQdOjUmsgs8EhWvD3n9oW2q7f7awo=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BP76XloVsPzw3yexHS6+m9eq9geYqlJ7iBNwNoM9uNM=
+			7YIUXCRzRgra8PYbpPsMFqFMifMBuAebgUMdYyidBzU=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C9MUBv0OZHWe9rLxMevWazCG1dlaG8IEg28XG2GMp/M=
+			Jgpw186SgzUxKf6Im0CIdDwKiAig5rG8Tlj/6SSxzc0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

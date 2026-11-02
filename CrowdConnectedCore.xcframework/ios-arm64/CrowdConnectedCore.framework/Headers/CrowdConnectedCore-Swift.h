@@ -720,6 +720,7 @@ typedef SWIFT_ENUM(NSInteger, ErrorCode, open) {
 };
 static NSString * _Nonnull const ErrorCodeDomain = @"CrowdConnectedCore.ErrorCode";
 
+@class NSNumber;
 /// A location computed by the CrowdConnected SDK.
 /// Contains geographic coordinates, metric positions, floor information, timestamps, and quality indicators.
 SWIFT_CLASS("_TtC18CrowdConnectedCore8Location")
@@ -734,11 +735,10 @@ SWIFT_CLASS("_TtC18CrowdConnectedCore8Location")
 @property (nonatomic) double longitude;
 /// The coordinates of the location in pixels.
 @property (nonatomic, strong) Coordinate * _Nullable pixelCoordinates;
-/// The floor number.
-/// <code>0</code> when the floor isn’t known. Check <code>hasFloor</code> first, because <code>0</code> is also a real floor.
-@property (nonatomic) NSInteger floor;
-/// Whether <code>floor</code> is known. <code>false</code> when the surface has no floor set, as Android reports a <code>null</code> floor.
-@property (nonatomic) BOOL hasFloor;
+/// The floor number, or <code>nil</code> when the surface has no floor set, as on Android.
+/// An <code>NSNumber</code> rather than an <code>Int</code>, so it can be <code>nil</code> in Objective-C too. In Swift, read it with
+/// <code>location.floor?.intValue</code>.
+@property (nonatomic, strong) NSNumber * _Nullable floor;
 /// The surface of the location.
 @property (nonatomic, copy) NSString * _Nonnull surfaceID;
 /// The timestamp of the location.
